@@ -1,0 +1,99 @@
+Food caddy STL assembly notes
+
+Parts:
+- food_caddy_k1se_body_216mm.stl
+- food_caddy_k1se_flip_lid_216mm.stl
+- food_caddy_k1se_rear_hinge_rail.stl
+- food_caddy_k1se_hanger_ears_pair.stl
+- food_caddy_k1se_accessories_combined_plate.stl
+- food_caddy_k1se_bag_retainer_ring_spare.stl
+- food_caddy_k1se_hinge_pin_spare.stl
+- food_caddy_k1se_hinge_retainer_collar_spare.stl
+
+Creality K1 SE:
+Use the K1SE-specific files for the fewest practical print runs:
+1. food_caddy_k1se_body_216mm.stl
+2. food_caddy_k1se_flip_lid_216mm.stl
+3. food_caddy_k1se_accessories_combined_plate.stl
+
+Current design intent:
+- Print the main bin upright, open side up.
+- Do not print the main bin sideways. Sideways printing would need extensive
+  support inside the bin, would make the hinge holes rougher/less accurate, and
+  would put the hanging rim and bottom joint in a less useful layer orientation.
+- The main bin no longer has integrated hinge barrels or vertical ribs. That
+  keeps the largest print simple, upright, and support-free.
+- The top lip is a shallow 8 mm tapered flare rather than a sudden horizontal
+  shelf. This avoids the rounded-corner gaps/overhangs from the earlier lip and
+  keeps the rim printable upright without support.
+- Strength is now coming from geometry rather than bulk: thin walls, a small
+  closed rim/bead, a slightly thicker floor, and separate load-bearing hanger
+  and hinge parts.
+- The lid is intentionally lightweight because it only acts as an odour cover.
+  It uses a thin 0.8 mm skin with shallow stiffening beads rather than a thick
+  solid plate.
+- The body now has a shallow inner seating ledge at the top rim. The lid is
+  slightly smaller than the outer rim so it sits on that ledge when closed,
+  rather than relying on the hinge position alone to hold it flush.
+- The rear hinge rail is a separate clip-on part. It is a U-channel that wraps
+  over the rear top rim of the bin, so the main bin itself does not need hinge
+  barrels or support material. It is included in the combined accessories plate,
+  and also as a separate spare-part STL.
+- The previous integrated ribs were removed because they did not improve the
+  useful layer direction when printed as part of the upright bin.
+
+The package only includes K1 SE-relevant STLs. The oversized 230 mm body and
+226 mm lid have been removed because they do not fit the usual K1 SE 220 x 220
+mm build plate.
+
+The K1SE body is intentionally 216 mm wide so it prints on the K1 SE with slicer
+clearance. It will not
+hang across the 230 mm support gap by itself. Use the two printed hanger ears
+from the combined accessory plate. Each ear is a C-channel clip: the open slot
+slides sideways over the 4 mm top flange, one from the left side and one from the
+right side. The thicker outside edge faces away from the caddy and becomes the
+new hanging ledge. The ear slot includes a tapered guide face to match the
+shallow flared rim. The small lower hook sits under the flange so the ear cannot
+just lift off when you remove the liner.
+
+Once both ears are fitted, they extend the assembled hanging width back to about
+230 mm after printing, while keeping every individual print within the K1 SE
+build area. If the ears feel loose, add a small drop of CA glue after test-fitting
+the caddy in the kitchen bin.
+
+Separate K1 SE spare-part files are included for the hanger ears, bag retainer,
+hinge pin, and hinge collar in case a small part breaks or the fit needs
+experimenting.
+
+Hinge:
+The separate rear hinge rail has two outside hinge knuckles. The lid has one
+centre hinge knuckle. First slide/press the rear hinge rail over the back rim of
+the bin: the U-channel wraps over the rim, with one wall inside the caddy and one
+wall outside the caddy. The small internal barbs are there to grip under the rim;
+if the fit is too tight, lightly sand the barbs.
+
+The rail hinge holes are circular. Once the hinge rail is seated on the bin, line up the lid knuckle between the two
+rail knuckles, then slide the hinge pin through all three from one side. The
+square head on one end stops the pin moving in one direction. Push the small
+retaining collar onto the other end so the pin cannot walk out during use.
+
+The hinge holes are 3.7 mm diameter. The printed hinge pin is 2.9 mm diameter,
+leaving clearance for typical FDM print tolerances. The retaining collar is a
+friction fit on the pin. If it is too tight, lightly sand the pin end; if it is too
+loose, add a tiny drop of CA glue, hot glue, or a softened filament mushroom on
+the very end after confirming the lid swings freely.
+
+Printing:
+- Print the body upright, open side up.
+- Print the rear hinge rail separately.
+- Print the lid flat, top face down or up depending on the finish you prefer.
+- Print the hinge pin lying flat.
+- Print the bag-retainer ring flat.
+- PETG is preferred for kitchen use; PLA is fine for a fit test.
+
+Bag retainer:
+Put the liner into the caddy, fold the top of the liner over the rim, then press
+the bag-retainer ring into the opening to trap the liner neatly below the lid.
+The ring is sized to sit inside the newer flared rim and below the lid seating
+ledge, so it should not hold the lid open. Its outer footprint is about
+204 x 164 mm including the small grip tabs.
