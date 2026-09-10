@@ -387,6 +387,16 @@ function makeK1seAccessoryPlate() {
   );
 }
 
+function makeK1seAccessoryPlateV2() {
+  return mergeMeshes(
+    makeBagRetainerV2(),
+    transformMesh(onBed(flipForPrint(makeK1seHangerEarsPlate())), { x: 0, y: 0 }),
+    transformMesh(onBed(makeRearHingeRail()), { x: 0, y: 94 }),
+    transformMesh(onBed(makeHingePin({ length: 206 })), { x: 0, y: -94 }),
+    transformMesh(makeHingeRetainerCollarV2(), { x: 76, y: 0 })
+  );
+}
+
 function makeK1seLinerHangerPlate() {
   return mergeMeshes(
     onBed(makeBagRetainer()),
@@ -399,6 +409,13 @@ function makeK1seLinerHangerPlateV2() {
   return mergeMeshes(
     makeBagRetainerV2(),
     transformMesh(onBed(flipForPrint(makeK1seHangerEarsPlate())), { x: 0, y: 0 }),
+    transformMesh(makeHingeRetainerCollarV2(), { x: 76, y: 0 })
+  );
+}
+
+function makeK1seFailedOnlyPlateV2() {
+  return mergeMeshes(
+    makeBagRetainerV2(),
     transformMesh(makeHingeRetainerCollarV2(), { x: 76, y: 0 })
   );
 }
@@ -427,6 +444,8 @@ const parts = {
   "food_caddy_k1se_hinge_retainer_collar_spare.stl": onBed(makeHingeRetainerCollar()),
   "food_caddy_k1se_liner_hanger_plate_v2.stl": makeK1seLinerHangerPlateV2(),
   "food_caddy_k1se_hinge_retainer_collar_spare_v2.stl": makeHingeRetainerCollarV2(),
+  "food_caddy_k1se_accessories_everything_v2.stl": makeK1seAccessoryPlateV2(),
+  "food_caddy_k1se_failed_only_v2.stl": makeK1seFailedOnlyPlateV2(),
 };
 
 for (const [filename, mesh] of Object.entries(parts)) {

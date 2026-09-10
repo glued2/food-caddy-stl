@@ -24,6 +24,12 @@ Version 2:
   that can separate when the frame is removed from the bed.
 - The v2 hinge-retainer collar is fully round and printed standing on its flat
   circular face, so its pin bore prints vertically and needs no small side lug.
+- food_caddy_k1se_accessories_everything_v2.stl contains all small accessory
+  parts on one plate: v2 bag-retainer frame, hanger ears, v2 collar, rear hinge
+  rail, and hinge pin.
+- food_caddy_k1se_failed_only_v2.stl contains only the revised parts from the
+  failed first accessory print: v2 bag-retainer frame and v2 collar. Use this
+  if the rear hinge rail and hinge pin have already printed successfully.
 
 Current design intent:
 - Print the main bin upright, open side up.
