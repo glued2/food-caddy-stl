@@ -230,12 +230,13 @@ function flipForPrint(mesh) {
   return mesh.map((face) => face.map(([x, y, z]) => [x, y, 2 * midZ - z]));
 }
 
-function transformMesh(mesh, { x = 0, y = 0, z = 0, rotate = 0 } = {}) {
+function transformMesh(mesh, { x = 0, y = 0, z = 0, rotate = 0, rotateY = 0 } = {}) {
   const c = Math.cos(rotate), s = Math.sin(rotate);
+  const cy = Math.cos(rotateY), sy = Math.sin(rotateY);
   return mesh.map((face) => face.map(([px, py, pz]) => [
-    px * c - py * s + x,
-    px * s + py * c + y,
-    pz + z,
+    (px * cy + pz * sy) * c - py * s + x,
+    (px * cy + pz * sy) * s + py * c + y,
+    -px * sy + pz * cy + z,
   ]));
 }
 
@@ -314,6 +315,21 @@ function makeBagRetainer() {
   return mesh;
 }
 
+function makeBagRetainerV2() {
+  const mesh = [];
+  const outer = chamferRect(198.0, 158.0, 21.0);
+  const inner = chamferRect(184.0, 144.0, 18.0);
+  const thickness = 2.8;
+  ringSlab(mesh, outer, inner, 0.0, thickness);
+
+  // Keep the bag-grip tabs flush with the ring to avoid a weak raised transition.
+  box(mesh, -30, 30, -158.0 / 2 - 3, -158.0 / 2 + 4, 0.0, thickness);
+  box(mesh, -30, 30, 158.0 / 2 - 4, 158.0 / 2 + 3, 0.0, thickness);
+  box(mesh, -198.0 / 2 - 3, -198.0 / 2 + 4, -20, 20, 0.0, thickness);
+  box(mesh, 198.0 / 2 - 4, 198.0 / 2 + 3, -20, 20, 0.0, thickness);
+  return mesh;
+}
+
 function makeHingePin({ length = 224 } = {}) {
   const mesh = [];
   cylinderX(mesh, -length / 2, length / 2, 0, 1.45, 1.45, 24);
@@ -324,8 +340,12 @@ function makeHingePin({ length = 224 } = {}) {
 function makeHingeRetainerCollar() {
   const mesh = [];
   tubeX(mesh, -4, 4, 0, 3.8, 3.8, 1.45, 32);
-  box(mesh, -4, 4, -4.8, -3.8, 2.3, 5.3);
   return mesh;
+}
+
+function makeHingeRetainerCollarV2() {
+  // Stand the circular collar on its face so the pin bore prints vertically.
+  return onBed(transformMesh(makeHingeRetainerCollar(), { rotateY: Math.PI / 2 }));
 }
 
 function makeHangerEar(side = 1) {
@@ -375,6 +395,14 @@ function makeK1seLinerHangerPlate() {
   );
 }
 
+function makeK1seLinerHangerPlateV2() {
+  return mergeMeshes(
+    makeBagRetainerV2(),
+    transformMesh(onBed(flipForPrint(makeK1seHangerEarsPlate())), { x: 0, y: 0 }),
+    transformMesh(makeHingeRetainerCollarV2(), { x: 76, y: 0 })
+  );
+}
+
 function makeK1seHingeKitPlate() {
   return mergeMeshes(
     transformMesh(onBed(makeRearHingeRail()), { x: 0, y: 35 }),
@@ -397,6 +425,8 @@ const parts = {
   "food_caddy_k1se_bag_retainer_ring_spare.stl": makeBagRetainer(),
   "food_caddy_k1se_hinge_pin_spare.stl": onBed(makeHingePin({ length: 212 })),
   "food_caddy_k1se_hinge_retainer_collar_spare.stl": onBed(makeHingeRetainerCollar()),
+  "food_caddy_k1se_liner_hanger_plate_v2.stl": makeK1seLinerHangerPlateV2(),
+  "food_caddy_k1se_hinge_retainer_collar_spare_v2.stl": makeHingeRetainerCollarV2(),
 };
 
 for (const [filename, mesh] of Object.entries(parts)) {

@@ -3,18 +3,27 @@ Food caddy STL assembly notes
 Parts:
 - food_caddy_k1se_body_216mm.stl
 - food_caddy_k1se_flip_lid_216mm.stl
-- food_caddy_k1se_rear_hinge_rail.stl
-- food_caddy_k1se_hanger_ears_pair.stl
-- food_caddy_k1se_accessories_combined_plate.stl
+- food_caddy_k1se_liner_hanger_plate_v2.stl
+- food_caddy_k1se_hinge_kit_plate.stl
 - food_caddy_k1se_bag_retainer_ring_spare.stl
 - food_caddy_k1se_hinge_pin_spare.stl
 - food_caddy_k1se_hinge_retainer_collar_spare.stl
+- food_caddy_k1se_hinge_retainer_collar_spare_v2.stl
 
 Creality K1 SE:
 Use the K1SE-specific files for the fewest practical print runs:
 1. food_caddy_k1se_body_216mm.stl
 2. food_caddy_k1se_flip_lid_216mm.stl
-3. food_caddy_k1se_accessories_combined_plate.stl
+3. food_caddy_k1se_liner_hanger_plate_v2.stl
+4. food_caddy_k1se_hinge_kit_plate.stl
+
+Version 2:
+- The original files are retained unchanged for reference.
+- The v2 liner/hanger plate has a 2.8 mm uniform-thickness bag-retainer frame.
+  Its grip tabs are flush rather than raised, eliminating the weak transition
+  that can separate when the frame is removed from the bed.
+- The v2 hinge-retainer collar is fully round and printed standing on its flat
+  circular face, so its pin bore prints vertically and needs no small side lug.
 
 Current design intent:
 - Print the main bin upright, open side up.
@@ -37,8 +46,7 @@ Current design intent:
   rather than relying on the hinge position alone to hold it flush.
 - The rear hinge rail is a separate clip-on part. It is a U-channel that wraps
   over the rear top rim of the bin, so the main bin itself does not need hinge
-  barrels or support material. It is included in the combined accessories plate,
-  and also as a separate spare-part STL.
+  barrels or support material. It is included in the hinge kit plate.
 - The previous integrated ribs were removed because they did not improve the
   useful layer direction when printed as part of the upright bin.
 
@@ -49,7 +57,7 @@ mm build plate.
 The K1SE body is intentionally 216 mm wide so it prints on the K1 SE with slicer
 clearance. It will not
 hang across the 230 mm support gap by itself. Use the two printed hanger ears
-from the combined accessory plate. Each ear is a C-channel clip: the open slot
+from the liner/hanger plate. Each ear is a C-channel clip: the open slot
 slides sideways over the 4 mm top flange, one from the left side and one from the
 right side. The thicker outside edge faces away from the caddy and becomes the
 new hanging ledge. The ear slot includes a tapered guide face to match the
@@ -61,9 +69,8 @@ Once both ears are fitted, they extend the assembled hanging width back to about
 build area. If the ears feel loose, add a small drop of CA glue after test-fitting
 the caddy in the kitchen bin.
 
-Separate K1 SE spare-part files are included for the hanger ears, bag retainer,
-hinge pin, and hinge collar in case a small part breaks or the fit needs
-experimenting.
+Separate K1 SE spare-part files are included for the bag retainer, hinge pin,
+and hinge collar in case a small part breaks or the fit needs experimenting.
 
 Hinge:
 The separate rear hinge rail has two outside hinge knuckles. The lid has one
