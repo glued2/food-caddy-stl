@@ -3,33 +3,41 @@ Food caddy STL assembly notes
 Parts:
 - food_caddy_k1se_body_216mm.stl
 - food_caddy_k1se_flip_lid_216mm.stl
-- food_caddy_k1se_liner_hanger_plate_v2.stl
+- food_caddy_k1se_liner_hanger_plate.stl
 - food_caddy_k1se_hinge_kit_plate.stl
+- food_caddy_k1se_accessories_everything.stl
+- food_caddy_k1se_accessories_no_rails.stl
+- food_caddy_k1se_failed_parts_only.stl
 - food_caddy_k1se_bag_retainer_ring_spare.stl
 - food_caddy_k1se_hinge_pin_spare.stl
 - food_caddy_k1se_hinge_retainer_collar_spare.stl
-- food_caddy_k1se_hinge_retainer_collar_spare_v2.stl
 
 Creality K1 SE:
 Use the K1SE-specific files for the fewest practical print runs:
 1. food_caddy_k1se_body_216mm.stl
 2. food_caddy_k1se_flip_lid_216mm.stl
-3. food_caddy_k1se_liner_hanger_plate_v2.stl
+3. food_caddy_k1se_liner_hanger_plate.stl
 4. food_caddy_k1se_hinge_kit_plate.stl
 
-Version 2:
-- The original files are retained unchanged for reference.
-- The v2 liner/hanger plate has a 2.8 mm uniform-thickness bag-retainer frame.
-  Its grip tabs are flush rather than raised, eliminating the weak transition
-  that can separate when the frame is removed from the bed.
-- The v2 hinge-retainer collar is fully round and printed standing on its flat
-  circular face, so its pin bore prints vertically and needs no small side lug.
-- food_caddy_k1se_accessories_everything_v2.stl contains all small accessory
-  parts on one plate: v2 bag-retainer frame, hanger ears, v2 collar, rear hinge
-  rail, and hinge pin.
-- food_caddy_k1se_failed_only_v2.stl contains only the revised parts from the
-  failed first accessory print: v2 bag-retainer frame and v2 collar. Use this
-  if the rear hinge rail and hinge pin have already printed successfully.
+Design update after the first test print:
+- The bag-retainer frame in food_caddy_k1se_liner_hanger_plate.stl now has a
+  uniform 2.8 mm thickness with flush grip tabs, instead of a thinner ring with
+  a raised tab that could separate when removed from the bed.
+- The hinge-retainer collar is now fully round and prints standing on its flat
+  circular face, so the pin bore prints vertically instead of needing a small
+  side lug that printed poorly on its side.
+- The lid's rear hinge spine and front seating tab now have wider, full-
+  thickness base pads bonded to the lid skin, to avoid the same kind of
+  shear-off failure the retainer frame tab had. The lid has not been printed
+  yet, so this is a preventive change rather than a confirmed fix.
+- Alternative accessory plates are available if you don't want to reprint
+  parts that already succeeded:
+  - food_caddy_k1se_accessories_everything.stl: bag-retainer frame, hanger
+    ears, collar, hinge rail, and hinge pin all on one plate.
+  - food_caddy_k1se_accessories_no_rails.stl: the same, minus the hinge rail,
+    since the rail already printed successfully on the first attempt.
+  - food_caddy_k1se_failed_parts_only.stl: just the bag-retainer frame and
+    collar, i.e. only the two parts that actually failed the first time.
 
 Current design intent:
 - Print the main bin upright, open side up.

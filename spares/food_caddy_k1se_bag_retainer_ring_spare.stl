@@ -3,42 +3,42 @@ solid food_caddy_k1se_bag_retainer_ring_spare
     outer loop
       vertex -78.000 -79.000 0.000
       vertex 78.000 -79.000 0.000
-      vertex 78.000 -79.000 2.000
+      vertex 78.000 -79.000 2.800
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex -78.000 -79.000 0.000
-      vertex 78.000 -79.000 2.000
-      vertex -78.000 -79.000 2.000
+      vertex 78.000 -79.000 2.800
+      vertex -78.000 -79.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex 74.000 -72.000 0.000
       vertex -74.000 -72.000 0.000
-      vertex -74.000 -72.000 2.000
+      vertex -74.000 -72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex 74.000 -72.000 0.000
-      vertex -74.000 -72.000 2.000
-      vertex 74.000 -72.000 2.000
+      vertex -74.000 -72.000 2.800
+      vertex 74.000 -72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -78.000 -79.000 2.000
-      vertex 78.000 -79.000 2.000
-      vertex 74.000 -72.000 2.000
+      vertex -78.000 -79.000 2.800
+      vertex 78.000 -79.000 2.800
+      vertex 74.000 -72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -78.000 -79.000 2.000
-      vertex 74.000 -72.000 2.000
-      vertex -74.000 -72.000 2.000
+      vertex -78.000 -79.000 2.800
+      vertex 74.000 -72.000 2.800
+      vertex -74.000 -72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -59,42 +59,42 @@ solid food_caddy_k1se_bag_retainer_ring_spare
     outer loop
       vertex 78.000 -79.000 0.000
       vertex 99.000 -58.000 0.000
-      vertex 99.000 -58.000 2.000
+      vertex 99.000 -58.000 2.800
     endloop
   endfacet
   facet normal 0.707107 -0.707107 0.000000
     outer loop
       vertex 78.000 -79.000 0.000
-      vertex 99.000 -58.000 2.000
-      vertex 78.000 -79.000 2.000
+      vertex 99.000 -58.000 2.800
+      vertex 78.000 -79.000 2.800
     endloop
   endfacet
   facet normal -0.707107 0.707107 0.000000
     outer loop
       vertex 92.000 -54.000 0.000
       vertex 74.000 -72.000 0.000
-      vertex 74.000 -72.000 2.000
+      vertex 74.000 -72.000 2.800
     endloop
   endfacet
   facet normal -0.707107 0.707107 0.000000
     outer loop
       vertex 92.000 -54.000 0.000
-      vertex 74.000 -72.000 2.000
-      vertex 92.000 -54.000 2.000
+      vertex 74.000 -72.000 2.800
+      vertex 92.000 -54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 78.000 -79.000 2.000
-      vertex 99.000 -58.000 2.000
-      vertex 92.000 -54.000 2.000
+      vertex 78.000 -79.000 2.800
+      vertex 99.000 -58.000 2.800
+      vertex 92.000 -54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 78.000 -79.000 2.000
-      vertex 92.000 -54.000 2.000
-      vertex 74.000 -72.000 2.000
+      vertex 78.000 -79.000 2.800
+      vertex 92.000 -54.000 2.800
+      vertex 74.000 -72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -115,42 +115,42 @@ solid food_caddy_k1se_bag_retainer_ring_spare
     outer loop
       vertex 99.000 -58.000 0.000
       vertex 99.000 58.000 0.000
-      vertex 99.000 58.000 2.000
+      vertex 99.000 58.000 2.800
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex 99.000 -58.000 0.000
-      vertex 99.000 58.000 2.000
-      vertex 99.000 -58.000 2.000
+      vertex 99.000 58.000 2.800
+      vertex 99.000 -58.000 2.800
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex 92.000 54.000 0.000
       vertex 92.000 -54.000 0.000
-      vertex 92.000 -54.000 2.000
+      vertex 92.000 -54.000 2.800
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex 92.000 54.000 0.000
-      vertex 92.000 -54.000 2.000
-      vertex 92.000 54.000 2.000
+      vertex 92.000 -54.000 2.800
+      vertex 92.000 54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 99.000 -58.000 2.000
-      vertex 99.000 58.000 2.000
-      vertex 92.000 54.000 2.000
+      vertex 99.000 -58.000 2.800
+      vertex 99.000 58.000 2.800
+      vertex 92.000 54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 99.000 -58.000 2.000
-      vertex 92.000 54.000 2.000
-      vertex 92.000 -54.000 2.000
+      vertex 99.000 -58.000 2.800
+      vertex 92.000 54.000 2.800
+      vertex 92.000 -54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -171,42 +171,42 @@ solid food_caddy_k1se_bag_retainer_ring_spare
     outer loop
       vertex 99.000 58.000 0.000
       vertex 78.000 79.000 0.000
-      vertex 78.000 79.000 2.000
+      vertex 78.000 79.000 2.800
     endloop
   endfacet
   facet normal 0.707107 0.707107 0.000000
     outer loop
       vertex 99.000 58.000 0.000
-      vertex 78.000 79.000 2.000
-      vertex 99.000 58.000 2.000
+      vertex 78.000 79.000 2.800
+      vertex 99.000 58.000 2.800
     endloop
   endfacet
   facet normal -0.707107 -0.707107 0.000000
     outer loop
       vertex 74.000 72.000 0.000
       vertex 92.000 54.000 0.000
-      vertex 92.000 54.000 2.000
+      vertex 92.000 54.000 2.800
     endloop
   endfacet
   facet normal -0.707107 -0.707107 0.000000
     outer loop
       vertex 74.000 72.000 0.000
-      vertex 92.000 54.000 2.000
-      vertex 74.000 72.000 2.000
+      vertex 92.000 54.000 2.800
+      vertex 74.000 72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 99.000 58.000 2.000
-      vertex 78.000 79.000 2.000
-      vertex 74.000 72.000 2.000
+      vertex 99.000 58.000 2.800
+      vertex 78.000 79.000 2.800
+      vertex 74.000 72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 99.000 58.000 2.000
-      vertex 74.000 72.000 2.000
-      vertex 92.000 54.000 2.000
+      vertex 99.000 58.000 2.800
+      vertex 74.000 72.000 2.800
+      vertex 92.000 54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -227,42 +227,42 @@ solid food_caddy_k1se_bag_retainer_ring_spare
     outer loop
       vertex 78.000 79.000 0.000
       vertex -78.000 79.000 0.000
-      vertex -78.000 79.000 2.000
+      vertex -78.000 79.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex 78.000 79.000 0.000
-      vertex -78.000 79.000 2.000
-      vertex 78.000 79.000 2.000
+      vertex -78.000 79.000 2.800
+      vertex 78.000 79.000 2.800
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex -74.000 72.000 0.000
       vertex 74.000 72.000 0.000
-      vertex 74.000 72.000 2.000
+      vertex 74.000 72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex -74.000 72.000 0.000
-      vertex 74.000 72.000 2.000
-      vertex -74.000 72.000 2.000
+      vertex 74.000 72.000 2.800
+      vertex -74.000 72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 78.000 79.000 2.000
-      vertex -78.000 79.000 2.000
-      vertex -74.000 72.000 2.000
+      vertex 78.000 79.000 2.800
+      vertex -78.000 79.000 2.800
+      vertex -74.000 72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 78.000 79.000 2.000
-      vertex -74.000 72.000 2.000
-      vertex 74.000 72.000 2.000
+      vertex 78.000 79.000 2.800
+      vertex -74.000 72.000 2.800
+      vertex 74.000 72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -283,42 +283,42 @@ solid food_caddy_k1se_bag_retainer_ring_spare
     outer loop
       vertex -78.000 79.000 0.000
       vertex -99.000 58.000 0.000
-      vertex -99.000 58.000 2.000
+      vertex -99.000 58.000 2.800
     endloop
   endfacet
   facet normal -0.707107 0.707107 0.000000
     outer loop
       vertex -78.000 79.000 0.000
-      vertex -99.000 58.000 2.000
-      vertex -78.000 79.000 2.000
+      vertex -99.000 58.000 2.800
+      vertex -78.000 79.000 2.800
     endloop
   endfacet
   facet normal 0.707107 -0.707107 0.000000
     outer loop
       vertex -92.000 54.000 0.000
       vertex -74.000 72.000 0.000
-      vertex -74.000 72.000 2.000
+      vertex -74.000 72.000 2.800
     endloop
   endfacet
   facet normal 0.707107 -0.707107 0.000000
     outer loop
       vertex -92.000 54.000 0.000
-      vertex -74.000 72.000 2.000
-      vertex -92.000 54.000 2.000
+      vertex -74.000 72.000 2.800
+      vertex -92.000 54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -78.000 79.000 2.000
-      vertex -99.000 58.000 2.000
-      vertex -92.000 54.000 2.000
+      vertex -78.000 79.000 2.800
+      vertex -99.000 58.000 2.800
+      vertex -92.000 54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -78.000 79.000 2.000
-      vertex -92.000 54.000 2.000
-      vertex -74.000 72.000 2.000
+      vertex -78.000 79.000 2.800
+      vertex -92.000 54.000 2.800
+      vertex -74.000 72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -339,42 +339,42 @@ solid food_caddy_k1se_bag_retainer_ring_spare
     outer loop
       vertex -99.000 58.000 0.000
       vertex -99.000 -58.000 0.000
-      vertex -99.000 -58.000 2.000
+      vertex -99.000 -58.000 2.800
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex -99.000 58.000 0.000
-      vertex -99.000 -58.000 2.000
-      vertex -99.000 58.000 2.000
+      vertex -99.000 -58.000 2.800
+      vertex -99.000 58.000 2.800
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex -92.000 -54.000 0.000
       vertex -92.000 54.000 0.000
-      vertex -92.000 54.000 2.000
+      vertex -92.000 54.000 2.800
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex -92.000 -54.000 0.000
-      vertex -92.000 54.000 2.000
-      vertex -92.000 -54.000 2.000
+      vertex -92.000 54.000 2.800
+      vertex -92.000 -54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -99.000 58.000 2.000
-      vertex -99.000 -58.000 2.000
-      vertex -92.000 -54.000 2.000
+      vertex -99.000 58.000 2.800
+      vertex -99.000 -58.000 2.800
+      vertex -92.000 -54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -99.000 58.000 2.000
-      vertex -92.000 -54.000 2.000
-      vertex -92.000 54.000 2.000
+      vertex -99.000 58.000 2.800
+      vertex -92.000 -54.000 2.800
+      vertex -92.000 54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -395,42 +395,42 @@ solid food_caddy_k1se_bag_retainer_ring_spare
     outer loop
       vertex -99.000 -58.000 0.000
       vertex -78.000 -79.000 0.000
-      vertex -78.000 -79.000 2.000
+      vertex -78.000 -79.000 2.800
     endloop
   endfacet
   facet normal -0.707107 -0.707107 0.000000
     outer loop
       vertex -99.000 -58.000 0.000
-      vertex -78.000 -79.000 2.000
-      vertex -99.000 -58.000 2.000
+      vertex -78.000 -79.000 2.800
+      vertex -99.000 -58.000 2.800
     endloop
   endfacet
   facet normal 0.707107 0.707107 0.000000
     outer loop
       vertex -74.000 -72.000 0.000
       vertex -92.000 -54.000 0.000
-      vertex -92.000 -54.000 2.000
+      vertex -92.000 -54.000 2.800
     endloop
   endfacet
   facet normal 0.707107 0.707107 0.000000
     outer loop
       vertex -74.000 -72.000 0.000
-      vertex -92.000 -54.000 2.000
-      vertex -74.000 -72.000 2.000
+      vertex -92.000 -54.000 2.800
+      vertex -74.000 -72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -99.000 -58.000 2.000
-      vertex -78.000 -79.000 2.000
-      vertex -74.000 -72.000 2.000
+      vertex -99.000 -58.000 2.800
+      vertex -78.000 -79.000 2.800
+      vertex -74.000 -72.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -99.000 -58.000 2.000
-      vertex -74.000 -72.000 2.000
-      vertex -92.000 -54.000 2.000
+      vertex -99.000 -58.000 2.800
+      vertex -74.000 -72.000 2.800
+      vertex -92.000 -54.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -463,71 +463,71 @@ solid food_caddy_k1se_bag_retainer_ring_spare
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex -30.000 -82.000 4.000
-      vertex -30.000 -75.000 4.000
-      vertex 30.000 -75.000 4.000
+      vertex -30.000 -82.000 2.800
+      vertex -30.000 -75.000 2.800
+      vertex 30.000 -75.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex -30.000 -82.000 4.000
-      vertex 30.000 -75.000 4.000
-      vertex 30.000 -82.000 4.000
+      vertex -30.000 -82.000 2.800
+      vertex 30.000 -75.000 2.800
+      vertex 30.000 -82.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex -30.000 -82.000 0.000
-      vertex -30.000 -82.000 4.000
-      vertex 30.000 -82.000 4.000
+      vertex -30.000 -82.000 2.800
+      vertex 30.000 -82.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex -30.000 -82.000 0.000
-      vertex 30.000 -82.000 4.000
+      vertex 30.000 -82.000 2.800
       vertex 30.000 -82.000 0.000
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex 30.000 -82.000 0.000
-      vertex 30.000 -82.000 4.000
-      vertex 30.000 -75.000 4.000
+      vertex 30.000 -82.000 2.800
+      vertex 30.000 -75.000 2.800
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex 30.000 -82.000 0.000
-      vertex 30.000 -75.000 4.000
+      vertex 30.000 -75.000 2.800
       vertex 30.000 -75.000 0.000
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex 30.000 -75.000 0.000
-      vertex 30.000 -75.000 4.000
-      vertex -30.000 -75.000 4.000
+      vertex 30.000 -75.000 2.800
+      vertex -30.000 -75.000 2.800
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex 30.000 -75.000 0.000
-      vertex -30.000 -75.000 4.000
+      vertex -30.000 -75.000 2.800
       vertex -30.000 -75.000 0.000
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex -30.000 -75.000 0.000
-      vertex -30.000 -75.000 4.000
-      vertex -30.000 -82.000 4.000
+      vertex -30.000 -75.000 2.800
+      vertex -30.000 -82.000 2.800
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex -30.000 -75.000 0.000
-      vertex -30.000 -82.000 4.000
+      vertex -30.000 -82.000 2.800
       vertex -30.000 -82.000 0.000
     endloop
   endfacet
@@ -547,71 +547,71 @@ solid food_caddy_k1se_bag_retainer_ring_spare
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex -30.000 75.000 4.000
-      vertex -30.000 82.000 4.000
-      vertex 30.000 82.000 4.000
+      vertex -30.000 75.000 2.800
+      vertex -30.000 82.000 2.800
+      vertex 30.000 82.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex -30.000 75.000 4.000
-      vertex 30.000 82.000 4.000
-      vertex 30.000 75.000 4.000
+      vertex -30.000 75.000 2.800
+      vertex 30.000 82.000 2.800
+      vertex 30.000 75.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex -30.000 75.000 0.000
-      vertex -30.000 75.000 4.000
-      vertex 30.000 75.000 4.000
+      vertex -30.000 75.000 2.800
+      vertex 30.000 75.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex -30.000 75.000 0.000
-      vertex 30.000 75.000 4.000
+      vertex 30.000 75.000 2.800
       vertex 30.000 75.000 0.000
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex 30.000 75.000 0.000
-      vertex 30.000 75.000 4.000
-      vertex 30.000 82.000 4.000
+      vertex 30.000 75.000 2.800
+      vertex 30.000 82.000 2.800
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex 30.000 75.000 0.000
-      vertex 30.000 82.000 4.000
+      vertex 30.000 82.000 2.800
       vertex 30.000 82.000 0.000
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex 30.000 82.000 0.000
-      vertex 30.000 82.000 4.000
-      vertex -30.000 82.000 4.000
+      vertex 30.000 82.000 2.800
+      vertex -30.000 82.000 2.800
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex 30.000 82.000 0.000
-      vertex -30.000 82.000 4.000
+      vertex -30.000 82.000 2.800
       vertex -30.000 82.000 0.000
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex -30.000 82.000 0.000
-      vertex -30.000 82.000 4.000
-      vertex -30.000 75.000 4.000
+      vertex -30.000 82.000 2.800
+      vertex -30.000 75.000 2.800
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex -30.000 82.000 0.000
-      vertex -30.000 75.000 4.000
+      vertex -30.000 75.000 2.800
       vertex -30.000 75.000 0.000
     endloop
   endfacet
@@ -631,71 +631,71 @@ solid food_caddy_k1se_bag_retainer_ring_spare
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex -102.000 -20.000 4.000
-      vertex -102.000 20.000 4.000
-      vertex -95.000 20.000 4.000
+      vertex -102.000 -20.000 2.800
+      vertex -102.000 20.000 2.800
+      vertex -95.000 20.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex -102.000 -20.000 4.000
-      vertex -95.000 20.000 4.000
-      vertex -95.000 -20.000 4.000
+      vertex -102.000 -20.000 2.800
+      vertex -95.000 20.000 2.800
+      vertex -95.000 -20.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex -102.000 -20.000 0.000
-      vertex -102.000 -20.000 4.000
-      vertex -95.000 -20.000 4.000
+      vertex -102.000 -20.000 2.800
+      vertex -95.000 -20.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex -102.000 -20.000 0.000
-      vertex -95.000 -20.000 4.000
+      vertex -95.000 -20.000 2.800
       vertex -95.000 -20.000 0.000
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex -95.000 -20.000 0.000
-      vertex -95.000 -20.000 4.000
-      vertex -95.000 20.000 4.000
+      vertex -95.000 -20.000 2.800
+      vertex -95.000 20.000 2.800
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex -95.000 -20.000 0.000
-      vertex -95.000 20.000 4.000
+      vertex -95.000 20.000 2.800
       vertex -95.000 20.000 0.000
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex -95.000 20.000 0.000
-      vertex -95.000 20.000 4.000
-      vertex -102.000 20.000 4.000
+      vertex -95.000 20.000 2.800
+      vertex -102.000 20.000 2.800
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex -95.000 20.000 0.000
-      vertex -102.000 20.000 4.000
+      vertex -102.000 20.000 2.800
       vertex -102.000 20.000 0.000
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex -102.000 20.000 0.000
-      vertex -102.000 20.000 4.000
-      vertex -102.000 -20.000 4.000
+      vertex -102.000 20.000 2.800
+      vertex -102.000 -20.000 2.800
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex -102.000 20.000 0.000
-      vertex -102.000 -20.000 4.000
+      vertex -102.000 -20.000 2.800
       vertex -102.000 -20.000 0.000
     endloop
   endfacet
@@ -715,71 +715,71 @@ solid food_caddy_k1se_bag_retainer_ring_spare
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex 95.000 -20.000 4.000
-      vertex 95.000 20.000 4.000
-      vertex 102.000 20.000 4.000
+      vertex 95.000 -20.000 2.800
+      vertex 95.000 20.000 2.800
+      vertex 102.000 20.000 2.800
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex 95.000 -20.000 4.000
-      vertex 102.000 20.000 4.000
-      vertex 102.000 -20.000 4.000
+      vertex 95.000 -20.000 2.800
+      vertex 102.000 20.000 2.800
+      vertex 102.000 -20.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex 95.000 -20.000 0.000
-      vertex 95.000 -20.000 4.000
-      vertex 102.000 -20.000 4.000
+      vertex 95.000 -20.000 2.800
+      vertex 102.000 -20.000 2.800
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
       vertex 95.000 -20.000 0.000
-      vertex 102.000 -20.000 4.000
+      vertex 102.000 -20.000 2.800
       vertex 102.000 -20.000 0.000
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex 102.000 -20.000 0.000
-      vertex 102.000 -20.000 4.000
-      vertex 102.000 20.000 4.000
+      vertex 102.000 -20.000 2.800
+      vertex 102.000 20.000 2.800
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
       vertex 102.000 -20.000 0.000
-      vertex 102.000 20.000 4.000
+      vertex 102.000 20.000 2.800
       vertex 102.000 20.000 0.000
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex 102.000 20.000 0.000
-      vertex 102.000 20.000 4.000
-      vertex 95.000 20.000 4.000
+      vertex 102.000 20.000 2.800
+      vertex 95.000 20.000 2.800
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex 102.000 20.000 0.000
-      vertex 95.000 20.000 4.000
+      vertex 95.000 20.000 2.800
       vertex 95.000 20.000 0.000
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex 95.000 20.000 0.000
-      vertex 95.000 20.000 4.000
-      vertex 95.000 -20.000 4.000
+      vertex 95.000 20.000 2.800
+      vertex 95.000 -20.000 2.800
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
       vertex 95.000 20.000 0.000
-      vertex 95.000 -20.000 4.000
+      vertex 95.000 -20.000 2.800
       vertex 95.000 -20.000 0.000
     endloop
   endfacet

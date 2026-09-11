@@ -273,10 +273,16 @@ function makeLid({ width = 226.0 } = {}) {
   ringSlab(mesh, lidOuter, lidRibInner, 0.8, 1.8);
 
   const backY = 86.5;
-  // Rear spine overlaps the lid skin and hinge knuckle so the lid is one connected part.
-  box(mesh, -58, 58, 80.0, 91.0, 0.4, 3.0);
+  // Rear spine: wide base pad bonded to the full lid thickness (z starts at 0,
+  // not partway up) so the spine cannot shear off the thin lid skin the way
+  // the first-print retainer tabs did.
+  box(mesh, -66, 66, 77.0, 93.0, 0.0, 1.2);
+  box(mesh, -58, 58, 80.0, 91.0, 0.0, 3.0);
   tubeX(mesh, -50, 50, backY, 4.5, 4.8, 1.9, 32);
-  box(mesh, -52, 52, backY - 4, backY + 2, 0.5, 2.8);
+  box(mesh, -54, 54, backY - 4, backY + 2, 0.0, 2.8);
+  // Front seating tab: wider base pad plus the original tab on top, for the
+  // same reason - more bonded area at the base reduces peel risk.
+  box(mesh, -34, 34, -172.0 / 2 - 9, -172.0 / 2 + 1, 0.0, 1.2);
   box(mesh, -26, 26, -172.0 / 2 - 8, -172.0 / 2, 0.0, 4.0);
   return mesh;
 }
@@ -305,20 +311,6 @@ function makeBagRetainer() {
   const mesh = [];
   const outer = chamferRect(198.0, 158.0, 21.0);
   const inner = chamferRect(184.0, 144.0, 18.0);
-  ringSlab(mesh, outer, inner, 0.0, 2.0);
-
-  // Low bag-grip tabs keep the liner captured while staying below the lid ledge.
-  box(mesh, -30, 30, -158.0 / 2 - 3, -158.0 / 2 + 4, 0.0, 4.0);
-  box(mesh, -30, 30, 158.0 / 2 - 4, 158.0 / 2 + 3, 0.0, 4.0);
-  box(mesh, -198.0 / 2 - 3, -198.0 / 2 + 4, -20, 20, 0.0, 4.0);
-  box(mesh, 198.0 / 2 - 4, 198.0 / 2 + 3, -20, 20, 0.0, 4.0);
-  return mesh;
-}
-
-function makeBagRetainerV2() {
-  const mesh = [];
-  const outer = chamferRect(198.0, 158.0, 21.0);
-  const inner = chamferRect(184.0, 144.0, 18.0);
   const thickness = 2.8;
   ringSlab(mesh, outer, inner, 0.0, thickness);
 
@@ -343,7 +335,7 @@ function makeHingeRetainerCollar() {
   return mesh;
 }
 
-function makeHingeRetainerCollarV2() {
+function makeHingeRetainerCollarStanding() {
   // Stand the circular collar on its face so the pin bore prints vertically.
   return onBed(transformMesh(makeHingeRetainerCollar(), { rotateY: Math.PI / 2 }));
 }
@@ -379,44 +371,35 @@ function makeK1seHangerEarsPlate() {
 
 function makeK1seAccessoryPlate() {
   return mergeMeshes(
-    transformMesh(onBed(makeBagRetainer()), { x: -5, y: 0 }),
-    transformMesh(onBed(flipForPrint(makeK1seHangerEarsPlate())), { x: -5, y: 0 }),
-    transformMesh(onBed(makeRearHingeRail()), { x: -5, y: 92 }),
-    transformMesh(onBed(makeHingePin({ length: 206 })), { x: 106, y: 0, rotate: Math.PI / 2 }),
-    transformMesh(onBed(makeHingeRetainerCollar()), { x: 76, y: 0 })
-  );
-}
-
-function makeK1seAccessoryPlateV2() {
-  return mergeMeshes(
-    makeBagRetainerV2(),
+    makeBagRetainer(),
     transformMesh(onBed(flipForPrint(makeK1seHangerEarsPlate())), { x: 0, y: 0 }),
     transformMesh(onBed(makeRearHingeRail()), { x: 0, y: 94 }),
     transformMesh(onBed(makeHingePin({ length: 206 })), { x: 0, y: -94 }),
-    transformMesh(makeHingeRetainerCollarV2(), { x: 76, y: 0 })
+    transformMesh(makeHingeRetainerCollarStanding(), { x: 76, y: 0 })
+  );
+}
+
+function makeK1seAccessoryNoRailsPlate() {
+  return mergeMeshes(
+    makeBagRetainer(),
+    transformMesh(onBed(flipForPrint(makeK1seHangerEarsPlate())), { x: 0, y: 0 }),
+    transformMesh(onBed(makeHingePin({ length: 206 })), { x: 0, y: -94 }),
+    transformMesh(makeHingeRetainerCollarStanding(), { x: 76, y: 0 })
   );
 }
 
 function makeK1seLinerHangerPlate() {
   return mergeMeshes(
-    onBed(makeBagRetainer()),
+    makeBagRetainer(),
     transformMesh(onBed(flipForPrint(makeK1seHangerEarsPlate())), { x: 0, y: 0 }),
-    transformMesh(onBed(makeHingeRetainerCollar()), { x: 76, y: 0 })
+    transformMesh(makeHingeRetainerCollarStanding(), { x: 76, y: 0 })
   );
 }
 
-function makeK1seLinerHangerPlateV2() {
+function makeK1seFailedPartsOnlyPlate() {
   return mergeMeshes(
-    makeBagRetainerV2(),
-    transformMesh(onBed(flipForPrint(makeK1seHangerEarsPlate())), { x: 0, y: 0 }),
-    transformMesh(makeHingeRetainerCollarV2(), { x: 76, y: 0 })
-  );
-}
-
-function makeK1seFailedOnlyPlateV2() {
-  return mergeMeshes(
-    makeBagRetainerV2(),
-    transformMesh(makeHingeRetainerCollarV2(), { x: 76, y: 0 })
+    makeBagRetainer(),
+    transformMesh(makeHingeRetainerCollarStanding(), { x: 76, y: 0 })
   );
 }
 
@@ -434,23 +417,19 @@ const parts = {
     outerTopWidth: 212.0,
   }),
   "food_caddy_k1se_flip_lid_216mm.stl": onBed(makeLid({ width: 216.0 })),
-  "food_caddy_k1se_rear_hinge_rail.stl": makeRearHingeRail(),
-  "food_caddy_k1se_hanger_ears_pair.stl": onBed(flipForPrint(makeK1seHangerEarsPlate())),
-  "food_caddy_k1se_accessories_combined_plate.stl": makeK1seAccessoryPlate(),
   "food_caddy_k1se_liner_hanger_plate.stl": makeK1seLinerHangerPlate(),
   "food_caddy_k1se_hinge_kit_plate.stl": makeK1seHingeKitPlate(),
+  "food_caddy_k1se_accessories_everything.stl": makeK1seAccessoryPlate(),
+  "food_caddy_k1se_accessories_no_rails.stl": makeK1seAccessoryNoRailsPlate(),
+  "food_caddy_k1se_failed_parts_only.stl": makeK1seFailedPartsOnlyPlate(),
   "food_caddy_k1se_bag_retainer_ring_spare.stl": makeBagRetainer(),
   "food_caddy_k1se_hinge_pin_spare.stl": onBed(makeHingePin({ length: 212 })),
-  "food_caddy_k1se_hinge_retainer_collar_spare.stl": onBed(makeHingeRetainerCollar()),
-  "food_caddy_k1se_liner_hanger_plate_v2.stl": makeK1seLinerHangerPlateV2(),
-  "food_caddy_k1se_hinge_retainer_collar_spare_v2.stl": makeHingeRetainerCollarV2(),
-  "food_caddy_k1se_accessories_everything_v2.stl": makeK1seAccessoryPlateV2(),
-  "food_caddy_k1se_failed_only_v2.stl": makeK1seFailedOnlyPlateV2(),
+  "food_caddy_k1se_hinge_retainer_collar_spare.stl": makeHingeRetainerCollarStanding(),
 };
 
 for (const [filename, mesh] of Object.entries(parts)) {
   writeStl(filename, filename.replace(/\.stl$/, ""), mesh);
-  if (filename.includes("_body_216mm") || filename.includes("_flip_lid_216mm") || filename.includes("_rear_hinge_rail") || filename.includes("_accessories_combined_plate") || filename.includes("_liner_hanger_plate") || filename.includes("_hinge_kit_plate")) {
+  if (filename.includes("_body_216mm") || filename.includes("_flip_lid_216mm") || filename.includes("_liner_hanger_plate") || filename.includes("_hinge_kit_plate") || filename.includes("_accessories_")) {
     const centeredName = filename.replace(".stl", "_bed_centered.stl");
     writeStl(centeredName, centeredName.replace(/\.stl$/, ""), bedCenterMesh(mesh));
   }

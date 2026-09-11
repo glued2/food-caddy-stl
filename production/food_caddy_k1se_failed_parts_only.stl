@@ -1,4 +1,4 @@
-solid food_caddy_k1se_failed_only_v2
+solid food_caddy_k1se_failed_parts_only
   facet normal 0.000000 -1.000000 0.000000
     outer loop
       vertex -78.000 -79.000 0.000
@@ -2575,4 +2575,4 @@ solid food_caddy_k1se_failed_only_v2
       vertex 79.517 1.422 0.000
     endloop
   endfacet
-endsolid food_caddy_k1se_failed_only_v2
+endsolid food_caddy_k1se_failed_parts_only

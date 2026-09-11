@@ -673,16 +673,100 @@ solid food_caddy_k1se_flip_lid_216mm
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -58.000 80.000 0.700
-      vertex 58.000 80.000 0.700
-      vertex 58.000 91.000 0.700
+      vertex -66.000 77.000 0.300
+      vertex 66.000 77.000 0.300
+      vertex 66.000 93.000 0.300
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -58.000 80.000 0.700
-      vertex 58.000 91.000 0.700
-      vertex -58.000 91.000 0.700
+      vertex -66.000 77.000 0.300
+      vertex 66.000 93.000 0.300
+      vertex -66.000 93.000 0.300
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -66.000 77.000 1.500
+      vertex -66.000 93.000 1.500
+      vertex 66.000 93.000 1.500
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -66.000 77.000 1.500
+      vertex 66.000 93.000 1.500
+      vertex 66.000 77.000 1.500
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -66.000 77.000 0.300
+      vertex -66.000 77.000 1.500
+      vertex 66.000 77.000 1.500
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -66.000 77.000 0.300
+      vertex 66.000 77.000 1.500
+      vertex 66.000 77.000 0.300
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 66.000 77.000 0.300
+      vertex 66.000 77.000 1.500
+      vertex 66.000 93.000 1.500
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 66.000 77.000 0.300
+      vertex 66.000 93.000 1.500
+      vertex 66.000 93.000 0.300
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 66.000 93.000 0.300
+      vertex 66.000 93.000 1.500
+      vertex -66.000 93.000 1.500
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 66.000 93.000 0.300
+      vertex -66.000 93.000 1.500
+      vertex -66.000 93.000 0.300
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -66.000 93.000 0.300
+      vertex -66.000 93.000 1.500
+      vertex -66.000 77.000 1.500
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -66.000 93.000 0.300
+      vertex -66.000 77.000 1.500
+      vertex -66.000 77.000 0.300
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -58.000 80.000 0.300
+      vertex 58.000 80.000 0.300
+      vertex 58.000 91.000 0.300
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -58.000 80.000 0.300
+      vertex 58.000 91.000 0.300
+      vertex -58.000 91.000 0.300
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
@@ -701,58 +785,58 @@ solid food_caddy_k1se_flip_lid_216mm
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
-      vertex -58.000 80.000 0.700
+      vertex -58.000 80.000 0.300
       vertex -58.000 80.000 3.300
       vertex 58.000 80.000 3.300
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
-      vertex -58.000 80.000 0.700
+      vertex -58.000 80.000 0.300
       vertex 58.000 80.000 3.300
-      vertex 58.000 80.000 0.700
+      vertex 58.000 80.000 0.300
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
-      vertex 58.000 80.000 0.700
+      vertex 58.000 80.000 0.300
       vertex 58.000 80.000 3.300
       vertex 58.000 91.000 3.300
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
-      vertex 58.000 80.000 0.700
+      vertex 58.000 80.000 0.300
       vertex 58.000 91.000 3.300
-      vertex 58.000 91.000 0.700
+      vertex 58.000 91.000 0.300
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
-      vertex 58.000 91.000 0.700
+      vertex 58.000 91.000 0.300
       vertex 58.000 91.000 3.300
       vertex -58.000 91.000 3.300
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
-      vertex 58.000 91.000 0.700
+      vertex 58.000 91.000 0.300
       vertex -58.000 91.000 3.300
-      vertex -58.000 91.000 0.700
+      vertex -58.000 91.000 0.300
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
-      vertex -58.000 91.000 0.700
+      vertex -58.000 91.000 0.300
       vertex -58.000 91.000 3.300
       vertex -58.000 80.000 3.300
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
-      vertex -58.000 91.000 0.700
+      vertex -58.000 91.000 0.300
       vertex -58.000 80.000 3.300
-      vertex -58.000 80.000 0.700
+      vertex -58.000 80.000 0.300
     endloop
   endfacet
   facet normal 0.000000 -0.995185 -0.098017
@@ -2549,86 +2633,170 @@ solid food_caddy_k1se_flip_lid_216mm
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -52.000 82.500 0.800
-      vertex 52.000 82.500 0.800
-      vertex 52.000 88.500 0.800
+      vertex -54.000 82.500 0.300
+      vertex 54.000 82.500 0.300
+      vertex 54.000 88.500 0.300
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex -52.000 82.500 0.800
-      vertex 52.000 88.500 0.800
-      vertex -52.000 88.500 0.800
+      vertex -54.000 82.500 0.300
+      vertex 54.000 88.500 0.300
+      vertex -54.000 88.500 0.300
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex -52.000 82.500 3.100
-      vertex -52.000 88.500 3.100
-      vertex 52.000 88.500 3.100
+      vertex -54.000 82.500 3.100
+      vertex -54.000 88.500 3.100
+      vertex 54.000 88.500 3.100
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex -52.000 82.500 3.100
-      vertex 52.000 88.500 3.100
-      vertex 52.000 82.500 3.100
+      vertex -54.000 82.500 3.100
+      vertex 54.000 88.500 3.100
+      vertex 54.000 82.500 3.100
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
-      vertex -52.000 82.500 0.800
-      vertex -52.000 82.500 3.100
-      vertex 52.000 82.500 3.100
+      vertex -54.000 82.500 0.300
+      vertex -54.000 82.500 3.100
+      vertex 54.000 82.500 3.100
     endloop
   endfacet
   facet normal 0.000000 1.000000 0.000000
     outer loop
-      vertex -52.000 82.500 0.800
-      vertex 52.000 82.500 3.100
-      vertex 52.000 82.500 0.800
+      vertex -54.000 82.500 0.300
+      vertex 54.000 82.500 3.100
+      vertex 54.000 82.500 0.300
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
-      vertex 52.000 82.500 0.800
-      vertex 52.000 82.500 3.100
-      vertex 52.000 88.500 3.100
+      vertex 54.000 82.500 0.300
+      vertex 54.000 82.500 3.100
+      vertex 54.000 88.500 3.100
     endloop
   endfacet
   facet normal -1.000000 0.000000 0.000000
     outer loop
-      vertex 52.000 82.500 0.800
-      vertex 52.000 88.500 3.100
-      vertex 52.000 88.500 0.800
+      vertex 54.000 82.500 0.300
+      vertex 54.000 88.500 3.100
+      vertex 54.000 88.500 0.300
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
-      vertex 52.000 88.500 0.800
-      vertex 52.000 88.500 3.100
-      vertex -52.000 88.500 3.100
+      vertex 54.000 88.500 0.300
+      vertex 54.000 88.500 3.100
+      vertex -54.000 88.500 3.100
     endloop
   endfacet
   facet normal 0.000000 -1.000000 0.000000
     outer loop
-      vertex 52.000 88.500 0.800
-      vertex -52.000 88.500 3.100
-      vertex -52.000 88.500 0.800
+      vertex 54.000 88.500 0.300
+      vertex -54.000 88.500 3.100
+      vertex -54.000 88.500 0.300
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
-      vertex -52.000 88.500 0.800
-      vertex -52.000 88.500 3.100
-      vertex -52.000 82.500 3.100
+      vertex -54.000 88.500 0.300
+      vertex -54.000 88.500 3.100
+      vertex -54.000 82.500 3.100
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
-      vertex -52.000 88.500 0.800
-      vertex -52.000 82.500 3.100
-      vertex -52.000 82.500 0.800
+      vertex -54.000 88.500 0.300
+      vertex -54.000 82.500 3.100
+      vertex -54.000 82.500 0.300
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -34.000 -95.000 0.300
+      vertex 34.000 -95.000 0.300
+      vertex 34.000 -85.000 0.300
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -34.000 -95.000 0.300
+      vertex 34.000 -85.000 0.300
+      vertex -34.000 -85.000 0.300
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -34.000 -95.000 1.500
+      vertex -34.000 -85.000 1.500
+      vertex 34.000 -85.000 1.500
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -34.000 -95.000 1.500
+      vertex 34.000 -85.000 1.500
+      vertex 34.000 -95.000 1.500
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -34.000 -95.000 0.300
+      vertex -34.000 -95.000 1.500
+      vertex 34.000 -95.000 1.500
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -34.000 -95.000 0.300
+      vertex 34.000 -95.000 1.500
+      vertex 34.000 -95.000 0.300
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 34.000 -95.000 0.300
+      vertex 34.000 -95.000 1.500
+      vertex 34.000 -85.000 1.500
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 34.000 -95.000 0.300
+      vertex 34.000 -85.000 1.500
+      vertex 34.000 -85.000 0.300
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 34.000 -85.000 0.300
+      vertex 34.000 -85.000 1.500
+      vertex -34.000 -85.000 1.500
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 34.000 -85.000 0.300
+      vertex -34.000 -85.000 1.500
+      vertex -34.000 -85.000 0.300
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -34.000 -85.000 0.300
+      vertex -34.000 -85.000 1.500
+      vertex -34.000 -95.000 1.500
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -34.000 -85.000 0.300
+      vertex -34.000 -95.000 1.500
+      vertex -34.000 -95.000 0.300
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
