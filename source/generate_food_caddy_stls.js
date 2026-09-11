@@ -278,7 +278,11 @@ function makeLid({ width = 226.0 } = {}) {
   // the first-print retainer tabs did.
   box(mesh, -66, 66, 77.0, 93.0, 0.0, 1.2);
   box(mesh, -58, 58, 80.0, 91.0, 0.0, 3.0);
-  tubeX(mesh, -50, 50, backY, 4.5, 4.8, 1.9, 32);
+  // Knuckle centre is raised so its round profile never dips below z=0 (was
+  // 4.5, radius 4.8, which put part of the tube at z=-0.3: below the bed. That
+  // forced onBed() to lift the ENTIRE lid 0.3 mm off the bed, causing bad
+  // first layers on the actual test print.
+  tubeX(mesh, -50, 50, backY, 5.3, 4.8, 1.9, 32);
   box(mesh, -54, 54, backY - 4, backY + 2, 0.0, 2.8);
   // Front seating tab: wider base pad plus the original tab on top, for the
   // same reason - more bonded area at the base reduces peel risk.

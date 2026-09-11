@@ -28,8 +28,13 @@ Design update after the first test print:
   side lug that printed poorly on its side.
 - The lid's rear hinge spine and front seating tab now have wider, full-
   thickness base pads bonded to the lid skin, to avoid the same kind of
-  shear-off failure the retainer frame tab had. The lid has not been printed
-  yet, so this is a preventive change rather than a confirmed fix.
+  shear-off failure the retainer frame tab had.
+- The lid's rear hinge knuckle had a separate bug where its round tube dipped
+  0.3 mm below the bed plane in the model coordinates. This forced the whole
+  lid to be lifted 0.3 mm off the print bed to compensate, which is very
+  likely why the first couple of layers printed badly on the test print. This
+  is now fixed: the knuckle no longer dips below the lid skin, so the lid
+  sits flush on the bed.
 - Alternative accessory plates are available if you don't want to reprint
   parts that already succeeded:
   - food_caddy_k1se_accessories_everything.stl: bag-retainer frame, hanger
