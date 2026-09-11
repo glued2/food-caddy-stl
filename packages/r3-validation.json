@@ -1,0 +1,824 @@
+{
+  "revision": "r3",
+  "parameters": {
+    "width": 212,
+    "depth": 194,
+    "bottomWidth": 192,
+    "bottomDepth": 176,
+    "height": 205,
+    "chamfer": 35,
+    "offset": 2.5,
+    "minimumWall": 2.4,
+    "floor": 3,
+    "ledgeSpan": 230,
+    "assumedOpening": 224,
+    "bracketBelowWidth": 220,
+    "suspensionDrop": 16,
+    "ledgeBottom": 221,
+    "ledgeTop": 224,
+    "bracketBottom": 184,
+    "lidThickness": 2.4,
+    "lidWidth": 214,
+    "lidDepth": 196,
+    "hingeY": 103,
+    "hingeZ": 212,
+    "hingeRadius": 5.5,
+    "hingeBore": 5.8,
+    "axleDiameter": 5,
+    "axleLength": 60,
+    "axleStartX": -25,
+    "fixedEarInnerX": 14,
+    "fixedEarOuterX": 24,
+    "movingHalfWidth": 12,
+    "mountBore": 4.6,
+    "countersinkDiameter": 8.6,
+    "printer": [
+      220,
+      220,
+      250
+    ],
+    "bedMargin": 2,
+    "plateGap": 5,
+    "frameZ": 201,
+    "frameThickness": 3,
+    "frameClearance": 0.5,
+    "shelfInset": 2
+  },
+  "tests": [
+    "bin: Manifold kernel NoError",
+    "bin: one connected physical solid",
+    "bin: closed oppositely directed edges",
+    "bin: outward signed volume agrees with kernel",
+    "bin: individual flat bed contact >35 square mm",
+    "bin: printer dimensions with >=2 mm XY margin",
+    "lid: Manifold kernel NoError",
+    "lid: one connected physical solid",
+    "lid: closed oppositely directed edges",
+    "lid: outward signed volume agrees with kernel",
+    "lid: individual flat bed contact >35 square mm",
+    "lid: printer dimensions with >=2 mm XY margin",
+    "liner-frame: Manifold kernel NoError",
+    "liner-frame: one connected physical solid",
+    "liner-frame: closed oppositely directed edges",
+    "liner-frame: outward signed volume agrees with kernel",
+    "liner-frame: individual flat bed contact >35 square mm",
+    "liner-frame: printer dimensions with >=2 mm XY margin",
+    "hanger-left: Manifold kernel NoError",
+    "hanger-left: one connected physical solid",
+    "hanger-left: closed oppositely directed edges",
+    "hanger-left: outward signed volume agrees with kernel",
+    "hanger-left: individual flat bed contact >35 square mm",
+    "hanger-left: printer dimensions with >=2 mm XY margin",
+    "hanger-right: Manifold kernel NoError",
+    "hanger-right: one connected physical solid",
+    "hanger-right: closed oppositely directed edges",
+    "hanger-right: outward signed volume agrees with kernel",
+    "hanger-right: individual flat bed contact >35 square mm",
+    "hanger-right: printer dimensions with >=2 mm XY margin",
+    "hinge-rail: Manifold kernel NoError",
+    "hinge-rail: one connected physical solid",
+    "hinge-rail: closed oppositely directed edges",
+    "hinge-rail: outward signed volume agrees with kernel",
+    "hinge-rail: individual flat bed contact >35 square mm",
+    "hinge-rail: printer dimensions with >=2 mm XY margin",
+    "hinge-leaf: Manifold kernel NoError",
+    "hinge-leaf: one connected physical solid",
+    "hinge-leaf: closed oppositely directed edges",
+    "hinge-leaf: outward signed volume agrees with kernel",
+    "hinge-leaf: individual flat bed contact >35 square mm",
+    "hinge-leaf: printer dimensions with >=2 mm XY margin",
+    "coupon-side-wall: Manifold kernel NoError",
+    "coupon-side-wall: one connected physical solid",
+    "coupon-side-wall: closed oppositely directed edges",
+    "coupon-side-wall: outward signed volume agrees with kernel",
+    "coupon-side-wall: individual flat bed contact >35 square mm",
+    "coupon-side-wall: printer dimensions with >=2 mm XY margin",
+    "coupon-rear-wall: Manifold kernel NoError",
+    "coupon-rear-wall: one connected physical solid",
+    "coupon-rear-wall: closed oppositely directed edges",
+    "coupon-rear-wall: outward signed volume agrees with kernel",
+    "coupon-rear-wall: individual flat bed contact >35 square mm",
+    "coupon-rear-wall: printer dimensions with >=2 mm XY margin",
+    "coupon-lid: Manifold kernel NoError",
+    "coupon-lid: one connected physical solid",
+    "coupon-lid: closed oppositely directed edges",
+    "coupon-lid: outward signed volume agrees with kernel",
+    "coupon-lid: individual flat bed contact >35 square mm",
+    "coupon-lid: printer dimensions with >=2 mm XY margin",
+    "coupon-host-left: Manifold kernel NoError",
+    "coupon-host-left: one connected physical solid",
+    "coupon-host-left: closed oppositely directed edges",
+    "coupon-host-left: outward signed volume agrees with kernel",
+    "coupon-host-left: individual flat bed contact >35 square mm",
+    "coupon-host-left: printer dimensions with >=2 mm XY margin",
+    "coupon-host-right: Manifold kernel NoError",
+    "coupon-host-right: one connected physical solid",
+    "coupon-host-right: closed oppositely directed edges",
+    "coupon-host-right: outward signed volume agrees with kernel",
+    "coupon-host-right: individual flat bed contact >35 square mm",
+    "coupon-host-right: printer dimensions with >=2 mm XY margin",
+    "coupon-corner: Manifold kernel NoError",
+    "coupon-corner: one connected physical solid",
+    "coupon-corner: closed oppositely directed edges",
+    "coupon-corner: outward signed volume agrees with kernel",
+    "coupon-corner: individual flat bed contact >35 square mm",
+    "coupon-corner: printer dimensions with >=2 mm XY margin",
+    "coupon-axle-bores: Manifold kernel NoError",
+    "coupon-axle-bores: one connected physical solid",
+    "coupon-axle-bores: closed oppositely directed edges",
+    "coupon-axle-bores: outward signed volume agrees with kernel",
+    "coupon-axle-bores: individual flat bed contact >35 square mm",
+    "coupon-axle-bores: printer dimensions with >=2 mm XY margin",
+    "bin: every non-bed downward face satisfies 45 degree support-free surface criterion",
+    "lid: broad actual flat skin at print Z=0, not tiny hinge feet",
+    "bin: broad continuous floor bed contact",
+    "host: full ledge span 230, bottom <210, body height <230",
+    "host: bracket vertical faces below ledges < assumed 224 opening",
+    "host: only 3 mm assumed bearing each side; real measurement REQUIRED",
+    "all eight tapered faces including chamfers: true normal wall >=2.4 mm",
+    "bin: unbroken 3 mm floor continuously joined to walls",
+    "liner frame: no bin collision, shelf contact at Z=201",
+    "liner frame: top Z=204 below seated lid Z=205",
+    "liner frame: >500 mm2 actual shelf bearing area",
+    "assembly: bin / frame no solid collision",
+    "assembly: bin / hanger-left no solid collision",
+    "assembly: bin / hanger-right no solid collision",
+    "assembly: bin / hinge-rail no solid collision",
+    "assembly: bin / lid no solid collision",
+    "assembly: bin / hinge-leaf no solid collision",
+    "assembly: frame / hanger-left no solid collision",
+    "assembly: frame / hanger-right no solid collision",
+    "assembly: frame / hinge-rail no solid collision",
+    "assembly: frame / lid no solid collision",
+    "assembly: frame / hinge-leaf no solid collision",
+    "assembly: hanger-left / hanger-right no solid collision",
+    "assembly: hanger-left / hinge-rail no solid collision",
+    "assembly: hanger-left / lid no solid collision",
+    "assembly: hanger-left / hinge-leaf no solid collision",
+    "assembly: hanger-right / hinge-rail no solid collision",
+    "assembly: hanger-right / lid no solid collision",
+    "assembly: hanger-right / hinge-leaf no solid collision",
+    "assembly: hinge-rail / lid no solid collision",
+    "assembly: hinge-rail / hinge-leaf no solid collision",
+    "assembly: lid / hinge-leaf no solid collision",
+    "closed lid: underside seats at rim Z=205 (zero vertical float)",
+    "closed lid: actual rim seating area >1500 mm2",
+    "assembly envelope: 230 wide, <215 deep, <230 tall",
+    "lid opening: CSG collision-free at 0.1 degree steps from closed to 110 degrees (not physical validation)",
+    "hinge: 2 mm axial gap on each side of moving leaf",
+    "M5 axle: circular bore clears bin",
+    "M5 axle: circular bore clears frame",
+    "M5 axle: circular bore clears hanger-left",
+    "M5 axle: circular bore clears hanger-right",
+    "M5 axle: circular bore clears hinge-rail",
+    "M5 axle: circular bore clears lid",
+    "M5 axle: circular bore clears hinge-leaf",
+    "hinge: full circular bore 5.8 mm / metal shaft 5.0 mm, 0.8 mm diametral clearance",
+    "hinge: minimum radial barrel wall >=2.4 mm",
+    "M5x60 axle: washer + 5 mm locknut + >=2 mm exposed thread",
+    "axle head envelope clears bin",
+    "axle nut envelope clears bin",
+    "axle head envelope clears frame",
+    "axle nut envelope clears frame",
+    "axle head envelope clears hanger-left",
+    "axle nut envelope clears hanger-left",
+    "axle head envelope clears hanger-right",
+    "axle nut envelope clears hanger-right",
+    "axle head envelope clears hinge-rail",
+    "axle nut envelope clears hinge-rail",
+    "axle head envelope clears lid",
+    "axle nut envelope clears lid",
+    "axle head envelope clears hinge-leaf",
+    "axle nut envelope clears hinge-leaf",
+    "M4 fixed mounting fastener envelopes clear bin",
+    "M4 lid mounting fastener envelopes clear bin",
+    "M4 fixed mounting fastener envelopes clear frame",
+    "M4 lid mounting fastener envelopes clear frame",
+    "M4 fixed mounting fastener envelopes clear hanger-left",
+    "M4 lid mounting fastener envelopes clear hanger-left",
+    "M4 fixed mounting fastener envelopes clear hanger-right",
+    "M4 lid mounting fastener envelopes clear hanger-right",
+    "M4 fixed mounting fastener envelopes clear hinge-rail",
+    "M4 lid mounting fastener envelopes clear hinge-rail",
+    "M4 fixed mounting fastener envelopes clear lid",
+    "M4 lid mounting fastener envelopes clear lid",
+    "M4 fixed mounting fastener envelopes clear hinge-leaf",
+    "M4 lid mounting fastener envelopes clear hinge-leaf",
+    "fixed and moving hardware do not collide when closed",
+    "hardware: moving lid screw/washer/nyloc envelopes clear fixed assembly in 0.5 degree sweep",
+    "all M4x16 joints: full 5 mm nut envelope engagement plus >=2 mm exposed shaft",
+    "full assembly INCLUDING projecting metal screw tips remains <230 mm tall",
+    "inset installation: closed assembly protrudes no more than 3 mm above INTERNAL bearing ledge",
+    "inset installation: floor less than 230 mm below INTERNAL bearing ledge",
+    "split host gauge: lap faces meet without overlap",
+    "bolted split gauge: assembled full width exactly 230 mm",
+    "01-bin/bin: centred plate has >=2 mm printer XY margin",
+    "01-bin/bin: canonical spare solid reused exactly",
+    "01-bin: one connected component per intended part",
+    "02-lid/lid: centred plate has >=2 mm printer XY margin",
+    "02-lid/lid: canonical spare solid reused exactly",
+    "02-lid: one connected component per intended part",
+    "03-liner-frame/liner-frame: centred plate has >=2 mm printer XY margin",
+    "03-liner-frame/liner-frame: canonical spare solid reused exactly",
+    "03-liner-frame: one connected component per intended part",
+    "04-hanging-rails/hanger-left: centred plate has >=2 mm printer XY margin",
+    "04-hanging-rails/hanger-left: canonical spare solid reused exactly",
+    "04-hanging-rails/hanger-right: centred plate has >=2 mm printer XY margin",
+    "04-hanging-rails/hanger-right: canonical spare solid reused exactly",
+    "04-hanging-rails: hanger-left/hanger-right bounding-box separation >=5 mm",
+    "04-hanging-rails: separate objects CSG intersection empty",
+    "04-hanging-rails: one connected component per intended part",
+    "05-hinge/hinge-rail: centred plate has >=2 mm printer XY margin",
+    "05-hinge/hinge-rail: canonical spare solid reused exactly",
+    "05-hinge/hinge-leaf: centred plate has >=2 mm printer XY margin",
+    "05-hinge/hinge-leaf: canonical spare solid reused exactly",
+    "05-hinge: hinge-rail/hinge-leaf bounding-box separation >=5 mm",
+    "05-hinge: separate objects CSG intersection empty",
+    "05-hinge: one connected component per intended part",
+    "test-01-host-gauge/coupon-host-left: centred plate has >=2 mm printer XY margin",
+    "test-01-host-gauge/coupon-host-left: canonical spare solid reused exactly",
+    "test-01-host-gauge/coupon-host-right: centred plate has >=2 mm printer XY margin",
+    "test-01-host-gauge/coupon-host-right: canonical spare solid reused exactly",
+    "test-01-host-gauge: coupon-host-left/coupon-host-right bounding-box separation >=5 mm",
+    "test-01-host-gauge: separate objects CSG intersection empty",
+    "test-01-host-gauge: one connected component per intended part",
+    "test-02-mating/coupon-side-wall: centred plate has >=2 mm printer XY margin",
+    "test-02-mating/coupon-side-wall: canonical spare solid reused exactly",
+    "test-02-mating/coupon-rear-wall: centred plate has >=2 mm printer XY margin",
+    "test-02-mating/coupon-rear-wall: canonical spare solid reused exactly",
+    "test-02-mating/coupon-lid: centred plate has >=2 mm printer XY margin",
+    "test-02-mating/coupon-lid: canonical spare solid reused exactly",
+    "test-02-mating/coupon-corner: centred plate has >=2 mm printer XY margin",
+    "test-02-mating/coupon-corner: canonical spare solid reused exactly",
+    "test-02-mating/coupon-axle-bores: centred plate has >=2 mm printer XY margin",
+    "test-02-mating/coupon-axle-bores: canonical spare solid reused exactly",
+    "test-02-mating: coupon-side-wall/coupon-rear-wall bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-side-wall/coupon-lid bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-side-wall/coupon-corner bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-side-wall/coupon-axle-bores bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-rear-wall/coupon-lid bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-rear-wall/coupon-corner bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-rear-wall/coupon-axle-bores bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-lid/coupon-corner bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-lid/coupon-axle-bores bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: coupon-corner/coupon-axle-bores bounding-box separation >=5 mm",
+    "test-02-mating: separate objects CSG intersection empty",
+    "test-02-mating: one connected component per intended part"
+  ],
+  "parts": {
+    "bin": {
+      "triangles": 1908,
+      "volumeMm3": 441586.64763245475,
+      "approximatePLAgrams": 547.5674430642439,
+      "bedContactMm2": 31342,
+      "bounds": {
+        "min": [
+          -106,
+          -97,
+          0
+        ],
+        "max": [
+          106,
+          97,
+          205
+        ]
+      },
+      "extent": [
+        212,
+        194,
+        205
+      ]
+    },
+    "lid": {
+      "triangles": 1252,
+      "volumeMm3": 94128.33837482547,
+      "approximatePLAgrams": 116.71913958478358,
+      "bedContactMm2": 39168.30663540169,
+      "bounds": {
+        "min": [
+          -107,
+          -98,
+          0
+        ],
+        "max": [
+          107,
+          98,
+          2.4000000000000057
+        ]
+      },
+      "extent": [
+        214,
+        196,
+        2.4000000000000057
+      ]
+    },
+    "liner-frame": {
+      "triangles": 64,
+      "volumeMm3": 8344.438643082876,
+      "approximatePLAgrams": 10.347103917422766,
+      "bedContactMm2": 2781.479803601862,
+      "bounds": {
+        "min": [
+          -102.80487804859877,
+          -93.82439024746418,
+          0
+        ],
+        "max": [
+          102.80487804859877,
+          93.82439024746418,
+          3
+        ]
+      },
+      "extent": [
+        205.60975609719753,
+        187.64878049492836,
+        3
+      ]
+    },
+    "hanger-left": {
+      "triangles": 1184,
+      "volumeMm3": 10916.938564915943,
+      "approximatePLAgrams": 13.53700382049577,
+      "bedContactMm2": 185.75609773024917,
+      "bounds": {
+        "min": [
+          -5.012195121496916,
+          -20,
+          0
+        ],
+        "max": [
+          5.012195121496916,
+          20,
+          60
+        ]
+      },
+      "extent": [
+        10.024390242993832,
+        40,
+        60
+      ]
+    },
+    "hanger-right": {
+      "triangles": 1184,
+      "volumeMm3": 10916.938564915943,
+      "approximatePLAgrams": 13.53700382049577,
+      "bedContactMm2": 185.75609773024917,
+      "bounds": {
+        "min": [
+          -5.012195121496916,
+          -20,
+          0
+        ],
+        "max": [
+          5.012195121496916,
+          20,
+          60
+        ]
+      },
+      "extent": [
+        10.024390242993832,
+        40,
+        60
+      ]
+    },
+    "hinge-rail": {
+      "triangles": 2756,
+      "volumeMm3": 7548.947030193815,
+      "approximatePLAgrams": 9.36069431744033,
+      "bedContactMm2": 297.95122146606445,
+      "bounds": {
+        "min": [
+          -30,
+          -6.232926829268294,
+          0
+        ],
+        "max": [
+          30,
+          6.232926829268294,
+          34.5
+        ]
+      },
+      "extent": [
+        60,
+        12.465853658536588,
+        34.5
+      ]
+    },
+    "hinge-leaf": {
+      "triangles": 1560,
+      "volumeMm3": 2793.9133555076137,
+      "approximatePLAgrams": 3.464452560829441,
+      "bedContactMm2": 121.94877508019232,
+      "bounds": {
+        "min": [
+          -5.5,
+          -11.75,
+          0
+        ],
+        "max": [
+          5.5,
+          11.75,
+          24
+        ]
+      },
+      "extent": [
+        11,
+        23.5,
+        24
+      ]
+    },
+    "coupon-side-wall": {
+      "triangles": 628,
+      "volumeMm3": 3623.273140316746,
+      "approximatePLAgrams": 4.492858693992765,
+      "bedContactMm2": 160,
+      "bounds": {
+        "min": [
+          -2.3475609756097526,
+          -32,
+          0
+        ],
+        "max": [
+          2.3475609756097526,
+          32,
+          22
+        ]
+      },
+      "extent": [
+        4.695121951219505,
+        64,
+        22
+      ]
+    },
+    "coupon-rear-wall": {
+      "triangles": 624,
+      "volumeMm3": 3943.27314031693,
+      "approximatePLAgrams": 4.889658693992993,
+      "bedContactMm2": 160,
+      "bounds": {
+        "min": [
+          -32,
+          -2.3378048780487717,
+          0
+        ],
+        "max": [
+          32,
+          2.337804878048786,
+          24
+        ]
+      },
+      "extent": [
+        64,
+        4.675609756097558,
+        24
+      ]
+    },
+    "coupon-lid": {
+      "triangles": 1192,
+      "volumeMm3": 848.9783748252571,
+      "approximatePLAgrams": 1.0527331847833188,
+      "bedContactMm2": 301.90683029199886,
+      "bounds": {
+        "min": [
+          -15,
+          -7,
+          0
+        ],
+        "max": [
+          15,
+          7,
+          2.4000000000000057
+        ]
+      },
+      "extent": [
+        30,
+        14,
+        2.4000000000000057
+      ]
+    },
+    "coupon-host-left": {
+      "triangles": 812,
+      "volumeMm3": 13888.971032052768,
+      "approximatePLAgrams": 17.22232407974543,
+      "bedContactMm2": 2514.657005300805,
+      "bounds": {
+        "min": [
+          -62.5,
+          -10.5,
+          0
+        ],
+        "max": [
+          62.5,
+          10.5,
+          6
+        ]
+      },
+      "extent": [
+        125,
+        21,
+        6
+      ]
+    },
+    "coupon-host-right": {
+      "triangles": 812,
+      "volumeMm3": 13888.971032052768,
+      "approximatePLAgrams": 17.22232407974543,
+      "bedContactMm2": 2514.657005300806,
+      "bounds": {
+        "min": [
+          -62.5,
+          -10.5,
+          0
+        ],
+        "max": [
+          62.5,
+          10.5,
+          6
+        ]
+      },
+      "extent": [
+        125,
+        21,
+        6
+      ]
+    },
+    "coupon-corner": {
+      "triangles": 44,
+      "volumeMm3": 1201.6473557541556,
+      "approximatePLAgrams": 1.490042721135153,
+      "bedContactMm2": 146.94406578911185,
+      "bounds": {
+        "min": [
+          -20.5,
+          -20.5,
+          0
+        ],
+        "max": [
+          20.5,
+          20.5,
+          7
+        ]
+      },
+      "extent": [
+        41,
+        41,
+        7
+      ]
+    },
+    "coupon-axle-bores": {
+      "triangles": 1176,
+      "volumeMm3": 2115.2582781653027,
+      "approximatePLAgrams": 2.6229202649249754,
+      "bedContactMm2": 352.54304622512683,
+      "bounds": {
+        "min": [
+          -18,
+          -6,
+          0
+        ],
+        "max": [
+          18,
+          6,
+          6
+        ]
+      },
+      "extent": [
+        36,
+        12,
+        6
+      ]
+    }
+  },
+  "plates": {
+    "01-bin": {
+      "parts": [
+        [
+          "bin",
+          0,
+          0
+        ]
+      ],
+      "componentCount": 1
+    },
+    "02-lid": {
+      "parts": [
+        [
+          "lid",
+          0,
+          0
+        ]
+      ],
+      "componentCount": 1
+    },
+    "03-liner-frame": {
+      "parts": [
+        [
+          "liner-frame",
+          0,
+          0
+        ]
+      ],
+      "componentCount": 1
+    },
+    "04-hanging-rails": {
+      "parts": [
+        [
+          "hanger-left",
+          -50,
+          0
+        ],
+        [
+          "hanger-right",
+          50,
+          0
+        ]
+      ],
+      "componentCount": 2
+    },
+    "05-hinge": {
+      "parts": [
+        [
+          "hinge-rail",
+          -35,
+          0
+        ],
+        [
+          "hinge-leaf",
+          35,
+          0
+        ]
+      ],
+      "componentCount": 2
+    },
+    "test-01-host-gauge": {
+      "parts": [
+        [
+          "coupon-host-left",
+          0,
+          -18
+        ],
+        [
+          "coupon-host-right",
+          0,
+          18
+        ]
+      ],
+      "componentCount": 2
+    },
+    "test-02-mating": {
+      "parts": [
+        [
+          "coupon-side-wall",
+          -85,
+          0
+        ],
+        [
+          "coupon-rear-wall",
+          0,
+          -45
+        ],
+        [
+          "coupon-lid",
+          0,
+          0
+        ],
+        [
+          "coupon-corner",
+          65,
+          -25
+        ],
+        [
+          "coupon-axle-bores",
+          0,
+          40
+        ]
+      ],
+      "componentCount": 5
+    }
+  },
+  "limitations": [
+    "Analytical geometry only: actual host opening, taper and ledge fit are unmeasured.",
+    "No physical fit, load rating, slicer/toolpath or long-term PLA creep validation.",
+    "No printed load-bearing pins: specified metal fasteners are REQUIRED."
+  ],
+  "minimumNormalWallMm": 2.494648404841059,
+  "printedAssemblyBounds": {
+    "min": [
+      -115,
+      -98,
+      0
+    ],
+    "max": [
+      115,
+      108.5,
+      224
+    ]
+  },
+  "axle": {
+    "type": "M5 x 60 bolt, two 1 mm washers, 5 mm-envelope nyloc nut",
+    "shaftX": [
+      -25,
+      35
+    ],
+    "fixedBarrelX": [
+      [
+        -24,
+        -14
+      ],
+      [
+        14,
+        24
+      ]
+    ],
+    "movingBarrelX": [
+      -12,
+      12
+    ],
+    "washerX": [
+      [
+        -25,
+        -24
+      ],
+      [
+        24,
+        25
+      ]
+    ],
+    "nutX": [
+      25,
+      30
+    ],
+    "exposedThreadMm": 5,
+    "headEnvelopeX": [
+      -29,
+      -25
+    ],
+    "bore": 5.8
+  },
+  "mountHardware": {
+    "screws": "Eight M4 x 16 countersunk, head <=8 mm diameter / 90 degrees",
+    "washers": "Eight M4, 1 mm thick / <=9 mm diameter",
+    "nuts": "Eight M4 nyloc, <=5 mm thick / <=9.4 mm corner diameter",
+    "sideExposedThreadMm": 2.6158536585365795,
+    "rearExposedThreadMm": 2.723170731707313,
+    "lidExposedThreadMm": 3.5999999999999943
+  },
+  "assemblyBounds": {
+    "min": [
+      -115,
+      -98,
+      0
+    ],
+    "max": [
+      115,
+      108.5,
+      224
+    ]
+  },
+  "internalLedgeInstallation": {
+    "supportPlaneZ": 221,
+    "bodyRimBelowSupportMm": 16,
+    "closedHeightAboveSupportMm": 3,
+    "floorBelowSupportMm": 221,
+    "closedBoundsRelativeToSupport": {
+      "min": [
+        -115,
+        -98,
+        -221
+      ],
+      "max": [
+        115,
+        108.5,
+        3
+      ]
+    },
+    "openingObstructionCheck": "Not measured: host end, adjacent bin, cabinet and drawer clearances are unknown.",
+    "lidOpeningEnvelope": {
+      "sampledStepDegrees": 0.5,
+      "maxHeightAboveSupportMm": 192.1218527077558,
+      "rearReachBeyondClosedAssemblyMm": 58.923462752844245,
+      "assemblyCoordinateBounds": {
+        "min": [
+          -107,
+          -98.12185270775576,
+          205
+        ],
+        "max": [
+          107,
+          167.42346275284424,
+          413.1218527077558
+        ]
+      },
+      "note": "CAD envelope only, add real clearance. Prefer hinge facing remaining recycling space, not tight against host end wall."
+    }
+  }
+}
