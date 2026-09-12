@@ -40,7 +40,7 @@ for name, stats in report["parts"].items():
     individual[name] = raw
 
 for name, layout in report["plates"].items():
-    raw, mesh = checked(ROOT / "production" / f"r4-{name}.stl", layout["componentCount"])
+    raw, mesh = checked(ROOT / layout["path"], layout["componentCount"])
     assert (mesh.bounds[0, :2] >= -108.00001).all(), name
     assert (mesh.bounds[1, :2] <= 108.00001).all() and mesh.bounds[1, 2] <= 250, name
     start = 0
@@ -50,6 +50,25 @@ for name, layout in report["plates"].items():
         assert np.allclose(actual, expected, atol=2e-5, rtol=0), f"{name}/{part}: spare parity"
         start += len(expected)
     assert start == len(raw.faces), f"{name}: no extra shells"
+
+counts = {}
+for filename in manifest["printJobs"]:
+    layout = next(v for v in report["plates"].values() if v["path"] == filename)
+    for part, _, _ in layout["parts"]:
+        counts[part] = counts.get(part, 0) + 1
+assert counts == manifest["productionQuantities"], "production quantities exactly once"
+assert len(manifest["printJobs"]) == 3
+assert report["plates"]["test-fit-kit"]["componentCount"] == 9
+assert {p[0] for p in report["plates"]["03-accessories-no-rails"]["parts"]} == {
+    "liner-frame", "hinge-leaf", "bayonet-keeper", "rear-gate-keeper", "hinge-axle", "axle-lock-gate"
+}
+for name in individual:
+    data = (ROOT / "spares" / f"r4-{name}.stl").read_bytes()
+    original = subprocess.check_output([
+        "git", "-C", str(ROOT), "show",
+        f"5a6008d61f7a816cb92a9e0977931b034bc7628f:spares/r4-{name}.stl"
+    ])
+    assert data == original, f"plate consolidation changed canonical geometry: {name}"
 
 for item in manifest["files"]:
     data = (ROOT / item["name"]).read_bytes()

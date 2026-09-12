@@ -17,6 +17,13 @@
     "axle-lock-gate": 1
   },
   "couponShortKeeperQuantity": 2,
+  "printJobs": [
+    "production/r4-01-bin.stl",
+    "production/r4-02-lid.stl",
+    "production/r4-03-accessories.stl"
+  ],
+  "fitTestJob": "production/r4-test-fit-kit.stl",
+  "noRailsJob": "alternatives/r4-03-accessories-no-rails.stl",
   "noRails": "Accessory-only: liner-frame, hinge-leaf, bayonet-keeper, rear-gate-keeper, hinge-axle and axle-lock-gate. EXCLUDES bin, lid, BOTH R4 hangers, fixed R4 hinge rail, coupons. Only for reusing identical R4 parts; never R3/legacy.",
   "files": [
     {
@@ -125,44 +132,29 @@
       "sha256": "aee76716e5ce4309fb0a1e06e14822d36b9d90f7f1e93128cac134ced1eabc66"
     },
     {
-      "name": "production/r4-03-liner-frame.stl",
-      "bytes": 3284,
-      "sha256": "1c448e28fd1a4521d4e1c1c749eb987d3e9a7873c8157da5960d2ac5abba0c97"
+      "name": "production/r4-03-accessories.stl",
+      "bytes": 349884,
+      "sha256": "cdec577889e2eab70504871ddb00c5954666f07272b369d5ea059acb5db4933b"
     },
     {
-      "name": "production/r4-04-hanging-rails.stl",
-      "bytes": 56884,
-      "sha256": "1ed99e664d2994a6b72ae12ebf3e894baf827a67292e1e9bf8cddf0c2d1e3767"
+      "name": "production/r4-test-fit-kit.stl",
+      "bytes": 212884,
+      "sha256": "25f88f68d8aadb9b5a14bebfb3ec439e70e396ec56497fa80e9bd042fd69fd8d"
     },
     {
-      "name": "production/r4-05-hinge.stl",
-      "bytes": 150684,
-      "sha256": "74404fd9c4542524465550a7b7d7ba44da713fc4ff110f775c0fb5cf867af249"
-    },
-    {
-      "name": "production/r4-06-keepers-and-axle.stl",
-      "bytes": 139284,
-      "sha256": "40f07e30ad58d20baf96ec6c245b6e9b9fb87244412382a3dbd848b1437963ab"
-    },
-    {
-      "name": "production/r4-test-01-host-gauge.stl",
-      "bytes": 124084,
-      "sha256": "b85c91486a417e1652c493084269511735b79c94e8a8384ad6f238a8ae02fff4"
-    },
-    {
-      "name": "production/r4-test-02-mating.stl",
-      "bytes": 88884,
-      "sha256": "5e8b0e117293c0959b7245d9d899561f0e0775e35712a585de98f8764e71be3b"
+      "name": "alternatives/r4-03-accessories-no-rails.stl",
+      "bytes": 231784,
+      "sha256": "203ffa127c7214e0d0455b601d702d0284da36bbe7d64ed823ec4950cac789a5"
     },
     {
       "name": "docs/R4_GUIDE.md",
-      "bytes": 19188,
-      "sha256": "898b51d66b28725585c0d0ce88cc666a8001c1f75b5b87ffddfc5e590dc2b9a0"
+      "bytes": 19798,
+      "sha256": "352a58bf8f77f6613942f365d71090959fc922a7747a6b208a43598661ce1fd1"
     },
     {
       "name": "packages/r4-validation.json",
-      "bytes": 35768,
-      "sha256": "e6b345b655db05324cf2cec9891bb83a9dbcad9b16299a50d9960f245366cd0c"
+      "bytes": 43665,
+      "sha256": "660982d7e2f1dd6d61900b1e1e0eebd15eb799c9ba298c80ec5257ea38e1ce8e"
     }
   ]
 }

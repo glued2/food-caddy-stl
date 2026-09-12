@@ -304,62 +304,156 @@
     "01-bin: exactly one component per intended copy",
     "02-lid/lid: centred plate XY margin >=2 mm",
     "02-lid: exactly one component per intended copy",
-    "03-liner-frame/liner-frame: centred plate XY margin >=2 mm",
-    "03-liner-frame: exactly one component per intended copy",
-    "04-hanging-rails/hanger-left: centred plate XY margin >=2 mm",
-    "04-hanging-rails/hanger-right: centred plate XY margin >=2 mm",
-    "04-hanging-rails: objects 0/1 separated >=5 mm",
-    "04-hanging-rails: exactly one component per intended copy",
-    "05-hinge/hinge-rail: centred plate XY margin >=2 mm",
-    "05-hinge/hinge-leaf: centred plate XY margin >=2 mm",
-    "05-hinge/axle-lock-gate: centred plate XY margin >=2 mm",
-    "05-hinge: objects 0/1 separated >=5 mm",
-    "05-hinge: objects 0/2 separated >=5 mm",
-    "05-hinge: objects 1/2 separated >=5 mm",
-    "05-hinge: exactly one component per intended copy",
-    "06-keepers-and-axle/bayonet-keeper: centred plate XY margin >=2 mm",
-    "06-keepers-and-axle/bayonet-keeper: centred plate XY margin >=2 mm",
-    "06-keepers-and-axle/bayonet-keeper: centred plate XY margin >=2 mm",
-    "06-keepers-and-axle/rear-gate-keeper: centred plate XY margin >=2 mm",
-    "06-keepers-and-axle/hinge-axle: centred plate XY margin >=2 mm",
-    "06-keepers-and-axle: objects 0/1 separated >=5 mm",
-    "06-keepers-and-axle: objects 0/2 separated >=5 mm",
-    "06-keepers-and-axle: objects 0/3 separated >=5 mm",
-    "06-keepers-and-axle: objects 0/4 separated >=5 mm",
-    "06-keepers-and-axle: objects 1/2 separated >=5 mm",
-    "06-keepers-and-axle: objects 1/3 separated >=5 mm",
-    "06-keepers-and-axle: objects 1/4 separated >=5 mm",
-    "06-keepers-and-axle: objects 2/3 separated >=5 mm",
-    "06-keepers-and-axle: objects 2/4 separated >=5 mm",
-    "06-keepers-and-axle: objects 3/4 separated >=5 mm",
-    "06-keepers-and-axle: exactly one component per intended copy",
-    "test-01-host-gauge/coupon-host-left: centred plate XY margin >=2 mm",
-    "test-01-host-gauge/coupon-host-right: centred plate XY margin >=2 mm",
-    "test-01-host-gauge/coupon-gauge-keeper: centred plate XY margin >=2 mm",
-    "test-01-host-gauge/coupon-gauge-keeper: centred plate XY margin >=2 mm",
-    "test-01-host-gauge: objects 0/1 separated >=5 mm",
-    "test-01-host-gauge: objects 0/2 separated >=5 mm",
-    "test-01-host-gauge: objects 0/3 separated >=5 mm",
-    "test-01-host-gauge: objects 1/2 separated >=5 mm",
-    "test-01-host-gauge: objects 1/3 separated >=5 mm",
-    "test-01-host-gauge: objects 2/3 separated >=5 mm",
-    "test-01-host-gauge: exactly one component per intended copy",
-    "test-02-mating/coupon-side-joint: centred plate XY margin >=2 mm",
-    "test-02-mating/coupon-rear-joint: centred plate XY margin >=2 mm",
-    "test-02-mating/coupon-lid-joint: centred plate XY margin >=2 mm",
-    "test-02-mating/coupon-corner: centred plate XY margin >=2 mm",
-    "test-02-mating/coupon-axle-bores: centred plate XY margin >=2 mm",
-    "test-02-mating: objects 0/1 separated >=5 mm",
-    "test-02-mating: objects 0/2 separated >=5 mm",
-    "test-02-mating: objects 0/3 separated >=5 mm",
-    "test-02-mating: objects 0/4 separated >=5 mm",
-    "test-02-mating: objects 1/2 separated >=5 mm",
-    "test-02-mating: objects 1/3 separated >=5 mm",
-    "test-02-mating: objects 1/4 separated >=5 mm",
-    "test-02-mating: objects 2/3 separated >=5 mm",
-    "test-02-mating: objects 2/4 separated >=5 mm",
-    "test-02-mating: objects 3/4 separated >=5 mm",
-    "test-02-mating: exactly one component per intended copy",
+    "03-accessories/liner-frame: centred plate XY margin >=2 mm",
+    "03-accessories/hanger-left: centred plate XY margin >=2 mm",
+    "03-accessories/hanger-right: centred plate XY margin >=2 mm",
+    "03-accessories/hinge-rail: centred plate XY margin >=2 mm",
+    "03-accessories/hinge-leaf: centred plate XY margin >=2 mm",
+    "03-accessories/axle-lock-gate: centred plate XY margin >=2 mm",
+    "03-accessories/bayonet-keeper: centred plate XY margin >=2 mm",
+    "03-accessories/bayonet-keeper: centred plate XY margin >=2 mm",
+    "03-accessories/bayonet-keeper: centred plate XY margin >=2 mm",
+    "03-accessories/rear-gate-keeper: centred plate XY margin >=2 mm",
+    "03-accessories/hinge-axle: centred plate XY margin >=2 mm",
+    "03-accessories: projected footprints 0/1 separated >=5 mm",
+    "03-accessories: projected footprints 0/2 separated >=5 mm",
+    "03-accessories: projected footprints 0/3 separated >=5 mm",
+    "03-accessories: projected footprints 0/4 separated >=5 mm",
+    "03-accessories: projected footprints 0/5 separated >=5 mm",
+    "03-accessories: projected footprints 0/6 separated >=5 mm",
+    "03-accessories: projected footprints 0/7 separated >=5 mm",
+    "03-accessories: projected footprints 0/8 separated >=5 mm",
+    "03-accessories: projected footprints 0/9 separated >=5 mm",
+    "03-accessories: projected footprints 0/10 separated >=5 mm",
+    "03-accessories: projected footprints 1/2 separated >=5 mm",
+    "03-accessories: projected footprints 1/3 separated >=5 mm",
+    "03-accessories: projected footprints 1/4 separated >=5 mm",
+    "03-accessories: projected footprints 1/5 separated >=5 mm",
+    "03-accessories: projected footprints 1/6 separated >=5 mm",
+    "03-accessories: projected footprints 1/7 separated >=5 mm",
+    "03-accessories: projected footprints 1/8 separated >=5 mm",
+    "03-accessories: projected footprints 1/9 separated >=5 mm",
+    "03-accessories: projected footprints 1/10 separated >=5 mm",
+    "03-accessories: projected footprints 2/3 separated >=5 mm",
+    "03-accessories: projected footprints 2/4 separated >=5 mm",
+    "03-accessories: projected footprints 2/5 separated >=5 mm",
+    "03-accessories: projected footprints 2/6 separated >=5 mm",
+    "03-accessories: projected footprints 2/7 separated >=5 mm",
+    "03-accessories: projected footprints 2/8 separated >=5 mm",
+    "03-accessories: projected footprints 2/9 separated >=5 mm",
+    "03-accessories: projected footprints 2/10 separated >=5 mm",
+    "03-accessories: projected footprints 3/4 separated >=5 mm",
+    "03-accessories: projected footprints 3/5 separated >=5 mm",
+    "03-accessories: projected footprints 3/6 separated >=5 mm",
+    "03-accessories: projected footprints 3/7 separated >=5 mm",
+    "03-accessories: projected footprints 3/8 separated >=5 mm",
+    "03-accessories: projected footprints 3/9 separated >=5 mm",
+    "03-accessories: projected footprints 3/10 separated >=5 mm",
+    "03-accessories: projected footprints 4/5 separated >=5 mm",
+    "03-accessories: projected footprints 4/6 separated >=5 mm",
+    "03-accessories: projected footprints 4/7 separated >=5 mm",
+    "03-accessories: projected footprints 4/8 separated >=5 mm",
+    "03-accessories: projected footprints 4/9 separated >=5 mm",
+    "03-accessories: projected footprints 4/10 separated >=5 mm",
+    "03-accessories: projected footprints 5/6 separated >=5 mm",
+    "03-accessories: projected footprints 5/7 separated >=5 mm",
+    "03-accessories: projected footprints 5/8 separated >=5 mm",
+    "03-accessories: projected footprints 5/9 separated >=5 mm",
+    "03-accessories: projected footprints 5/10 separated >=5 mm",
+    "03-accessories: projected footprints 6/7 separated >=5 mm",
+    "03-accessories: projected footprints 6/8 separated >=5 mm",
+    "03-accessories: projected footprints 6/9 separated >=5 mm",
+    "03-accessories: projected footprints 6/10 separated >=5 mm",
+    "03-accessories: projected footprints 7/8 separated >=5 mm",
+    "03-accessories: projected footprints 7/9 separated >=5 mm",
+    "03-accessories: projected footprints 7/10 separated >=5 mm",
+    "03-accessories: projected footprints 8/9 separated >=5 mm",
+    "03-accessories: projected footprints 8/10 separated >=5 mm",
+    "03-accessories: projected footprints 9/10 separated >=5 mm",
+    "03-accessories: exactly one component per intended copy",
+    "test-fit-kit/coupon-host-left: centred plate XY margin >=2 mm",
+    "test-fit-kit/coupon-host-right: centred plate XY margin >=2 mm",
+    "test-fit-kit/coupon-gauge-keeper: centred plate XY margin >=2 mm",
+    "test-fit-kit/coupon-gauge-keeper: centred plate XY margin >=2 mm",
+    "test-fit-kit/coupon-side-joint: centred plate XY margin >=2 mm",
+    "test-fit-kit/coupon-rear-joint: centred plate XY margin >=2 mm",
+    "test-fit-kit/coupon-lid-joint: centred plate XY margin >=2 mm",
+    "test-fit-kit/coupon-corner: centred plate XY margin >=2 mm",
+    "test-fit-kit/coupon-axle-bores: centred plate XY margin >=2 mm",
+    "test-fit-kit: projected footprints 0/1 separated >=5 mm",
+    "test-fit-kit: projected footprints 0/2 separated >=5 mm",
+    "test-fit-kit: projected footprints 0/3 separated >=5 mm",
+    "test-fit-kit: projected footprints 0/4 separated >=5 mm",
+    "test-fit-kit: projected footprints 0/5 separated >=5 mm",
+    "test-fit-kit: projected footprints 0/6 separated >=5 mm",
+    "test-fit-kit: projected footprints 0/7 separated >=5 mm",
+    "test-fit-kit: projected footprints 0/8 separated >=5 mm",
+    "test-fit-kit: projected footprints 1/2 separated >=5 mm",
+    "test-fit-kit: projected footprints 1/3 separated >=5 mm",
+    "test-fit-kit: projected footprints 1/4 separated >=5 mm",
+    "test-fit-kit: projected footprints 1/5 separated >=5 mm",
+    "test-fit-kit: projected footprints 1/6 separated >=5 mm",
+    "test-fit-kit: projected footprints 1/7 separated >=5 mm",
+    "test-fit-kit: projected footprints 1/8 separated >=5 mm",
+    "test-fit-kit: projected footprints 2/3 separated >=5 mm",
+    "test-fit-kit: projected footprints 2/4 separated >=5 mm",
+    "test-fit-kit: projected footprints 2/5 separated >=5 mm",
+    "test-fit-kit: projected footprints 2/6 separated >=5 mm",
+    "test-fit-kit: projected footprints 2/7 separated >=5 mm",
+    "test-fit-kit: projected footprints 2/8 separated >=5 mm",
+    "test-fit-kit: projected footprints 3/4 separated >=5 mm",
+    "test-fit-kit: projected footprints 3/5 separated >=5 mm",
+    "test-fit-kit: projected footprints 3/6 separated >=5 mm",
+    "test-fit-kit: projected footprints 3/7 separated >=5 mm",
+    "test-fit-kit: projected footprints 3/8 separated >=5 mm",
+    "test-fit-kit: projected footprints 4/5 separated >=5 mm",
+    "test-fit-kit: projected footprints 4/6 separated >=5 mm",
+    "test-fit-kit: projected footprints 4/7 separated >=5 mm",
+    "test-fit-kit: projected footprints 4/8 separated >=5 mm",
+    "test-fit-kit: projected footprints 5/6 separated >=5 mm",
+    "test-fit-kit: projected footprints 5/7 separated >=5 mm",
+    "test-fit-kit: projected footprints 5/8 separated >=5 mm",
+    "test-fit-kit: projected footprints 6/7 separated >=5 mm",
+    "test-fit-kit: projected footprints 6/8 separated >=5 mm",
+    "test-fit-kit: projected footprints 7/8 separated >=5 mm",
+    "test-fit-kit: exactly one component per intended copy",
+    "03-accessories-no-rails/liner-frame: centred plate XY margin >=2 mm",
+    "03-accessories-no-rails/hinge-leaf: centred plate XY margin >=2 mm",
+    "03-accessories-no-rails/axle-lock-gate: centred plate XY margin >=2 mm",
+    "03-accessories-no-rails/bayonet-keeper: centred plate XY margin >=2 mm",
+    "03-accessories-no-rails/bayonet-keeper: centred plate XY margin >=2 mm",
+    "03-accessories-no-rails/bayonet-keeper: centred plate XY margin >=2 mm",
+    "03-accessories-no-rails/rear-gate-keeper: centred plate XY margin >=2 mm",
+    "03-accessories-no-rails/hinge-axle: centred plate XY margin >=2 mm",
+    "03-accessories-no-rails: projected footprints 0/1 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 0/2 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 0/3 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 0/4 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 0/5 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 0/6 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 0/7 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 1/2 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 1/3 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 1/4 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 1/5 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 1/6 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 1/7 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 2/3 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 2/4 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 2/5 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 2/6 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 2/7 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 3/4 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 3/5 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 3/6 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 3/7 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 4/5 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 4/6 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 4/7 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 5/6 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 5/7 separated >=5 mm",
+    "03-accessories-no-rails: projected footprints 6/7 separated >=5 mm",
+    "03-accessories-no-rails: exactly one component per intended copy",
     "22 legacy and all 59 R3 fallback file hashes preserved"
   ],
   "parts": {
@@ -822,6 +916,7 @@
   },
   "plates": {
     "01-bin": {
+      "path": "production/r4-01-bin.stl",
       "parts": [
         [
           "bin",
@@ -829,9 +924,16 @@
           0
         ]
       ],
-      "componentCount": 1
+      "componentCount": 1,
+      "minimumFootprintGapMm": null,
+      "extent": [
+        212,
+        194,
+        200
+      ]
     },
     "02-lid": {
+      "path": "production/r4-02-lid.stl",
       "parts": [
         [
           "lid",
@@ -839,137 +941,189 @@
           0
         ]
       ],
-      "componentCount": 1
+      "componentCount": 1,
+      "minimumFootprintGapMm": null,
+      "extent": [
+        206,
+        192,
+        6.399999998509884
+      ]
     },
-    "03-liner-frame": {
+    "03-accessories": {
+      "path": "production/r4-03-accessories.stl",
       "parts": [
         [
           "liner-frame",
           0,
           0
-        ]
-      ],
-      "componentCount": 1
-    },
-    "04-hanging-rails": {
-      "parts": [
+        ],
         [
           "hanger-left",
-          -45,
+          -66,
           0
         ],
         [
           "hanger-right",
-          45,
+          66,
           0
-        ]
-      ],
-      "componentCount": 2
-    },
-    "05-hinge": {
-      "parts": [
+        ],
         [
           "hinge-rail",
-          -40,
-          -25
+          0,
+          -57
         ],
         [
           "hinge-leaf",
           40,
-          -25
+          -12
         ],
         [
           "axle-lock-gate",
-          0,
-          40
-        ]
-      ],
-      "componentCount": 3
-    },
-    "06-keepers-and-axle": {
-      "parts": [
-        [
-          "bayonet-keeper",
-          -60,
-          -35
-        ],
-        [
-          "bayonet-keeper",
           -20,
-          -35
+          0
         ],
         [
           "bayonet-keeper",
-          20,
-          -35
+          -38,
+          30
+        ],
+        [
+          "bayonet-keeper",
+          -16,
+          30
+        ],
+        [
+          "bayonet-keeper",
+          6,
+          30
         ],
         [
           "rear-gate-keeper",
-          60,
-          -35
+          30,
+          30
         ],
         [
           "hinge-axle",
           0,
-          25
+          58
         ]
       ],
-      "componentCount": 5
+      "componentCount": 11,
+      "minimumFootprintGapMm": 7.899999998509884,
+      "extent": [
+        197.7199999988079,
+        183.68000000715256,
+        58.5
+      ]
     },
-    "test-01-host-gauge": {
+    "test-fit-kit": {
+      "path": "production/r4-test-fit-kit.stl",
       "parts": [
         [
           "coupon-host-left",
           0,
-          -20
+          -80
         ],
         [
           "coupon-host-right",
           0,
-          20
+          -50
         ],
         [
           "coupon-gauge-keeper",
-          -20,
-          65
+          82,
+          -80
         ],
         [
           "coupon-gauge-keeper",
-          20,
-          65
-        ]
-      ],
-      "componentCount": 4
-    },
-    "test-02-mating": {
-      "parts": [
+          82,
+          -50
+        ],
         [
           "coupon-side-joint",
-          -85,
+          -90,
           0
         ],
         [
           "coupon-rear-joint",
-          0,
-          -50
+          -30,
+          -16
         ],
         [
           "coupon-lid-joint",
+          -30,
+          17
+        ],
+        [
+          "coupon-corner",
+          28,
+          4
+        ],
+        [
+          "coupon-axle-bores",
+          28,
+          49
+        ]
+      ],
+      "componentCount": 9,
+      "minimumFootprintGapMm": 9,
+      "extent": [
+        180.52,
+        148.5,
+        40
+      ]
+    },
+    "03-accessories-no-rails": {
+      "path": "alternatives/r4-03-accessories-no-rails.stl",
+      "parts": [
+        [
+          "liner-frame",
           0,
           0
         ],
         [
-          "coupon-corner",
-          65,
-          -25
+          "hinge-leaf",
+          40,
+          -12
         ],
         [
-          "coupon-axle-bores",
+          "axle-lock-gate",
+          -20,
+          0
+        ],
+        [
+          "bayonet-keeper",
+          -38,
+          30
+        ],
+        [
+          "bayonet-keeper",
+          -16,
+          30
+        ],
+        [
+          "bayonet-keeper",
+          6,
+          30
+        ],
+        [
+          "rear-gate-keeper",
+          30,
+          30
+        ],
+        [
+          "hinge-axle",
           0,
-          45
+          58
         ]
       ],
-      "componentCount": 5
+      "componentCount": 8,
+      "minimumFootprintGapMm": 7.899999998509884,
+      "extent": [
+        197.7199999988079,
+        183.68000000715256,
+        53
+      ]
     }
   },
   "assemblyPaths": {

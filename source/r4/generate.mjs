@@ -195,19 +195,31 @@ const parts={
 };
 const quantities={bin:1,lid:1,'liner-frame':1,'hanger-left':1,'hanger-right':1,
   'hinge-rail':1,'hinge-leaf':1,'bayonet-keeper':3,'hinge-axle':1,'rear-gate-keeper':1,'axle-lock-gate':1};
+const accessories=[
+  ['liner-frame',0,0],['hanger-left',-66,0],['hanger-right',66,0],
+  ['hinge-rail',0,-57],['hinge-leaf',40,-12],['axle-lock-gate',-20,0],
+  ['bayonet-keeper',-38,30],['bayonet-keeper',-16,30],['bayonet-keeper',6,30],
+  ['rear-gate-keeper',30,30],['hinge-axle',0,58],
+];
 const layouts={
   '01-bin':[['bin',0,0]],
   '02-lid':[['lid',0,0]],
-  '03-liner-frame':[['liner-frame',0,0]],
-  '04-hanging-rails':[['hanger-left',-45,0],['hanger-right',45,0]],
-  '05-hinge':[['hinge-rail',-40,-25],['hinge-leaf',40,-25],['axle-lock-gate',0,40]],
-  '06-keepers-and-axle':[['bayonet-keeper',-60,-35],['bayonet-keeper',-20,-35],
-    ['bayonet-keeper',20,-35],['rear-gate-keeper',60,-35],['hinge-axle',0,25]],
-  'test-01-host-gauge':[['coupon-host-left',0,-20],['coupon-host-right',0,20],
-    ['coupon-gauge-keeper',-20,65],['coupon-gauge-keeper',20,65]],
-  'test-02-mating':[['coupon-side-joint',-85,0],['coupon-rear-joint',0,-50],
-    ['coupon-lid-joint',0,0],['coupon-corner',65,-25],['coupon-axle-bores',0,45]],
+  '03-accessories':accessories,
+  'test-fit-kit':[['coupon-host-left',0,-80],['coupon-host-right',0,-50],
+    ['coupon-gauge-keeper',82,-80],['coupon-gauge-keeper',82,-50],
+    ['coupon-side-joint',-90,0],['coupon-rear-joint',-30,-16],
+    ['coupon-lid-joint',-30,17],['coupon-corner',28,4],['coupon-axle-bores',28,49]],
+  '03-accessories-no-rails':accessories.filter(([name])=>
+    !['hanger-left','hanger-right','hinge-rail'].includes(name)),
 };
+const alternative='03-accessories-no-rails';
+const platePath=n=>`${n===alternative?'alternatives':'production'}/r4-${n}.stl`;
+const actualQuantities={};
+for(const[n,layout]of Object.entries(layouts)){
+  if(n.startsWith('test-')||n===alternative)continue;
+  for(const[name]of layout)actualQuantities[name]=(actualQuantities[name]??0)+1;
+}
+assert.deepEqual(actualQuantities,quantities,'main plates contain every production quantity exactly once');
 function meshStats(s,name){
   ok(s.status()==='NoError',`${name}: Manifold NoError`);
   ok(s.decompose().length===1,`${name}: one joined physical solid`);
@@ -427,15 +439,22 @@ for(const[n,layout]of Object.entries(layouts)){
     ok(b.min[0]>=-108-1e-5&&b.max[0]<=108+1e-5&&b.min[1]>=-108-1e-5&&b.max[1]<=108+1e-5,
       `${n}/${name}: centred plate XY margin >=2 mm`);
   }
+  // Project the whole part so taller features cannot overhang another footprint.
+  // Unlike bounding boxes, this preserves the liner frame's empty centre.
+  const footprints=placed.map(o=>o.s.project().extrude(1));
+  let minimumGap=Infinity;
   for(let i=0;i<placed.length;i++)for(let j=i+1;j<placed.length;j++){
-    const a=placed[i].s.boundingBox(),b=placed[j].s.boundingBox();
-    const gap=Math.max(b.min[0]-a.max[0],a.min[0]-b.max[0],b.min[1]-a.max[1],a.min[1]-b.max[1]);
-    ok(gap>=p.plateGap,`${n}: objects ${i}/${j} separated >=5 mm`);
+    const gap=footprints[i].minGap(footprints[j],220);
+    minimumGap=Math.min(minimumGap,gap);
+    ok(gap>=p.plateGap,`${n}: projected footprints ${i}/${j} separated >=5 mm`);
     clear(placed[i].s,placed[j].s,`${n}: objects have empty CSG intersection`);
   }
   ok(M.compose(placed.map(o=>o.s)).decompose().length===placed.length,`${n}: exactly one component per intended copy`);
-  report.plates[n]={parts:layout,componentCount:placed.length};
-  put(`production/r4-${n}.stl`,stl(placed.map(o=>o.s)));
+  const bb=M.compose(placed.map(o=>o.s)).boundingBox();
+  report.plates[n]={path:platePath(n),parts:layout,componentCount:placed.length,
+    minimumFootprintGapMm:Number.isFinite(minimumGap)?minimumGap:null,
+    extent:bb.max.map((v,i)=>v-bb.min[i])};
+  put(platePath(n),stl(placed.map(o=>o.s)));
 }
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const legacy=JSON.parse(fs.readFileSync(path.join(root,'archive','legacy-manifest.json'),'utf8'));
@@ -449,12 +468,13 @@ put('docs/R4_GUIDE.md',fs.readFileSync(path.join(root,'docs','R4_GUIDE.md')));
 put('packages/r4-validation.json',JSON.stringify(report,null,2)+'\n');
 const manifest={revision:'r4-all-printed',units:'mm',purchasedHardwareRequired:false,structuralGlueRequired:false,
   productionQuantities:quantities,couponShortKeeperQuantity:2,
+  printJobs:['01-bin','02-lid','03-accessories'].map(platePath),
+  fitTestJob:platePath('test-fit-kit'),
+  noRailsJob:platePath(alternative),
   noRails:'Accessory-only: liner-frame, hinge-leaf, bayonet-keeper, rear-gate-keeper, hinge-axle and axle-lock-gate. EXCLUDES bin, lid, BOTH R4 hangers, fixed R4 hinge rail, coupons. Only for reusing identical R4 parts; never R3/legacy.',
   files:[...files].map(([name,b])=>({name,bytes:b.length,sha256:sha(b)}))};
 put('packages/r4-manifest.json',JSON.stringify(manifest,null,2)+'\n');
-const full=[...files.keys()],noRails=['spares/r4-liner-frame.stl','spares/r4-hinge-leaf.stl',
-  'spares/r4-bayonet-keeper.stl','spares/r4-hinge-axle.stl','docs/R4_GUIDE.md','packages/r4-manifest.json'];
-noRails.push('spares/r4-rear-gate-keeper.stl','spares/r4-axle-lock-gate.stl');
+const full=[...files.keys()],noRails=[platePath(alternative),'docs/R4_GUIDE.md','packages/r4-manifest.json'];
 const archives=new Map();
 for(const[name,names]of [['packages/food-caddy-r4-ALL-PRINTED-FULL.zip',full],
   ['packages/food-caddy-r4-ALL-PRINTED-NO-RAILS.zip',noRails]]){
@@ -467,7 +487,7 @@ for(const[name,names]of [['packages/food-caddy-r4-ALL-PRINTED-FULL.zip',full],
 }
 if(checkOnly){
   for(const[n,b]of [...files,...archives])assert(fs.readFileSync(path.join(root,n)).equals(b),`stale output ${n}`);
-  for(const folder of ['production','spares']){
+  for(const folder of ['production','alternatives','spares']){
     const expected=[...files.keys()].filter(n=>n.startsWith(`${folder}/`)&&n.endsWith('.stl'))
       .map(n=>path.basename(n)).sort();
     assert.deepEqual(fs.readdirSync(path.join(root,folder)).filter(n=>n.endsWith('.stl')).sort(),expected,

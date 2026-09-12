@@ -139,12 +139,16 @@ jobs, not a crowded single plate. All individual spares are in `spares`.
 |---|---|
 | `production/r4-01-bin.stl` | 1 bin, integral body rails and liner shelf |
 | `production/r4-02-lid.stl` | 1 flat lid with integral leaf slide rail |
-| `production/r4-03-liner-frame.stl` | 1 continuous removable bag frame |
-| `production/r4-04-hanging-rails.stl` | Left and right hangers |
-| `production/r4-05-hinge.stl` | Fixed hinge rail, moving leaf, axle-lock gate |
-| `production/r4-06-keepers-and-axle.stl` | 3 standard keepers, 1 LONG rear keeper, 1 hinge axle |
-| `production/r4-test-01-host-gauge.stl` | 2 gauge halves and 2 SHORT gauge keepers |
-| `production/r4-test-02-mating.stl` | Side-joint, rear-joint, lid-joint, corner and bore coupons |
+| `production/r4-03-accessories.stl` | Frame, both hangers, fixed rail, moving leaf, gate, 3 standard keepers, 1 LONG keeper and axle |
+| `production/r4-test-fit-kit.stl` | Both gauge halves, 2 SHORT gauge keepers, and all 5 mating/corner/bore coupons |
+
+This reduces six production jobs to **three**, and two test jobs to **one**.
+The main bin and lid remain separate; all smaller production pieces fit inside
+the liner frame's empty centre. Only layout translations changed, not geometry
+or print orientation. Every projected footprint has at least 5 mm clearance.
+Print layer by layer, **not sequentially by complete object**; otherwise the
+toolhead can hit a tall fitting. Check localized support expansion in the slicer
+preview: a part-gap check does not certify generated support/toolhead paths.
 
 There are **13 production pieces**, representing 11 individual part types.
 The eight coupon types require nine pieces because the short keeper is
@@ -158,9 +162,10 @@ NEVER be used on the loaded assembly. Quantities are also in
 
 ### NO-RAILS option
 
-`packages/food-caddy-r4-ALL-PRINTED-NO-RAILS.zip` contains individual replacement
-jobs for the **liner frame, moving hinge leaf, standard keeper, long rear
-keeper, hinge axle and axle-lock gate**. It explicitly excludes:
+`packages/food-caddy-r4-ALL-PRINTED-NO-RAILS.zip` contains one alternative plate,
+`alternatives/r4-03-accessories-no-rails.stl`, with the **liner frame, moving
+hinge leaf, three standard keepers, long rear keeper, hinge axle and axle-lock
+gate**. Use it instead of the full accessory plate, not in addition. It excludes:
 
 - the bin and lid;
 - **BOTH new R4 hanging ledges/brackets**;
@@ -169,8 +174,8 @@ keeper, hinge axle and axle-lock gate**. It explicitly excludes:
 
 It is only for repeat prints reusing identical R4 body/lid/rails already in
 hand. It does not work with R3 metal-screw fittings or unsafe legacy rails.
-One keeper STL represents one keeper: print the quantity actually needed
-(three standards in a complete assembly). The included manifest describes
+The alternative plate already includes three standard keepers. Each individual
+spare STL represents one keeper. The included manifest describes
 the whole design, not additional contents secretly present in this ZIP.
 
 ## Fit-first sequence and collision-checked assembly paths
@@ -180,7 +185,8 @@ the whole design, not additional contents secretly present in this ZIP.
    taper at the proposed bottom and rail depths, floor clearance, corners,
    drawer closure and opening sweep. Do not use the 230 outside measurement
    as the opening.
-2. Print the host-gauge plate. Mate the central half-thickness tabs by
+2. Print `production/r4-test-fit-kit.stl`. Separate the two gauge halves and
+   two short keys from the five mating coupons. Mate the central half-thickness tabs by
    bringing the right half against the left along the front/back direction.
    Align BOTH holes, insert the two **short** keys, then quarter-turn them.
    There is no purchased fastening. The assembled gauge spans 230 at the
@@ -188,8 +194,9 @@ the whole design, not additional contents secretly present in this ZIP.
    Rest tips on the **internal** ledge, not the external flange. Check square
    alignment and drawer closure gently. This is not a full tapered-bin,
    56-deep hanger, 216-deep floor or load test.
-3. Print the mating plate PLUS all actual small production fittings
-   (`04`, `05`, `06`). Assemble the side/rear coupons with their real rails,
+3. Print `production/r4-03-accessories.stl`, containing the frame and all actual
+   small production fittings. Use the mating coupons from the test kit.
+   Assemble the side/rear coupons with their real rails,
    and leaf with the lid coupon. Print orientation and clearance must match
    the production parts. Bore coupon holes are 8.6, **9.0**, 9.4 left-to-right;
    the centre is the production circular core. It checks diameter only:
@@ -206,7 +213,8 @@ the whole design, not additional contents secretly present in this ZIP.
    top. Fit and lock a standard lid keeper from above. Verify blocked
    lateral removal and captured lift-off. Remove only after unlocking
    that keeper; never pry the undercut apart.
-6. After successful coupons, print the full bin, lid and frame. Install
+6. After successful coupons, print the full bin and lid; the frame was already
+   printed on the accessory plate. Install
    hangers and their locked standard keys. Slide rear rail up and hold it
    seated during hinge installation. Install the bag/frame: the frame sits
    at Z=196..199 on the integral shelf, 1 below the rim.

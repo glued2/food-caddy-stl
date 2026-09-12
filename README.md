@@ -12,21 +12,30 @@ Actual host fit, safe load and kitchen clearance remain **unverified**.
 ## Current print files — coupons first
 
 - **[Full ALL-PRINTED ZIP](packages/food-caddy-r4-ALL-PRINTED-FULL.zip)**:
-  six production print jobs, two test jobs, individual spares, guide and
+  three production print jobs, one combined test job, individual spares, guide and
   machine-readable validation. “Full” means a package, not one giant plate.
 - **[R4 guide](docs/R4_GUIDE.md)**: read for coupon sequence, every assembly
   and removal path, keeper orientations, print orientation and local supports.
 - **[Production/test plates](production)** and **[individual spares](spares)**.
 - **[NO-RAILS accessory ZIP](packages/food-caddy-r4-ALL-PRINTED-NO-RAILS.zip)**:
-  liner frame, moving leaf, standard keeper, long rear keeper, axle and
-  axle-lock gate only. **Excludes bin, lid, BOTH R4 hanging brackets,
+  one combined alternative plate with liner frame, moving leaf, three standard
+  keepers, long rear keeper, axle and axle-lock gate. **Excludes bin, lid, BOTH R4 hanging brackets,
   fixed rear R4 hinge rail and all coupons.** Repeat prints for identical R4
   fittings already in hand only; never compatible with R3 or legacy parts.
 
 The complete assembly has **13 printed pieces**. The production plates
 include all required quantities, including three standard keepers and one
-long rear keeper. The host-gauge plate includes its two **short** keepers;
+long rear keeper. The combined test plate includes the gauge's two **short** keepers;
 those short keys must not be used on the caddy.
+
+Print `production/r4-test-fit-kit.stl` first. It combines the gauge and mating
+coupons. Then print `production/r4-03-accessories.stl` and test the real fittings
+on those coupons before the large `r4-01-bin.stl` and `r4-02-lid.stl` jobs.
+The accessory parts sit inside the open liner frame, with at least 5 mm between
+their projected footprints; no part shape or orientation has changed.
+Use layer-by-layer printing, NOT sequential/complete-individual-object mode.
+Localized supports must stay inside the available gaps in the slicer preview.
+Individual spares remain available; they are not extra required print jobs.
 
 ### Structural redesign, not printed replacement M4 bolts
 
