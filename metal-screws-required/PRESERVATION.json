@@ -1,0 +1,300 @@
+{
+  "commit": "b736c3d7db481300fadee53dfdf104b7b42ae97f",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 29,
+      "sha256": "9b9f91b2d2128cb63d20c8fa60a68972e0bd528ca4ad0f0befb4980d3737e13a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6270,
+      "sha256": "7a740a6cd59a399b2eb86de148ecab40cfb0453113b869705c021ea68988c196"
+    },
+    {
+      "path": "archive/README.md",
+      "bytes": 1046,
+      "sha256": "cf13d89626680121856fedaad0dd2ca34c13508136a0a3694f51579f7b60eb7c"
+    },
+    {
+      "path": "archive/legacy-manifest.json",
+      "bytes": 7519,
+      "sha256": "59a53dfe1954ab64c1f117c8e58c5149e7b226c2289367f3b1447cca42971775"
+    },
+    {
+      "path": "archive/legacy/README.md",
+      "bytes": 1905,
+      "sha256": "a011f52f020e3a732e3028feefd6d77d7e930533e050b4da6d3cef1b5451ea1b"
+    },
+    {
+      "path": "archive/legacy/docs/ASSEMBLY_NOTES.txt",
+      "bytes": 6865,
+      "sha256": "2018643d29d44445ba46352cc13ad0158e7b1439aa24bc16452a5ce3e4803949"
+    },
+    {
+      "path": "archive/legacy/food-caddy-k1se-hyper-pla-gcode.zip",
+      "bytes": 1185875,
+      "sha256": "6a85af3910b44697716a64c2b37b9b7e1a54a5d016c623cb3842facb80477c8e"
+    },
+    {
+      "path": "archive/legacy/food-caddy-k1se-pla-current-gcode.zip",
+      "bytes": 1181444,
+      "sha256": "f8fd6879ddcfbb71652e293987722dfe77d8356e61168ac61cf754c275e8c43e"
+    },
+    {
+      "path": "archive/legacy/food-caddy-k1se-stls.zip",
+      "bytes": 44576,
+      "sha256": "a970ba0bacace27454cc4feba719342e6559bbfe95f1865cb3fe7ceb40622e6a"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_accessories_everything.stl",
+      "bytes": 217714,
+      "sha256": "1e565922d9a1ecda122728758f80978bcba20e3dffae34a6d0018c2da82a38be"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_accessories_everything_bed_centered.stl",
+      "bytes": 217886,
+      "sha256": "07e81d59d94998f76792830134c5ecf0fc709ed1c5a6e1e02548858be6d761d8"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_accessories_no_rails.stl",
+      "bytes": 105578,
+      "sha256": "6cdbeb854f3830986281e210f20e0403346c96142ea5e914ec94c2373f1802f7"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_accessories_no_rails_bed_centered.stl",
+      "bytes": 106624,
+      "sha256": "dc1672d5197a66b50008e1c1449f7bc3b58928d0a6ed1f74a63c7ca350710774"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_body_216mm.stl",
+      "bytes": 18119,
+      "sha256": "e77444a3e991c6e12b866bd9da494c592d3e93fbc08c2dba1a39b4575e63c6b0"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_body_216mm_bed_centered.stl",
+      "bytes": 18005,
+      "sha256": "b41dc023328aa09e02a20f96456074f950f92bf0be41d222a2f97c60ff35fd62"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_failed_parts_only.stl",
+      "bytes": 66202,
+      "sha256": "10dee5c55a0f0fb5f939515b7400f0a5d3cd0bf4e001477c61da89e10d86d8b0"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_flip_lid_216mm.stl",
+      "bytes": 75023,
+      "sha256": "b0f5b5e66ec4287f6c743b8942f8caebced57cb2a89ecd36984698bc2ff809ea"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_flip_lid_216mm_bed_centered.stl",
+      "bytes": 75785,
+      "sha256": "2271e7d2cbcf997a335fc89c2a0945528c74f0ba341d9b1d76925ddd15f178c8"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_hinge_kit_plate.stl",
+      "bytes": 130805,
+      "sha256": "d6f7f48c8022d65f2920a7caa1ff7278af7f5bf51947a7ccb1dd7d6c274b5dca"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_hinge_kit_plate_bed_centered.stl",
+      "bytes": 130933,
+      "sha256": "761a0c0d00afe0c25902f5b97638fc54244fde2ecb9fde686e1974fdee10395f"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_liner_hanger_plate.stl",
+      "bytes": 85336,
+      "sha256": "c2fd5245a7fbe485164b880d0cd4314f64c728bd30db4f13cb90129270f02ed1"
+    },
+    {
+      "path": "archive/legacy/production/food_caddy_k1se_liner_hanger_plate_bed_centered.stl",
+      "bytes": 87228,
+      "sha256": "fb37215dcefbc50b3b9f9ae9eccd316f6947f6ca969b5566b47639d742ea9a29"
+    },
+    {
+      "path": "archive/legacy/source/generate_food_caddy_stls.js",
+      "bytes": 16288,
+      "sha256": "a329c1f475665170b039c4e45546e4dd4eb6cc0f1fcbd8f7e52cd0a4110f6a47"
+    },
+    {
+      "path": "archive/legacy/spares/food_caddy_k1se_bag_retainer_ring_spare.stl",
+      "bytes": 20579,
+      "sha256": "16665d007bda07bafcf835ad306785c1d6f75b31769bbd3caed9e4e16b657c89"
+    },
+    {
+      "path": "archive/legacy/spares/food_caddy_k1se_hinge_pin_spare.stl",
+      "bytes": 19807,
+      "sha256": "bad32eacc99dac2ac441989c1a5420571d27ef1c895d718b9f7f8905801750b1"
+    },
+    {
+      "path": "archive/legacy/spares/food_caddy_k1se_hinge_retainer_collar_spare.stl",
+      "bytes": 45008,
+      "sha256": "cefd46ce9248fa304c3ab00cca18605e548b4651b3ca0d01ddc94ac2c24a1996"
+    },
+    {
+      "path": "docs/R3_GUIDE.md",
+      "bytes": 17335,
+      "sha256": "a0c11c09602a64a8bd04280bc71cc054f66de7e6c7909915df5e6f4ea0be7ef9"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 34531,
+      "sha256": "660d1c45efea492b1850db6c4fca2261938650d9bbf9c41e901ec15e14b3c58e"
+    },
+    {
+      "path": "package.json",
+      "bytes": 271,
+      "sha256": "96b03d7d0fc0ff68015e01b945747a3a1f51aea97f55f298ddc9e17a0491643c"
+    },
+    {
+      "path": "packages/README.md",
+      "bytes": 1061,
+      "sha256": "03aa6f0d197377e1541cca4bc5d69717d62084393de8c59ca67b6ae763e9eed0"
+    },
+    {
+      "path": "packages/food-caddy-r3-FULL.zip",
+      "bytes": 353932,
+      "sha256": "b6eda0a576a2f3a98a3e214eee66025d30f4a341d8ef296ea5583fccd0c68c69"
+    },
+    {
+      "path": "packages/food-caddy-r3-accessories-NO-RAILS.zip",
+      "bytes": 25375,
+      "sha256": "c9b0fa4317b487b744f67571d21a4358400e71d93aabc0e49d5b52721e08cfba"
+    },
+    {
+      "path": "packages/r3-manifest.json",
+      "bytes": 4384,
+      "sha256": "4285b91ff4a9d1540a48756164da081d56d2a36f332028859ce0c0b01a69b115"
+    },
+    {
+      "path": "packages/r3-validation.json",
+      "bytes": 25060,
+      "sha256": "ca32fa579b8ece03eda95dafd446242c2bc08b135c01e871eb1504f805341243"
+    },
+    {
+      "path": "production/README.md",
+      "bytes": 522,
+      "sha256": "fc761ea61316b9e449418d717f7b879112ba60fca374d590910ac30652ec9b1b"
+    },
+    {
+      "path": "production/r3-01-bin.stl",
+      "bytes": 95484,
+      "sha256": "5aaa0bd1f6c3878b72e571a93ef72aebba53772f19a159e6132e3461e14e29ac"
+    },
+    {
+      "path": "production/r3-02-lid.stl",
+      "bytes": 62684,
+      "sha256": "3feaef77bc2b25f6c741ddd34cc580e2c220ded45877d757c53ca05c3cc12d8f"
+    },
+    {
+      "path": "production/r3-03-liner-frame.stl",
+      "bytes": 3284,
+      "sha256": "7d350809ebb632b86a14757114f06e4b259f2cab08abe9fc0613ae59eeeaef5b"
+    },
+    {
+      "path": "production/r3-04-hanging-rails.stl",
+      "bytes": 118484,
+      "sha256": "89ddf112f90d263b6101e096958e406540bce6bb1cbd044be2d40776667cdbfd"
+    },
+    {
+      "path": "production/r3-05-hinge.stl",
+      "bytes": 215884,
+      "sha256": "05433e54fddd3934f25ec6124529c5ca48bf00900073f05f4ceec58920724591"
+    },
+    {
+      "path": "production/r3-test-01-host-gauge.stl",
+      "bytes": 81284,
+      "sha256": "1e63a60e308a983fb0ac075737e3cd0270aa5099075d5868ee94d78e4245b349"
+    },
+    {
+      "path": "production/r3-test-02-mating.stl",
+      "bytes": 183284,
+      "sha256": "aec0bfc42a24268332c3d19be9e0f2e5cfb06454a48e5af273c542ab600f9731"
+    },
+    {
+      "path": "source/r3/generate.mjs",
+      "bytes": 27742,
+      "sha256": "a0f55b6ca6068670bcb1ec948c38a904de4733d8aba1798cd4fd84b217d012da"
+    },
+    {
+      "path": "source/r3/validate_stl.py",
+      "bytes": 5066,
+      "sha256": "77db6b83999ecd0e40930c79e0cc0af04bc0611d78a61578a9f2a10ff7fff578"
+    },
+    {
+      "path": "spares/README.md",
+      "bytes": 523,
+      "sha256": "7c71a7529bd98967c26791a865584a1ac6944dea11f308753d9e9e05bb0c8a1b"
+    },
+    {
+      "path": "spares/r3-bin.stl",
+      "bytes": 95484,
+      "sha256": "5aaa0bd1f6c3878b72e571a93ef72aebba53772f19a159e6132e3461e14e29ac"
+    },
+    {
+      "path": "spares/r3-coupon-axle-bores.stl",
+      "bytes": 58884,
+      "sha256": "09d63d4c2a02765cc8c47b6d1ea084ebb75fd47577c4d59aaa4c47be12b0a86a"
+    },
+    {
+      "path": "spares/r3-coupon-corner.stl",
+      "bytes": 2284,
+      "sha256": "899147ea884ba81686b58b8e46d7634c106a41f890c88cb006957f4ddf508969"
+    },
+    {
+      "path": "spares/r3-coupon-host-left.stl",
+      "bytes": 40684,
+      "sha256": "ddee721ca774e5d10a6f29445d6d7f33e7cfd22a6802c95837d76fcfe352f1c6"
+    },
+    {
+      "path": "spares/r3-coupon-host-right.stl",
+      "bytes": 40684,
+      "sha256": "6bcca3d2d45e5af82b8bea4aaffcdd6f907320f27ad2557a489437ce195a8448"
+    },
+    {
+      "path": "spares/r3-coupon-lid.stl",
+      "bytes": 59684,
+      "sha256": "9ac183247bbde81442cd30a6912949b7ee8cbfe7e4965759345d8aa6801ee427"
+    },
+    {
+      "path": "spares/r3-coupon-rear-wall.stl",
+      "bytes": 31284,
+      "sha256": "7e8819b0134b60b9ed85d875c2b91e94ee14969166a56b7364931aede8b3afcf"
+    },
+    {
+      "path": "spares/r3-coupon-side-wall.stl",
+      "bytes": 31484,
+      "sha256": "1f6e119042029a74178ea80b4e898c226917fb5c3d55cbdd5f95b42ff6e2d9a0"
+    },
+    {
+      "path": "spares/r3-hanger-left.stl",
+      "bytes": 59284,
+      "sha256": "2af1b6db8a404f99dbc0d2241c28fe3bd9f153926a2d200b636940946328ee43"
+    },
+    {
+      "path": "spares/r3-hanger-right.stl",
+      "bytes": 59284,
+      "sha256": "eb60f9c6fa85bda48bb4b5a5fd55f5a9bce6195a9cfa5f3619e7d642d7cc76a4"
+    },
+    {
+      "path": "spares/r3-hinge-leaf.stl",
+      "bytes": 78084,
+      "sha256": "0a3616419aa45bc569761204b224ca0799e05beb21d107364ea38313d1b2cdd8"
+    },
+    {
+      "path": "spares/r3-hinge-rail.stl",
+      "bytes": 137884,
+      "sha256": "7bc9a7d7a2b096d8926bcaeb73b169151b11ef23f16759b8349f829bc2b5cea6"
+    },
+    {
+      "path": "spares/r3-lid.stl",
+      "bytes": 62684,
+      "sha256": "3feaef77bc2b25f6c741ddd34cc580e2c220ded45877d757c53ca05c3cc12d8f"
+    },
+    {
+      "path": "spares/r3-liner-frame.stl",
+      "bytes": 3284,
+      "sha256": "7d350809ebb632b86a14757114f06e4b259f2cab08abe9fc0613ae59eeeaef5b"
+    }
+  ]
+}

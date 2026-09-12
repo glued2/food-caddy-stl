@@ -1,0 +1,1173 @@
+{
+  "revision": "r4-all-printed",
+  "parameters": {
+    "width": 204,
+    "depth": 190,
+    "bottomWidth": 190,
+    "bottomDepth": 174,
+    "height": 200,
+    "chamfer": 35,
+    "offset": 2.5,
+    "minWall": 2.4,
+    "floor": 3,
+    "span": 230,
+    "assumedOpening": 224,
+    "suspensionDrop": 16,
+    "ledgeThickness": 3,
+    "sideLength": 52,
+    "fit": 0.35,
+    "jointRootInset": 2,
+    "jointNeckOut": 1,
+    "jointCapOut": 4,
+    "jointOuterOut": 8,
+    "jointBottom": 164,
+    "jointTop": 198,
+    "jointSlope": 1.3,
+    "jointPinZ": 186,
+    "bracketBottom": 160,
+    "lidThickness": 2.4,
+    "frameThickness": 3,
+    "keeperDiameter": 6,
+    "keeperBore": 6.8,
+    "keeperHeadR": 6,
+    "keeperHeadDepth": 2.2,
+    "hingeY": 105,
+    "hingeZ": 209,
+    "hingeRadius": 9.5,
+    "hingeBore": 9,
+    "axleDiameter": 8,
+    "fixedEarInner": 20,
+    "fixedEarOuter": 34,
+    "movingHalf": 18,
+    "lidTrackY": 82,
+    "lidTrackHalfLength": 15,
+    "lidTrackHeight": 4,
+    "leafTop": 211.2,
+    "openingDegrees": 110,
+    "printer": [
+      220,
+      220,
+      250
+    ],
+    "margin": 2,
+    "plateGap": 5
+  },
+  "tests": [
+    "bin: Manifold NoError",
+    "bin: one joined physical solid",
+    "bin: closed consistently oriented topology",
+    "bin: positive outward volume matches kernel",
+    "bin: individual flat bed contact >30 mm2",
+    "bin: K1SE extents and >=2 mm XY margins",
+    "lid: Manifold NoError",
+    "lid: one joined physical solid",
+    "lid: closed consistently oriented topology",
+    "lid: positive outward volume matches kernel",
+    "lid: individual flat bed contact >30 mm2",
+    "lid: K1SE extents and >=2 mm XY margins",
+    "liner-frame: Manifold NoError",
+    "liner-frame: one joined physical solid",
+    "liner-frame: closed consistently oriented topology",
+    "liner-frame: positive outward volume matches kernel",
+    "liner-frame: individual flat bed contact >30 mm2",
+    "liner-frame: K1SE extents and >=2 mm XY margins",
+    "hanger-left: Manifold NoError",
+    "hanger-left: one joined physical solid",
+    "hanger-left: closed consistently oriented topology",
+    "hanger-left: positive outward volume matches kernel",
+    "hanger-left: individual flat bed contact >30 mm2",
+    "hanger-left: K1SE extents and >=2 mm XY margins",
+    "hanger-right: Manifold NoError",
+    "hanger-right: one joined physical solid",
+    "hanger-right: closed consistently oriented topology",
+    "hanger-right: positive outward volume matches kernel",
+    "hanger-right: individual flat bed contact >30 mm2",
+    "hanger-right: K1SE extents and >=2 mm XY margins",
+    "hinge-rail: Manifold NoError",
+    "hinge-rail: one joined physical solid",
+    "hinge-rail: closed consistently oriented topology",
+    "hinge-rail: positive outward volume matches kernel",
+    "hinge-rail: individual flat bed contact >30 mm2",
+    "hinge-rail: K1SE extents and >=2 mm XY margins",
+    "hinge-leaf: Manifold NoError",
+    "hinge-leaf: one joined physical solid",
+    "hinge-leaf: closed consistently oriented topology",
+    "hinge-leaf: positive outward volume matches kernel",
+    "hinge-leaf: individual flat bed contact >30 mm2",
+    "hinge-leaf: K1SE extents and >=2 mm XY margins",
+    "bayonet-keeper: Manifold NoError",
+    "bayonet-keeper: one joined physical solid",
+    "bayonet-keeper: closed consistently oriented topology",
+    "bayonet-keeper: positive outward volume matches kernel",
+    "bayonet-keeper: individual flat bed contact >30 mm2",
+    "bayonet-keeper: K1SE extents and >=2 mm XY margins",
+    "hinge-axle: Manifold NoError",
+    "hinge-axle: one joined physical solid",
+    "hinge-axle: closed consistently oriented topology",
+    "hinge-axle: positive outward volume matches kernel",
+    "hinge-axle: individual flat bed contact >30 mm2",
+    "hinge-axle: K1SE extents and >=2 mm XY margins",
+    "rear-gate-keeper: Manifold NoError",
+    "rear-gate-keeper: one joined physical solid",
+    "rear-gate-keeper: closed consistently oriented topology",
+    "rear-gate-keeper: positive outward volume matches kernel",
+    "rear-gate-keeper: individual flat bed contact >30 mm2",
+    "rear-gate-keeper: K1SE extents and >=2 mm XY margins",
+    "axle-lock-gate: Manifold NoError",
+    "axle-lock-gate: one joined physical solid",
+    "axle-lock-gate: closed consistently oriented topology",
+    "axle-lock-gate: positive outward volume matches kernel",
+    "axle-lock-gate: individual flat bed contact >30 mm2",
+    "axle-lock-gate: K1SE extents and >=2 mm XY margins",
+    "coupon-host-left: Manifold NoError",
+    "coupon-host-left: one joined physical solid",
+    "coupon-host-left: closed consistently oriented topology",
+    "coupon-host-left: positive outward volume matches kernel",
+    "coupon-host-left: individual flat bed contact >30 mm2",
+    "coupon-host-left: K1SE extents and >=2 mm XY margins",
+    "coupon-host-right: Manifold NoError",
+    "coupon-host-right: one joined physical solid",
+    "coupon-host-right: closed consistently oriented topology",
+    "coupon-host-right: positive outward volume matches kernel",
+    "coupon-host-right: individual flat bed contact >30 mm2",
+    "coupon-host-right: K1SE extents and >=2 mm XY margins",
+    "coupon-gauge-keeper: Manifold NoError",
+    "coupon-gauge-keeper: one joined physical solid",
+    "coupon-gauge-keeper: closed consistently oriented topology",
+    "coupon-gauge-keeper: positive outward volume matches kernel",
+    "coupon-gauge-keeper: individual flat bed contact >30 mm2",
+    "coupon-gauge-keeper: K1SE extents and >=2 mm XY margins",
+    "coupon-side-joint: Manifold NoError",
+    "coupon-side-joint: one joined physical solid",
+    "coupon-side-joint: closed consistently oriented topology",
+    "coupon-side-joint: positive outward volume matches kernel",
+    "coupon-side-joint: individual flat bed contact >30 mm2",
+    "coupon-side-joint: K1SE extents and >=2 mm XY margins",
+    "coupon-rear-joint: Manifold NoError",
+    "coupon-rear-joint: one joined physical solid",
+    "coupon-rear-joint: closed consistently oriented topology",
+    "coupon-rear-joint: positive outward volume matches kernel",
+    "coupon-rear-joint: individual flat bed contact >30 mm2",
+    "coupon-rear-joint: K1SE extents and >=2 mm XY margins",
+    "coupon-lid-joint: Manifold NoError",
+    "coupon-lid-joint: one joined physical solid",
+    "coupon-lid-joint: closed consistently oriented topology",
+    "coupon-lid-joint: positive outward volume matches kernel",
+    "coupon-lid-joint: individual flat bed contact >30 mm2",
+    "coupon-lid-joint: K1SE extents and >=2 mm XY margins",
+    "coupon-corner: Manifold NoError",
+    "coupon-corner: one joined physical solid",
+    "coupon-corner: closed consistently oriented topology",
+    "coupon-corner: positive outward volume matches kernel",
+    "coupon-corner: individual flat bed contact >30 mm2",
+    "coupon-corner: K1SE extents and >=2 mm XY margins",
+    "coupon-axle-bores: Manifold NoError",
+    "coupon-axle-bores: one joined physical solid",
+    "coupon-axle-bores: closed consistently oriented topology",
+    "coupon-axle-bores: positive outward volume matches kernel",
+    "coupon-axle-bores: individual flat bed contact >30 mm2",
+    "coupon-axle-bores: K1SE extents and >=2 mm XY margins",
+    "bin: all non-bed downward faces satisfy 45-degree support-free criterion",
+    "lid: all non-bed downward faces satisfy 45-degree support-free criterion",
+    "hinge-axle: horizontal flat orientation is support-free at 45-degree criterion",
+    "bayonet-keeper: horizontal flat orientation is support-free at 45-degree criterion",
+    "rear-gate-keeper: horizontal flat orientation is support-free at 45-degree criterion",
+    "coupon-gauge-keeper: horizontal flat orientation is support-free at 45-degree criterion",
+    "lid: broad flat skin at print Z=0",
+    "true tapered normal wall >=2.4 mm including all chamfers",
+    "continuous 3 mm floor, joined with body and rail roots",
+    "side rail roots overlap body wall by >100 mm3, not a coplanar join",
+    "rear rail roots overlap body wall by >100 mm3, not a coplanar join",
+    "lid slide rail overlaps skin with positive volume",
+    "closed CSG disjoint: bin/liner-frame",
+    "closed CSG disjoint: bin/hanger-left",
+    "closed CSG disjoint: bin/hanger-right",
+    "closed CSG disjoint: bin/hinge-rail",
+    "closed CSG disjoint: bin/keeper-left",
+    "closed CSG disjoint: bin/keeper-right",
+    "closed CSG disjoint: bin/keeper-rear",
+    "closed CSG disjoint: bin/hinge-axle",
+    "closed CSG disjoint: bin/axle-lock-gate",
+    "closed CSG disjoint: bin/lid",
+    "closed CSG disjoint: bin/hinge-leaf",
+    "closed CSG disjoint: bin/keeper-lid",
+    "closed CSG disjoint: liner-frame/hanger-left",
+    "closed CSG disjoint: liner-frame/hanger-right",
+    "closed CSG disjoint: liner-frame/hinge-rail",
+    "closed CSG disjoint: liner-frame/keeper-left",
+    "closed CSG disjoint: liner-frame/keeper-right",
+    "closed CSG disjoint: liner-frame/keeper-rear",
+    "closed CSG disjoint: liner-frame/hinge-axle",
+    "closed CSG disjoint: liner-frame/axle-lock-gate",
+    "closed CSG disjoint: liner-frame/lid",
+    "closed CSG disjoint: liner-frame/hinge-leaf",
+    "closed CSG disjoint: liner-frame/keeper-lid",
+    "closed CSG disjoint: hanger-left/hanger-right",
+    "closed CSG disjoint: hanger-left/hinge-rail",
+    "closed CSG disjoint: hanger-left/keeper-left",
+    "closed CSG disjoint: hanger-left/keeper-right",
+    "closed CSG disjoint: hanger-left/keeper-rear",
+    "closed CSG disjoint: hanger-left/hinge-axle",
+    "closed CSG disjoint: hanger-left/axle-lock-gate",
+    "closed CSG disjoint: hanger-left/lid",
+    "closed CSG disjoint: hanger-left/hinge-leaf",
+    "closed CSG disjoint: hanger-left/keeper-lid",
+    "closed CSG disjoint: hanger-right/hinge-rail",
+    "closed CSG disjoint: hanger-right/keeper-left",
+    "closed CSG disjoint: hanger-right/keeper-right",
+    "closed CSG disjoint: hanger-right/keeper-rear",
+    "closed CSG disjoint: hanger-right/hinge-axle",
+    "closed CSG disjoint: hanger-right/axle-lock-gate",
+    "closed CSG disjoint: hanger-right/lid",
+    "closed CSG disjoint: hanger-right/hinge-leaf",
+    "closed CSG disjoint: hanger-right/keeper-lid",
+    "closed CSG disjoint: hinge-rail/keeper-left",
+    "closed CSG disjoint: hinge-rail/keeper-right",
+    "closed CSG disjoint: hinge-rail/keeper-rear",
+    "closed CSG disjoint: hinge-rail/hinge-axle",
+    "closed CSG disjoint: hinge-rail/axle-lock-gate",
+    "closed CSG disjoint: hinge-rail/lid",
+    "closed CSG disjoint: hinge-rail/hinge-leaf",
+    "closed CSG disjoint: hinge-rail/keeper-lid",
+    "closed CSG disjoint: keeper-left/keeper-right",
+    "closed CSG disjoint: keeper-left/keeper-rear",
+    "closed CSG disjoint: keeper-left/hinge-axle",
+    "closed CSG disjoint: keeper-left/axle-lock-gate",
+    "closed CSG disjoint: keeper-left/lid",
+    "closed CSG disjoint: keeper-left/hinge-leaf",
+    "closed CSG disjoint: keeper-left/keeper-lid",
+    "closed CSG disjoint: keeper-right/keeper-rear",
+    "closed CSG disjoint: keeper-right/hinge-axle",
+    "closed CSG disjoint: keeper-right/axle-lock-gate",
+    "closed CSG disjoint: keeper-right/lid",
+    "closed CSG disjoint: keeper-right/hinge-leaf",
+    "closed CSG disjoint: keeper-right/keeper-lid",
+    "closed CSG disjoint: keeper-rear/hinge-axle",
+    "closed CSG disjoint: keeper-rear/axle-lock-gate",
+    "closed CSG disjoint: keeper-rear/lid",
+    "closed CSG disjoint: keeper-rear/hinge-leaf",
+    "closed CSG disjoint: keeper-rear/keeper-lid",
+    "closed CSG disjoint: hinge-axle/axle-lock-gate",
+    "closed CSG disjoint: hinge-axle/lid",
+    "closed CSG disjoint: hinge-axle/hinge-leaf",
+    "closed CSG disjoint: hinge-axle/keeper-lid",
+    "closed CSG disjoint: axle-lock-gate/lid",
+    "closed CSG disjoint: axle-lock-gate/hinge-leaf",
+    "closed CSG disjoint: axle-lock-gate/keeper-lid",
+    "closed CSG disjoint: lid/hinge-leaf",
+    "closed CSG disjoint: lid/keeper-lid",
+    "closed CSG disjoint: hinge-leaf/keeper-lid",
+    "lid seats directly at body rim; no hinge float",
+    "frame has continuous shelf bearing >400 mm2",
+    "right dovetail: broad positive sloped load seat, not keeper/friction",
+    "left dovetail: broad positive sloped load seat, not keeper/friction",
+    "rear dovetail: broad positive sloped load seat, not keeper/friction",
+    "hanger-right: full upward slide-in and reverse removal path checked",
+    "hanger-left: full upward slide-in and reverse removal path checked",
+    "hinge-rail: full upward slide-in and reverse removal path checked",
+    "lid dovetail positively blocks lift-off",
+    "keeper-right: locked bayonet wing mechanically blocks straight withdrawal",
+    "keeper-right: broad head positively stops over-insertion",
+    "keeper-left: locked bayonet wing mechanically blocks straight withdrawal",
+    "keeper-left: broad head positively stops over-insertion",
+    "keeper-rear: locked bayonet wing mechanically blocks straight withdrawal",
+    "keeper-rear: broad head positively stops over-insertion",
+    "keeper-lid: locked bayonet wing mechanically blocks straight withdrawal",
+    "keeper-lid: broad head positively stops over-insertion",
+    "right: fitted keeper/gate system blocks downward hanger/rail removal",
+    "left: fitted keeper/gate system blocks downward hanger/rail removal",
+    "rear: fitted keeper/gate system blocks downward hanger/rail removal",
+    "lid: fitted keeper blocks lateral leaf removal",
+    "complete lid assembly can be lowered into alignment with fixed ears before axle insertion",
+    "axle: distal bayonet crossbar positively blocks withdrawal after quarter-turn",
+    "axle: broad integral head stops over-insertion",
+    "rear keeper positively blocks removal of the axle lock gate",
+    "axle gate positively blocks rotation away from locked position (80 degrees)",
+    "axle gate positively blocks rotation away from locked position (100 degrees)",
+    "axle gate still blocks unlocking across axial play X=-0.8, angle=80",
+    "axle gate still blocks unlocking across axial play X=-0.8, angle=100",
+    "axle gate still blocks unlocking across axial play X=0.05, angle=80",
+    "axle gate still blocks unlocking across axial play X=0.05, angle=100",
+    "axle gate also positively limits axial withdrawal before the bayonet stop",
+    "0..110 degree lid/leaf/keeper opening sweep against ALL fixed parts including axle and keepers",
+    "bag frame can lift vertically 80 mm with lid fully open, and insert by the reverse path",
+    "gauge-keeper--8: locked bayonet wing mechanically blocks straight withdrawal",
+    "gauge-keeper--8: broad head positively stops over-insertion",
+    "gauge-keeper-8: locked bayonet wing mechanically blocks straight withdrawal",
+    "gauge-keeper-8: broad head positively stops over-insertion",
+    "all-printed host gauge assembled width exactly 230 mm",
+    "installed envelope: 230 total span, <215 depth, <230 total height",
+    "closed projection <=3 above internal ledge; floor <230 below",
+    "hanger faces below ledges clear assumed 224 opening",
+    "hypothetical flat 224-opening ledge: 156 mm2 bearing per hanger, NOT measured host fit",
+    "01-bin/bin: centred plate XY margin >=2 mm",
+    "01-bin: exactly one component per intended copy",
+    "02-lid/lid: centred plate XY margin >=2 mm",
+    "02-lid: exactly one component per intended copy",
+    "03-liner-frame/liner-frame: centred plate XY margin >=2 mm",
+    "03-liner-frame: exactly one component per intended copy",
+    "04-hanging-rails/hanger-left: centred plate XY margin >=2 mm",
+    "04-hanging-rails/hanger-right: centred plate XY margin >=2 mm",
+    "04-hanging-rails: objects 0/1 separated >=5 mm",
+    "04-hanging-rails: exactly one component per intended copy",
+    "05-hinge/hinge-rail: centred plate XY margin >=2 mm",
+    "05-hinge/hinge-leaf: centred plate XY margin >=2 mm",
+    "05-hinge/axle-lock-gate: centred plate XY margin >=2 mm",
+    "05-hinge: objects 0/1 separated >=5 mm",
+    "05-hinge: objects 0/2 separated >=5 mm",
+    "05-hinge: objects 1/2 separated >=5 mm",
+    "05-hinge: exactly one component per intended copy",
+    "06-keepers-and-axle/bayonet-keeper: centred plate XY margin >=2 mm",
+    "06-keepers-and-axle/bayonet-keeper: centred plate XY margin >=2 mm",
+    "06-keepers-and-axle/bayonet-keeper: centred plate XY margin >=2 mm",
+    "06-keepers-and-axle/rear-gate-keeper: centred plate XY margin >=2 mm",
+    "06-keepers-and-axle/hinge-axle: centred plate XY margin >=2 mm",
+    "06-keepers-and-axle: objects 0/1 separated >=5 mm",
+    "06-keepers-and-axle: objects 0/2 separated >=5 mm",
+    "06-keepers-and-axle: objects 0/3 separated >=5 mm",
+    "06-keepers-and-axle: objects 0/4 separated >=5 mm",
+    "06-keepers-and-axle: objects 1/2 separated >=5 mm",
+    "06-keepers-and-axle: objects 1/3 separated >=5 mm",
+    "06-keepers-and-axle: objects 1/4 separated >=5 mm",
+    "06-keepers-and-axle: objects 2/3 separated >=5 mm",
+    "06-keepers-and-axle: objects 2/4 separated >=5 mm",
+    "06-keepers-and-axle: objects 3/4 separated >=5 mm",
+    "06-keepers-and-axle: exactly one component per intended copy",
+    "test-01-host-gauge/coupon-host-left: centred plate XY margin >=2 mm",
+    "test-01-host-gauge/coupon-host-right: centred plate XY margin >=2 mm",
+    "test-01-host-gauge/coupon-gauge-keeper: centred plate XY margin >=2 mm",
+    "test-01-host-gauge/coupon-gauge-keeper: centred plate XY margin >=2 mm",
+    "test-01-host-gauge: objects 0/1 separated >=5 mm",
+    "test-01-host-gauge: objects 0/2 separated >=5 mm",
+    "test-01-host-gauge: objects 0/3 separated >=5 mm",
+    "test-01-host-gauge: objects 1/2 separated >=5 mm",
+    "test-01-host-gauge: objects 1/3 separated >=5 mm",
+    "test-01-host-gauge: objects 2/3 separated >=5 mm",
+    "test-01-host-gauge: exactly one component per intended copy",
+    "test-02-mating/coupon-side-joint: centred plate XY margin >=2 mm",
+    "test-02-mating/coupon-rear-joint: centred plate XY margin >=2 mm",
+    "test-02-mating/coupon-lid-joint: centred plate XY margin >=2 mm",
+    "test-02-mating/coupon-corner: centred plate XY margin >=2 mm",
+    "test-02-mating/coupon-axle-bores: centred plate XY margin >=2 mm",
+    "test-02-mating: objects 0/1 separated >=5 mm",
+    "test-02-mating: objects 0/2 separated >=5 mm",
+    "test-02-mating: objects 0/3 separated >=5 mm",
+    "test-02-mating: objects 0/4 separated >=5 mm",
+    "test-02-mating: objects 1/2 separated >=5 mm",
+    "test-02-mating: objects 1/3 separated >=5 mm",
+    "test-02-mating: objects 1/4 separated >=5 mm",
+    "test-02-mating: objects 2/3 separated >=5 mm",
+    "test-02-mating: objects 2/4 separated >=5 mm",
+    "test-02-mating: objects 3/4 separated >=5 mm",
+    "test-02-mating: exactly one component per intended copy",
+    "22 legacy and all 59 R3 fallback file hashes preserved"
+  ],
+  "parts": {
+    "bin": {
+      "triangles": 576,
+      "volumeMm3": 432762.2469612917,
+      "approximatePLAgrams": 536.6251862320017,
+      "bedContactMm2": 30610,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -106,
+          -97,
+          0
+        ],
+        "max": [
+          106,
+          97,
+          200
+        ]
+      },
+      "extent": [
+        212,
+        194,
+        200
+      ]
+    },
+    "lid": {
+      "triangles": 272,
+      "volumeMm3": 89644.26270797032,
+      "approximatePLAgrams": 111.1588857578832,
+      "bedContactMm2": 36907.88701229177,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -103,
+          -96,
+          0
+        ],
+        "max": [
+          103,
+          96,
+          6.399999998509884
+        ]
+      },
+      "extent": [
+        206,
+        192,
+        6.399999998509884
+      ]
+    },
+    "liner-frame": {
+      "triangles": 64,
+      "volumeMm3": 8059.833765014909,
+      "approximatePLAgrams": 9.994193868618488,
+      "bedContactMm2": 2686.6112817246467,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -98.85999999940395,
+          -91.84000000357628,
+          0
+        ],
+        "max": [
+          98.85999999940395,
+          91.84000000357628,
+          3
+        ]
+      },
+      "extent": [
+        197.7199999988079,
+        183.68000000715256,
+        3
+      ]
+    },
+    "hanger-left": {
+      "triangles": 568,
+      "volumeMm3": 16765.884453530074,
+      "approximatePLAgrams": 20.789696722377293,
+      "bedContactMm2": 457.5,
+      "steepDownwardFaceAreaMm2": 67.96250098605981,
+      "bounds": {
+        "min": [
+          -6.25,
+          -29.5,
+          0
+        ],
+        "max": [
+          6.25,
+          29.5,
+          52
+        ]
+      },
+      "extent": [
+        12.5,
+        59,
+        52
+      ]
+    },
+    "hanger-right": {
+      "triangles": 568,
+      "volumeMm3": 16765.884453530074,
+      "approximatePLAgrams": 20.789696722377293,
+      "bedContactMm2": 457.5,
+      "steepDownwardFaceAreaMm2": 67.96250098605981,
+      "bounds": {
+        "min": [
+          -6.25,
+          -29.5,
+          0
+        ],
+        "max": [
+          6.25,
+          29.5,
+          52
+        ]
+      },
+      "extent": [
+        12.5,
+        59,
+        52
+      ]
+    },
+    "hinge-rail": {
+      "triangles": 1226,
+      "volumeMm3": 28789.641038463404,
+      "approximatePLAgrams": 35.69915488769462,
+      "bedContactMm2": 630,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -42,
+          -9.5,
+          0
+        ],
+        "max": [
+          42,
+          9.5,
+          58.5
+        ]
+      },
+      "extent": [
+        84,
+        19,
+        58.5
+      ]
+    },
+    "hinge-leaf": {
+      "triangles": 1076,
+      "volumeMm3": 12118.574111474423,
+      "approximatePLAgrams": 15.027031898228284,
+      "bedContactMm2": 348.93519427626586,
+      "steepDownwardFaceAreaMm2": 22.615428009752787,
+      "bounds": {
+        "min": [
+          -9.5,
+          -21.25,
+          0
+        ],
+        "max": [
+          9.5,
+          21.25,
+          36
+        ]
+      },
+      "extent": [
+        19,
+        42.5,
+        36
+      ]
+    },
+    "bayonet-keeper": {
+      "triangles": 556,
+      "volumeMm3": 473.8075352832145,
+      "approximatePLAgrams": 0.587521343751186,
+      "bedContactMm2": 88.68578160485367,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -7,
+          -6,
+          0
+        ],
+        "max": [
+          7,
+          6,
+          8
+        ]
+      },
+      "extent": [
+        14,
+        12,
+        8
+      ]
+    },
+    "hinge-axle": {
+      "triangles": 560,
+      "volumeMm3": 3610.2634757733454,
+      "approximatePLAgrams": 4.476726709958948,
+      "bedContactMm2": 480.87283992767334,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -38,
+          -7,
+          0
+        ],
+        "max": [
+          38,
+          7,
+          9.75
+        ]
+      },
+      "extent": [
+        76,
+        14,
+        9.75
+      ]
+    },
+    "rear-gate-keeper": {
+      "triangles": 556,
+      "volumeMm3": 579.4883962239271,
+      "approximatePLAgrams": 0.7185656113176697,
+      "bedContactMm2": 107.45936545642189,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -9.1,
+          -6,
+          0
+        ],
+        "max": [
+          9.1,
+          6,
+          8
+        ]
+      },
+      "extent": [
+        18.2,
+        12,
+        8
+      ]
+    },
+    "axle-lock-gate": {
+      "triangles": 710,
+      "volumeMm3": 5236.930342236951,
+      "approximatePLAgrams": 6.4937936243738195,
+      "bedContactMm2": 371.89999771118164,
+      "steepDownwardFaceAreaMm2": 29.061557039928264,
+      "bounds": {
+        "min": [
+          -22.5,
+          -6.6000000000000085,
+          0
+        ],
+        "max": [
+          22.5,
+          6.599999999999994,
+          53
+        ]
+      },
+      "extent": [
+        45,
+        13.200000000000003,
+        53
+      ]
+    },
+    "coupon-host-left": {
+      "triangles": 300,
+      "volumeMm3": 13541.323466375059,
+      "approximatePLAgrams": 16.791241098305072,
+      "bedContactMm2": 2524.7744469868594,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -65.5,
+          -10.5,
+          0
+        ],
+        "max": [
+          65.5,
+          10.5,
+          6
+        ]
+      },
+      "extent": [
+        131,
+        21,
+        6
+      ]
+    },
+    "coupon-host-right": {
+      "triangles": 1068,
+      "volumeMm3": 13269.185837168166,
+      "approximatePLAgrams": 16.453790438088525,
+      "bedContactMm2": 2403.8244213469375,
+      "steepDownwardFaceAreaMm2": 120.95002563992148,
+      "bounds": {
+        "min": [
+          -65.5,
+          -10.5,
+          0
+        ],
+        "max": [
+          65.5,
+          10.5,
+          6
+        ]
+      },
+      "extent": [
+        131,
+        21,
+        6
+      ]
+    },
+    "coupon-gauge-keeper": {
+      "triangles": 556,
+      "volumeMm3": 332.8997206955977,
+      "approximatePLAgrams": 0.4127956536625412,
+      "bedContactMm2": 63.65434585724472,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -4.2,
+          -6,
+          0
+        ],
+        "max": [
+          4.2,
+          6,
+          8
+        ]
+      },
+      "extent": [
+        8.4,
+        12,
+        8
+      ]
+    },
+    "coupon-side-joint": {
+      "triangles": 182,
+      "volumeMm3": 8760.70808068974,
+      "approximatePLAgrams": 10.863278020055278,
+      "bedContactMm2": 119.9999942779541,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -4.320000000000007,
+          -24,
+          0
+        ],
+        "max": [
+          4.319999999999993,
+          24,
+          40
+        ]
+      },
+      "extent": [
+        8.64,
+        48,
+        40
+      ]
+    },
+    "coupon-rear-joint": {
+      "triangles": 182,
+      "volumeMm3": 7002.41462893233,
+      "approximatePLAgrams": 8.68299413987609,
+      "bedContactMm2": 120,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -24,
+          -4.329999999999998,
+          0
+        ],
+        "max": [
+          24,
+          4.329999999999998,
+          40
+        ]
+      },
+      "extent": [
+        48,
+        8.659999999999997,
+        40
+      ]
+    },
+    "coupon-lid-joint": {
+      "triangles": 192,
+      "volumeMm3": 3436.262707970122,
+      "approximatePLAgrams": 4.260965757882951,
+      "bedContactMm2": 987.8872415479539,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -22,
+          -12,
+          0
+        ],
+        "max": [
+          22,
+          12,
+          6.399999998509884
+        ]
+      },
+      "extent": [
+        44,
+        24,
+        6.399999998509884
+      ]
+    },
+    "coupon-corner": {
+      "triangles": 44,
+      "volumeMm3": 1202.9956789249231,
+      "approximatePLAgrams": 1.4917146418669047,
+      "bedContactMm2": 147.2535147296112,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -20.5,
+          -20.5,
+          0
+        ],
+        "max": [
+          20.5,
+          20.5,
+          7
+        ]
+      },
+      "extent": [
+        41,
+        41,
+        7
+      ]
+    },
+    "coupon-axle-bores": {
+      "triangles": 1176,
+      "volumeMm3": 3714.1999628919543,
+      "approximatePLAgrams": 4.605607953986023,
+      "bedContactMm2": 619.0333280842005,
+      "steepDownwardFaceAreaMm2": 0,
+      "bounds": {
+        "min": [
+          -22.5,
+          -9,
+          0
+        ],
+        "max": [
+          22.5,
+          9,
+          6
+        ]
+      },
+      "extent": [
+        45,
+        18,
+        6
+      ]
+    }
+  },
+  "plates": {
+    "01-bin": {
+      "parts": [
+        [
+          "bin",
+          0,
+          0
+        ]
+      ],
+      "componentCount": 1
+    },
+    "02-lid": {
+      "parts": [
+        [
+          "lid",
+          0,
+          0
+        ]
+      ],
+      "componentCount": 1
+    },
+    "03-liner-frame": {
+      "parts": [
+        [
+          "liner-frame",
+          0,
+          0
+        ]
+      ],
+      "componentCount": 1
+    },
+    "04-hanging-rails": {
+      "parts": [
+        [
+          "hanger-left",
+          -45,
+          0
+        ],
+        [
+          "hanger-right",
+          45,
+          0
+        ]
+      ],
+      "componentCount": 2
+    },
+    "05-hinge": {
+      "parts": [
+        [
+          "hinge-rail",
+          -40,
+          -25
+        ],
+        [
+          "hinge-leaf",
+          40,
+          -25
+        ],
+        [
+          "axle-lock-gate",
+          0,
+          40
+        ]
+      ],
+      "componentCount": 3
+    },
+    "06-keepers-and-axle": {
+      "parts": [
+        [
+          "bayonet-keeper",
+          -60,
+          -35
+        ],
+        [
+          "bayonet-keeper",
+          -20,
+          -35
+        ],
+        [
+          "bayonet-keeper",
+          20,
+          -35
+        ],
+        [
+          "rear-gate-keeper",
+          60,
+          -35
+        ],
+        [
+          "hinge-axle",
+          0,
+          25
+        ]
+      ],
+      "componentCount": 5
+    },
+    "test-01-host-gauge": {
+      "parts": [
+        [
+          "coupon-host-left",
+          0,
+          -20
+        ],
+        [
+          "coupon-host-right",
+          0,
+          20
+        ],
+        [
+          "coupon-gauge-keeper",
+          -20,
+          65
+        ],
+        [
+          "coupon-gauge-keeper",
+          20,
+          65
+        ]
+      ],
+      "componentCount": 4
+    },
+    "test-02-mating": {
+      "parts": [
+        [
+          "coupon-side-joint",
+          -85,
+          0
+        ],
+        [
+          "coupon-rear-joint",
+          0,
+          -50
+        ],
+        [
+          "coupon-lid-joint",
+          0,
+          0
+        ],
+        [
+          "coupon-corner",
+          65,
+          -25
+        ],
+        [
+          "coupon-axle-bores",
+          0,
+          45
+        ]
+      ],
+      "componentCount": 5
+    }
+  },
+  "assemblyPaths": {
+    "hanger-right": {
+      "motion": "translate Z -80 to 0, before keeper insertion",
+      "stepMm": 0.5,
+      "reverse": "unlock/remove keeper, slide down"
+    },
+    "hanger-left": {
+      "motion": "translate Z -80 to 0, before keeper insertion",
+      "stepMm": 0.5,
+      "reverse": "unlock/remove keeper, slide down"
+    },
+    "hinge-rail": {
+      "motion": "translate Z -80 to 0, before keeper insertion",
+      "stepMm": 0.5,
+      "reverse": "unlock/remove keeper, slide down"
+    },
+    "hinge-leaf": {
+      "motion": "translate X +60 to 0 on detached lid",
+      "stepMm": 0.5,
+      "reverse": "remove lid keeper, slide +X"
+    },
+    "keeper-right": {
+      "motion": "insert unturned along local -X; rotate 90 degrees after seating",
+      "insertionStepMm": 0.5,
+      "rotationStepDegrees": 1,
+      "lockedWithdrawalStopBeforeMm": 0.8999999999999999,
+      "reverse": "quarter-turn back while fully seated, then withdraw +local X"
+    },
+    "keeper-left": {
+      "motion": "insert unturned along local -X; rotate 90 degrees after seating",
+      "insertionStepMm": 0.5,
+      "rotationStepDegrees": 1,
+      "lockedWithdrawalStopBeforeMm": 0.8999999999999999,
+      "reverse": "quarter-turn back while fully seated, then withdraw +local X"
+    },
+    "keeper-rear": {
+      "motion": "insert unturned along local -X; rotate 90 degrees after seating",
+      "insertionStepMm": 0.5,
+      "rotationStepDegrees": 1,
+      "lockedWithdrawalStopBeforeMm": 0.6,
+      "reverse": "quarter-turn back while fully seated, then withdraw +local X"
+    },
+    "keeper-lid": {
+      "motion": "insert unturned along local -X; rotate 90 degrees after seating",
+      "insertionStepMm": 0.5,
+      "rotationStepDegrees": 1,
+      "lockedWithdrawalStopBeforeMm": 0.8999999999999999,
+      "reverse": "quarter-turn back while fully seated, then withdraw +local X"
+    },
+    "hinge-axle": {
+      "motion": "insert unturned from X -120 to 0, then rotate 90 degrees",
+      "insertionStepMm": 0.5,
+      "rotationStepDegrees": 1,
+      "reverse": "fully reseat, reverse quarter-turn, withdraw left",
+      "shaftX": [
+        -34,
+        36
+      ],
+      "fixedBarrelsX": [
+        [
+          -34,
+          -20
+        ],
+        [
+          20,
+          34
+        ]
+      ],
+      "movingBarrelX": [
+        -18,
+        18
+      ],
+      "positiveHeadX": [
+        -37,
+        -34
+      ],
+      "positiveWingX": [
+        36,
+        39
+      ],
+      "diametralCoreClearanceMm": 1,
+      "axialBarrelGapsMm": 2,
+      "axialRetentionPlayMm": 2
+    },
+    "axle-lock-gate": {
+      "motion": "slide X -80 to 0 AFTER locking axle, then install LONG rear keeper",
+      "stepMm": 0.5,
+      "reverse": "unlock/remove long rear keeper, slide gate left, then unlock/remove axle"
+    },
+    "liner-frame": {
+      "motion": "with lid at 110 degrees, lift Z 0 to +80",
+      "stepMm": 0.5,
+      "reverse": "lower onto shelf with lid open",
+      "note": "Real host/liner clearances unmeasured."
+    },
+    "gauge-keeper--8": {
+      "motion": "insert unturned along local -X; rotate 90 degrees after seating",
+      "insertionStepMm": 0.5,
+      "rotationStepDegrees": 1,
+      "lockedWithdrawalStopBeforeMm": 0.5,
+      "reverse": "quarter-turn back while fully seated, then withdraw +local X"
+    },
+    "gauge-keeper-8": {
+      "motion": "insert unturned along local -X; rotate 90 degrees after seating",
+      "insertionStepMm": 0.5,
+      "rotationStepDegrees": 1,
+      "lockedWithdrawalStopBeforeMm": 0.5,
+      "reverse": "quarter-turn back while fully seated, then withdraw +local X"
+    }
+  },
+  "intentionalContacts": [
+    {
+      "pair": [
+        "lid",
+        "bin"
+      ],
+      "kind": "rim seat",
+      "projectedAreaMm2": 1744.2603187111913
+    },
+    {
+      "pair": [
+        "liner-frame",
+        "bin"
+      ],
+      "kind": "integral ramped shelf seat",
+      "projectedAreaMm2": 998.8137431554412
+    },
+    {
+      "pair": [
+        "bin",
+        "hanger-right"
+      ],
+      "kind": "1.3:1 downward load-bearing seat",
+      "projectedAreaMm2": 115.99999999964427
+    },
+    {
+      "pair": [
+        "bin",
+        "hanger-left"
+      ],
+      "kind": "1.3:1 downward load-bearing seat",
+      "projectedAreaMm2": 115.99999999964663
+    },
+    {
+      "pair": [
+        "bin",
+        "hinge-rail"
+      ],
+      "kind": "1.3:1 downward load-bearing seat",
+      "projectedAreaMm2": 67.99999999989268
+    }
+  ],
+  "limitations": [
+    "No purchased hardware or structural glue. All keepers and the axle are printed.",
+    "Actual host opening, internal ledge step, taper and cabinet clearances are unmeasured.",
+    "No load rating, physical print/fit validation, slicer validation or PLA creep-life claim.",
+    "Discrete CAD trajectories are not a formal continuous-motion proof."
+  ],
+  "minimumNormalWallMm": 2.4964917734334335,
+  "openingSweep": {
+    "stepDegrees": 0.1,
+    "checks": 33030,
+    "bounds": {
+      "min": [
+        -103,
+        -96.20135142109694,
+        197.2
+      ],
+      "max": [
+        103,
+        167.54407751126587,
+        410.201351421097
+      ]
+    },
+    "heightAboveInternalLedgeMm": 194.201351421097,
+    "rearReachBeyondClosedMm": 53.04407751126587
+  },
+  "assemblyBounds": {
+    "min": [
+      -115,
+      -96,
+      0
+    ],
+    "max": [
+      115,
+      114.5,
+      219
+    ]
+  },
+  "internalLedgeInstallation": {
+    "bearingZ": 216,
+    "closedAboveBearingMm": 3,
+    "floorBelowBearingMm": 216,
+    "rimRecessMm": 16,
+    "assumedHostBearingEachSideMm": 3,
+    "note": "Internal ledge only; never clamp the unknown external host flange.",
+    "assumedHostBearingAreaEachMm2": 155.9999999997899
+  }
+}

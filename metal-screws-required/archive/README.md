@@ -5,11 +5,9 @@ old generator, original README/assembly notes, STL ZIP, and historical
 G-code ZIPs. These are preserved for traceability, **not recommended files**.
 Instructions inside that snapshot are obsolete and unsafe to follow.
 
-Use only the current all-printed R4 root `production/`, `spares/`, `packages/`,
-`source/r4/` and `docs/R4_GUIDE.md`. **No old hanging or hinge fitting is
-compatible**. No-rails packages refer only to identical R4 fittings.
-The valid but hardware-dependent R3 fallback is separately preserved under
-`../metal-screws-required/`; it is not this unsafe legacy snapshot.
+Use only the current root `production/`, `spares/`, `packages/`, `source/r3/`
+and `docs/R3_GUIDE.md`. R3 is a different design; **no old hanging or hinge
+fitting is compatible**. No-rails packages refer only to identical R3 fittings.
 
 `legacy-manifest.json` records all 22 original paths, their archived paths,
 byte lengths, SHA-256 hashes and immutable source commit. Binary assets and

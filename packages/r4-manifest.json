@@ -1,0 +1,168 @@
+{
+  "revision": "r4-all-printed",
+  "units": "mm",
+  "purchasedHardwareRequired": false,
+  "structuralGlueRequired": false,
+  "productionQuantities": {
+    "bin": 1,
+    "lid": 1,
+    "liner-frame": 1,
+    "hanger-left": 1,
+    "hanger-right": 1,
+    "hinge-rail": 1,
+    "hinge-leaf": 1,
+    "bayonet-keeper": 3,
+    "hinge-axle": 1,
+    "rear-gate-keeper": 1,
+    "axle-lock-gate": 1
+  },
+  "couponShortKeeperQuantity": 2,
+  "noRails": "Accessory-only: liner-frame, hinge-leaf, bayonet-keeper, rear-gate-keeper, hinge-axle and axle-lock-gate. EXCLUDES bin, lid, BOTH R4 hangers, fixed R4 hinge rail, coupons. Only for reusing identical R4 parts; never R3/legacy.",
+  "files": [
+    {
+      "name": "spares/r4-bin.stl",
+      "bytes": 28884,
+      "sha256": "f8d08732babbc07f65ff0420ade940418dca61e639decc0919537f1b495eeac8"
+    },
+    {
+      "name": "spares/r4-lid.stl",
+      "bytes": 13684,
+      "sha256": "aee76716e5ce4309fb0a1e06e14822d36b9d90f7f1e93128cac134ced1eabc66"
+    },
+    {
+      "name": "spares/r4-liner-frame.stl",
+      "bytes": 3284,
+      "sha256": "1c448e28fd1a4521d4e1c1c749eb987d3e9a7873c8157da5960d2ac5abba0c97"
+    },
+    {
+      "name": "spares/r4-hanger-left.stl",
+      "bytes": 28484,
+      "sha256": "8359caaaa5903e297fbf454fa507324706964cbe4338347d3a61eb708c2b8f8a"
+    },
+    {
+      "name": "spares/r4-hanger-right.stl",
+      "bytes": 28484,
+      "sha256": "51589c3759e3a21b586a10c466831f82a6e44a7f5d081bc5e0a76bcf96a99157"
+    },
+    {
+      "name": "spares/r4-hinge-rail.stl",
+      "bytes": 61384,
+      "sha256": "c2c240ea0ffd597e58ab4ba2403f6bcbbb7cc4796a101974d5c20f617c2192d1"
+    },
+    {
+      "name": "spares/r4-hinge-leaf.stl",
+      "bytes": 53884,
+      "sha256": "252fc3da739fda0e0011bde4a390c90760880d405bbf07829ef79ea38b460c32"
+    },
+    {
+      "name": "spares/r4-bayonet-keeper.stl",
+      "bytes": 27884,
+      "sha256": "1c3751d3592866e6e5ba5f2d5b95ab8ee136ec38f2215a54c19f42a0fa6f7caa"
+    },
+    {
+      "name": "spares/r4-hinge-axle.stl",
+      "bytes": 28084,
+      "sha256": "f230f9fac453d257e29ecc261b84342a8d2fac20e058febba16d1537aa4411d3"
+    },
+    {
+      "name": "spares/r4-rear-gate-keeper.stl",
+      "bytes": 27884,
+      "sha256": "8dca0df2b786926de47c856234bea4a4308fd591876e5cb99120f3da7d213e21"
+    },
+    {
+      "name": "spares/r4-axle-lock-gate.stl",
+      "bytes": 35584,
+      "sha256": "dc5110c1338f6037a8722dc147467a8a0b25da25e8dfcbb8401ee2ce8924c9df"
+    },
+    {
+      "name": "spares/r4-coupon-host-left.stl",
+      "bytes": 15084,
+      "sha256": "ea76116b55be9e1533e51261513f24f4aaa95a53372da58d6844e4a7d989454d"
+    },
+    {
+      "name": "spares/r4-coupon-host-right.stl",
+      "bytes": 53484,
+      "sha256": "a83144fbd6e8b27cba5193b55292fc419f4146c36bf31895fb77b6203b14fcd4"
+    },
+    {
+      "name": "spares/r4-coupon-gauge-keeper.stl",
+      "bytes": 27884,
+      "sha256": "06b203bd14e36a9002390a8245d73d74951860458d66f515d892e296153ab0c5"
+    },
+    {
+      "name": "spares/r4-coupon-side-joint.stl",
+      "bytes": 9184,
+      "sha256": "e40b4e73008fd8357c35cda42b36027e54daeda2de177f2ad82bcf10c8efecb0"
+    },
+    {
+      "name": "spares/r4-coupon-rear-joint.stl",
+      "bytes": 9184,
+      "sha256": "19554d6bf69eb9dc78d264052b58165bad156f863867d7199d789e2a8257d148"
+    },
+    {
+      "name": "spares/r4-coupon-lid-joint.stl",
+      "bytes": 9684,
+      "sha256": "d1447a5bef4206ea6210cc6db15e87ffde0cbcfbabe997d8e21d91e4101f9098"
+    },
+    {
+      "name": "spares/r4-coupon-corner.stl",
+      "bytes": 2284,
+      "sha256": "b1b888bd6da99e7984c0bd030a5cbdb2de44af565b93cada67fe0ee10658da53"
+    },
+    {
+      "name": "spares/r4-coupon-axle-bores.stl",
+      "bytes": 58884,
+      "sha256": "4d1d8d6b484303116c1dd9161e74aa7ade3bb54869666679ea23ec01107df5b4"
+    },
+    {
+      "name": "production/r4-01-bin.stl",
+      "bytes": 28884,
+      "sha256": "f8d08732babbc07f65ff0420ade940418dca61e639decc0919537f1b495eeac8"
+    },
+    {
+      "name": "production/r4-02-lid.stl",
+      "bytes": 13684,
+      "sha256": "aee76716e5ce4309fb0a1e06e14822d36b9d90f7f1e93128cac134ced1eabc66"
+    },
+    {
+      "name": "production/r4-03-liner-frame.stl",
+      "bytes": 3284,
+      "sha256": "1c448e28fd1a4521d4e1c1c749eb987d3e9a7873c8157da5960d2ac5abba0c97"
+    },
+    {
+      "name": "production/r4-04-hanging-rails.stl",
+      "bytes": 56884,
+      "sha256": "1ed99e664d2994a6b72ae12ebf3e894baf827a67292e1e9bf8cddf0c2d1e3767"
+    },
+    {
+      "name": "production/r4-05-hinge.stl",
+      "bytes": 150684,
+      "sha256": "74404fd9c4542524465550a7b7d7ba44da713fc4ff110f775c0fb5cf867af249"
+    },
+    {
+      "name": "production/r4-06-keepers-and-axle.stl",
+      "bytes": 139284,
+      "sha256": "40f07e30ad58d20baf96ec6c245b6e9b9fb87244412382a3dbd848b1437963ab"
+    },
+    {
+      "name": "production/r4-test-01-host-gauge.stl",
+      "bytes": 124084,
+      "sha256": "b85c91486a417e1652c493084269511735b79c94e8a8384ad6f238a8ae02fff4"
+    },
+    {
+      "name": "production/r4-test-02-mating.stl",
+      "bytes": 88884,
+      "sha256": "5e8b0e117293c0959b7245d9d899561f0e0775e35712a585de98f8764e71be3b"
+    },
+    {
+      "name": "docs/R4_GUIDE.md",
+      "bytes": 19188,
+      "sha256": "898b51d66b28725585c0d0ce88cc666a8001c1f75b5b87ffddfc5e590dc2b9a0"
+    },
+    {
+      "name": "packages/r4-validation.json",
+      "bytes": 35768,
+      "sha256": "e6b345b655db05324cf2cec9891bb83a9dbcad9b16299a50d9960f245366cd0c"
+    }
+  ]
+}

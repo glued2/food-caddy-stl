@@ -1,111 +1,107 @@
-# Food caddy STL — corrected R3
+# Food caddy R4 — ALL PRINTED
 
-## Current R3 files only; print fit coupons before the bin
+**No purchased fasteners, metal pins, nuts or structural glue.** The bin,
+hangers, flip hinge, axle, positive retainers, bag frame and fit-gauge keys
+all print on the K1 SE. No brims or G-code.
 
-This is an **inset suspended food caddy inside one end of the LEFT recycling
-bin in a pullout kitchen drawer**, not an external rim clip. The hanging
-ledges rest on the host's **recessed internal bearing ledge** without clamping
-its broad outer flange. The roughly 200 mm caddy occupies about one end of
-the 400 mm host; the remaining recycling area stays accessible when closed.
-Exact usable volume and clearances depend on the actual host.
+This hangs **inside one end of the LEFT recycling bin** in the pullout
+drawer, resting on the recessed internal ledge—not clamping the external
+flange. The remaining recycling area stays accessible when the lid is closed.
+Actual host fit, safe load and kitchen clearance remain **unverified**.
 
-**Legacy files are UNSAFE historical reference, not current print files.**
-All 22 original tracked files—old STL parts, generator, original documentation,
-STL ZIP and historical G-code ZIPs—are preserved under
-[`archive/legacy`](archive/legacy). Preservation hashes and the original Git
-commit are recorded in [`archive/legacy-manifest.json`](archive/legacy-manifest.json).
-Their thin/collapsed chamfer walls, overlapping or inverted
-shells, and mismatched fittings are not fixed by slicer mesh repair.
-**Do not reuse the previously printed hangers or hinge rail with R3.**
+## Current print files — coupons first
 
-R3 is real manifold-3d solid CSG, with separately bolted hanging ledges,
-a flat lid and separate hinge leaf, a **metal M5 bolt/locknut axle**, and a
-continuous liner frame. It does not depend on glue or a printed friction pin.
-**Metal hardware is required**, not included in STL downloads.
+- **[Full ALL-PRINTED ZIP](packages/food-caddy-r4-ALL-PRINTED-FULL.zip)**:
+  six production print jobs, two test jobs, individual spares, guide and
+  machine-readable validation. “Full” means a package, not one giant plate.
+- **[R4 guide](docs/R4_GUIDE.md)**: read for coupon sequence, every assembly
+  and removal path, keeper orientations, print orientation and local supports.
+- **[Production/test plates](production)** and **[individual spares](spares)**.
+- **[NO-RAILS accessory ZIP](packages/food-caddy-r4-ALL-PRINTED-NO-RAILS.zip)**:
+  liner frame, moving leaf, standard keeper, long rear keeper, axle and
+  axle-lock gate only. **Excludes bin, lid, BOTH R4 hanging brackets,
+  fixed rear R4 hinge rail and all coupons.** Repeat prints for identical R4
+  fittings already in hand only; never compatible with R3 or legacy parts.
 
-- **[Full R3 ZIP](packages/food-caddy-r3-FULL.zip)** — all parts,
-  small fit coupons, separate printable plates, guide and validation.
-  “Full” means a package of print jobs, not a crowded single plate.
-- **[R3 assembly/printing guide](docs/R3_GUIDE.md)** — dimensions, required
-  hardware, coupon sequence, supports and limitations. Read this first.
-- **[Production/test plates](production)** — five production
-  jobs and two test jobs. Import centred, at 100%, millimetres.
-- **[Individual parts / spares](spares)** — seven production
-  parts plus seven coupons, each in its intended print orientation.
-- **[NO-RAILS accessory-only ZIP](packages/food-caddy-r3-accessories-NO-RAILS.zip)**
-  — **liner frame and moving hinge leaf ONLY**. Excludes bin, lid, **both
-  hanging ledges/brackets, fixed rear hinge rail**, coupons and all hardware.
-  This is for identical R3 rail reuse, never old fittings, and is not a
-  complete caddy.
+The complete assembly has **13 printed pieces**. The production plates
+include all required quantities, including three standard keepers and one
+long rear keeper. The host-gauge plate includes its two **short** keepers;
+those short keys must not be used on the caddy.
 
-The root now contains only the new design's `source/r3`, `docs`, `production`,
-`spares` and `packages`; **the archive is not a source of usable spare parts**.
-The hanging bin, hinged lid and removable bag-retainer functions are retained.
-Significant changes are mechanical M4 mounting joints, a positively retained
-metal M5 axle instead of a printed pin/collar, and wholly new hanging/hinge
-fittings. No artificial compatibility with already printed legacy parts is
-maintained. No-rails means omitting **new R3** rails for repeat prints only.
+### Structural redesign, not printed replacement M4 bolts
 
-### Confirmed measurements versus assumptions
+- Integral broad body dovetails and matching stopped hanger slides carry
+  waste weight through sloped bearing seats. Small keys do **not** carry
+  the main hanging load. No flexible snap fingers or friction-only joints.
+- Solid printed bayonet keepers insert freely, then quarter-turn into
+  positive withdrawal stops. A wide lid dovetail captures its moving leaf.
+- An **8 mm printed axle** carries the lid only. Its integral head and
+  cross-wing retain it axially; a separate **rigid axle-lock gate** prevents
+  rotation back to release. A long rear keeper locks that gate in place.
+- A removable continuous bag-retainer frame sits on the bin's integral
+  ramped shelf. The lid really flips and seats directly on the rim.
 
-230 mm is the host's **total outside left/right width including ledges**,
-NOT its clear opening. Actual clear opening is **unmeasured**. R3 assumes
-224 for design checks; its ledges span 230 overall (only 3 mm nominal
-bearing each side), below-ledge bracket envelope is 220, bin top is
-212 x 194, base 192 x 176, body height 205. Corners use 35 mm chamfers.
-Full closed assembly is **230 x 206.5 x 224 mm**. The body rim is deliberately
-recessed **16 mm below the internal support plane**, keeping the entire
-closed assembly, including hardware, **at most 3 mm above that plane**;
-the floor is 221 mm below it. This recess is a design choice, not a dimension
-measured from the photo. Height relative to the host's outer rim is unknown.
+## Dimensions and critical assumptions
 
-Body wall is a true 2.5 mm polygon offset, giving **minimum 2.4946 mm
-normal thickness including tapered chamfers**, with a 3 mm floor.
-Lid skin is 2.4 mm, seats directly at rim height, and prints with over
-39,000 mm² actual flat contact on the bed.
+| Dimension | Current design |
+|---|---|
+| Full assembly | **230 x 210.5 x 219 mm** |
+| Body shell top / bottom | **204 x 190 / 190 x 174 mm** |
+| Body height / floor | **200 / 3 mm** |
+| Minimum true normal wall, including chamfers | **>=2.496 mm** |
+| Straight top corner chamfer | **35 mm** |
+| Internal ledge support plane | **216 mm above floor** |
+| Body rim recess below support / closed projection above | **16 / 3 mm** |
 
-These dimensions do **not** establish real host fit or safe loading. The
-user's approximate “just over 210 at depth 230” and 18 mm ledge height
-do not describe the whole taper or ledge profile; 18 mm is a vertical height,
-**not flange thickness to grip**. Drawer/shelf clearance and lid-opening
-space at the chosen end are also unmeasured. Measure these and test
-the split full-span gauge, wall joints and complete small hinge assembly
-**before spending filament on the bin**. No physical fit, load rating,
-creep life or slicer validation is claimed.
+**230 is total outside width INCLUDING ledges, not the host opening.**
+The working opening assumption is **224, unmeasured**, leaving only **3 mm
+nominal bearing each side**. The reported 18 mm ledge dimension is a
+vertical height, not flange thickness to clamp. Exact taper, internal step,
+floor datum and cabinet clearances cannot be inferred from the photo.
 
-### Slicing summary
+Measure the actual internal bearing surfaces and use the printed split
+gauge and real joint coupons before spending filament on the bin. The
+16 mm recess is a design choice, not a measured step. Prefer the hinge
+facing the remaining recycling space; opening requires roughly **195 mm
+above the internal ledge** and **54 mm behind the closed hinge end**, plus
+clearance. Check the fully extended drawer, shelf/counter and adjacent bin.
 
-K1 SE: 220 x 220 x 250. Supplied layouts have >=2 mm XY edge margin.
-PLA on a correctly prepared/glued bed. **No brims, no new G-code.**
-Bin and broad flat lid: supports off. The fixed rear hinge rail's horizontal
-5.8 mm bores need localized removable supports; other small-part horizontal
-M4 holes may need local support depending on coupon results. Use the supplied
-orientations and read the full guide. Do not automatically lay hangers on
-their projecting ledge tips.
+## Printing and validation
 
-### Source and validation
+K1 SE **220 x 220 x 250**, 100% scale, supplied orientations, >=2 mm
+plate-edge margin. PLA on a prepared/glued bed; **no brim**. Bin and broad
+flat lid pass a support-free downward-face test. Some small-part transverse
+head recesses may need **localized removable supports**, as specified in
+the guide. Keepers and axle print **horizontally on broad flats**, not upright.
 
 ```powershell
 npm ci
 npm run build
 npm test
-# Independent audit, in an environment with numpy and trimesh:
-python source\r3\validate_stl.py
+# In a Python environment with numpy and trimesh:
+python source\r4\validate_stl.py
 ```
 
-The generator is `source/r3/generate.mjs`; dependencies are pinned in
-`package-lock.json`. It writes directly to `production`, `spares` and `packages`
-using a single file manifest, never into `archive`. `npm test` rebuilds in
-memory and fails on stale files.
+Source: `source/r4/generate.mjs`, pinned Manifold WASM CSG. Build writes only
+current `production`, `spares`, `packages` and the existing guide bytes.
+`npm test` regenerates in memory and checks exact deterministic output/ZIP
+parity without rewriting. Tests cover outward single solids, true wall/floor,
+per-part bed contact, plate/spare identity and gaps, bearing contact, slide
+and bayonet trajectories, positive stops, gate anti-rotation, lid seating
+and a full 0–110° movement sweep including all retainers.
+See [validation](packages/r4-validation.json) and [manifest](packages/r4-manifest.json).
+No mesh is silently repaired. CAD checks are not physical print success,
+a load rating, layer-bond validation or a PLA creep-life guarantee.
 
-Automated checks cover valid closed outward single-part solids; true
-chamfer offsets and continuous floor; individual bed contact; printer margins;
-plate separation and translated spare identity; lid seating and assembly
-collisions; 0–110° opening at 0.1° intervals; metal axle clearance and positive
-retention dimensions; archive parity. Details are in
-[`packages/r3-validation.json`](packages/r3-validation.json).
-The independent Python audit checks the exported STL topology/winding/volume,
-per-component bed contact, triangle-level plate/spare parity, manifest/ZIP
-hashes and complete archive preservation against its immutable baseline.
-Neither test substitutes for physical
-fit, layer adhesion, stress analysis or a slicer preview.
+## Two preserved alternatives — do not mix fittings
+
+**[metal-screws-required](metal-screws-required/FALLBACK_NOTE.md)** contains the
+complete valid-but-hardware-dependent **R3 fallback** from commit
+`b736c3d7db481300fadee53dfdf104b7b42ae97f`. All 59 original source/doc/STL/ZIP
+and dependency files are preserved byte-for-byte with hashes. Its build runs
+from that folder; use its small `RUN_AUDIT.py` wrapper for the independent
+audit in its new nested location. This fallback is not the unsafe legacy set.
+
+**[archive/legacy](archive/README.md)** retains the 22 much older files with
+known unsafe geometry. Those are historical reference only, not print
+recommendations. The independent audit verifies both snapshots remain intact.

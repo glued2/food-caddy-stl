@@ -1,0 +1,159 @@
+{
+  "legacyCommit": "803bab6b88cf811245e1d4e67d6b9834c89e7c00",
+  "files": [
+    {
+      "originalPath": "README.md",
+      "archivedPath": "archive/legacy/README.md",
+      "bytes": 1905,
+      "sha256": "a011f52f020e3a732e3028feefd6d77d7e930533e050b4da6d3cef1b5451ea1b",
+      "origin": "original Git HEAD blob (before R3 documentation rewrite)"
+    },
+    {
+      "originalPath": "docs/ASSEMBLY_NOTES.txt",
+      "archivedPath": "archive/legacy/docs/ASSEMBLY_NOTES.txt",
+      "bytes": 6865,
+      "sha256": "2018643d29d44445ba46352cc13ad0158e7b1439aa24bc16452a5ce3e4803949",
+      "origin": "original Git HEAD blob (before R3 documentation rewrite)"
+    },
+    {
+      "originalPath": "food-caddy-k1se-hyper-pla-gcode.zip",
+      "archivedPath": "archive/legacy/food-caddy-k1se-hyper-pla-gcode.zip",
+      "bytes": 1185875,
+      "sha256": "6a85af3910b44697716a64c2b37b9b7e1a54a5d016c623cb3842facb80477c8e",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "food-caddy-k1se-pla-current-gcode.zip",
+      "archivedPath": "archive/legacy/food-caddy-k1se-pla-current-gcode.zip",
+      "bytes": 1181444,
+      "sha256": "f8fd6879ddcfbb71652e293987722dfe77d8356e61168ac61cf754c275e8c43e",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "food-caddy-k1se-stls.zip",
+      "archivedPath": "archive/legacy/food-caddy-k1se-stls.zip",
+      "bytes": 44576,
+      "sha256": "a970ba0bacace27454cc4feba719342e6559bbfe95f1865cb3fe7ceb40622e6a",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_accessories_everything.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_accessories_everything.stl",
+      "bytes": 217714,
+      "sha256": "1e565922d9a1ecda122728758f80978bcba20e3dffae34a6d0018c2da82a38be",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_accessories_everything_bed_centered.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_accessories_everything_bed_centered.stl",
+      "bytes": 217886,
+      "sha256": "07e81d59d94998f76792830134c5ecf0fc709ed1c5a6e1e02548858be6d761d8",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_accessories_no_rails.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_accessories_no_rails.stl",
+      "bytes": 105578,
+      "sha256": "6cdbeb854f3830986281e210f20e0403346c96142ea5e914ec94c2373f1802f7",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_accessories_no_rails_bed_centered.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_accessories_no_rails_bed_centered.stl",
+      "bytes": 106624,
+      "sha256": "dc1672d5197a66b50008e1c1449f7bc3b58928d0a6ed1f74a63c7ca350710774",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_body_216mm.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_body_216mm.stl",
+      "bytes": 18119,
+      "sha256": "e77444a3e991c6e12b866bd9da494c592d3e93fbc08c2dba1a39b4575e63c6b0",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_body_216mm_bed_centered.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_body_216mm_bed_centered.stl",
+      "bytes": 18005,
+      "sha256": "b41dc023328aa09e02a20f96456074f950f92bf0be41d222a2f97c60ff35fd62",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_failed_parts_only.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_failed_parts_only.stl",
+      "bytes": 66202,
+      "sha256": "10dee5c55a0f0fb5f939515b7400f0a5d3cd0bf4e001477c61da89e10d86d8b0",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_flip_lid_216mm.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_flip_lid_216mm.stl",
+      "bytes": 75023,
+      "sha256": "b0f5b5e66ec4287f6c743b8942f8caebced57cb2a89ecd36984698bc2ff809ea",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_flip_lid_216mm_bed_centered.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_flip_lid_216mm_bed_centered.stl",
+      "bytes": 75785,
+      "sha256": "2271e7d2cbcf997a335fc89c2a0945528c74f0ba341d9b1d76925ddd15f178c8",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_hinge_kit_plate.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_hinge_kit_plate.stl",
+      "bytes": 130805,
+      "sha256": "d6f7f48c8022d65f2920a7caa1ff7278af7f5bf51947a7ccb1dd7d6c274b5dca",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_hinge_kit_plate_bed_centered.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_hinge_kit_plate_bed_centered.stl",
+      "bytes": 130933,
+      "sha256": "761a0c0d00afe0c25902f5b97638fc54244fde2ecb9fde686e1974fdee10395f",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_liner_hanger_plate.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_liner_hanger_plate.stl",
+      "bytes": 85336,
+      "sha256": "c2fd5245a7fbe485164b880d0cd4314f64c728bd30db4f13cb90129270f02ed1",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "production/food_caddy_k1se_liner_hanger_plate_bed_centered.stl",
+      "archivedPath": "archive/legacy/production/food_caddy_k1se_liner_hanger_plate_bed_centered.stl",
+      "bytes": 87228,
+      "sha256": "fb37215dcefbc50b3b9f9ae9eccd316f6947f6ca969b5566b47639d742ea9a29",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "source/generate_food_caddy_stls.js",
+      "archivedPath": "archive/legacy/source/generate_food_caddy_stls.js",
+      "bytes": 16288,
+      "sha256": "a329c1f475665170b039c4e45546e4dd4eb6cc0f1fcbd8f7e52cd0a4110f6a47",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "spares/food_caddy_k1se_bag_retainer_ring_spare.stl",
+      "archivedPath": "archive/legacy/spares/food_caddy_k1se_bag_retainer_ring_spare.stl",
+      "bytes": 20579,
+      "sha256": "16665d007bda07bafcf835ad306785c1d6f75b31769bbd3caed9e4e16b657c89",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "spares/food_caddy_k1se_hinge_pin_spare.stl",
+      "archivedPath": "archive/legacy/spares/food_caddy_k1se_hinge_pin_spare.stl",
+      "bytes": 19807,
+      "sha256": "bad32eacc99dac2ac441989c1a5420571d27ef1c895d718b9f7f8905801750b1",
+      "origin": "byte-preserved working-tree file"
+    },
+    {
+      "originalPath": "spares/food_caddy_k1se_hinge_retainer_collar_spare.stl",
+      "archivedPath": "archive/legacy/spares/food_caddy_k1se_hinge_retainer_collar_spare.stl",
+      "bytes": 45008,
+      "sha256": "cefd46ce9248fa304c3ab00cca18605e548b4651b3ca0d01ddc94ac2c24a1996",
+      "origin": "byte-preserved working-tree file"
+    }
+  ]
+}

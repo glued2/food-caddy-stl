@@ -1,10 +1,9 @@
-# R3 individual parts, spares and fit coupons
+# R4 all-printed individual parts and coupons
 
-These 14 STLs comprise seven production parts and seven small coupon parts.
-Each is already in its intended print orientation. Production plates in
-`../production/` reuse the identical solids, so do not print both unless you
-want extra copies.
+One STL is one physical copy. Complete caddy quantities are in
+`../packages/r4-manifest.json`: notably **3 standard bayonet keepers** and
+**1 long rear-gate keeper**. The two **short** gauge keepers belong only to
+the host test gauge and must never replace a production keeper.
 
-Read [`../docs/R3_GUIDE.md`](../docs/R3_GUIDE.md) before printing or assembly.
-**No R3 part is intended to mate with an archived legacy fitting.** The
-no-rails accessory package omits NEW R3 rails for repeat prints only.
+All parts are already in print orientation. Plates in `../production`
+reuse these exact solids by translation. See `../docs/R4_GUIDE.md`.

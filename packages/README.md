@@ -1,17 +1,15 @@
-# Current R3 packages
+# Current R4 all-printed packages
 
-- `food-caddy-r3-FULL.zip`: all seven production parts, seven coupons,
-  five production plates and two test plates, guide, manifest and validation.
-  This is a package of separate print jobs, not one oversized plate.
-- `food-caddy-r3-accessories-NO-RAILS.zip`: **liner frame and moving hinge
-  leaf only**. Excludes bin, lid, **both new hanging brackets/ledges and
-  the new fixed rear hinge rail**, coupons and all metal hardware.
-  Only for repeat prints reusing identical R3 fittings—never archived parts.
-- `r3-manifest.json`: full current file inventory and SHA-256 hashes.
-  The accessory ZIP includes this full-design catalogue for reference;
-  that catalogue does not mean the omitted parts are in the accessory ZIP.
-- `r3-validation.json`: dimensions and automated CSG/print/assembly checks.
+- `food-caddy-r4-ALL-PRINTED-FULL.zip`: all production parts/coupons,
+  six production jobs, two test jobs, guide, manifest and validation.
+- `food-caddy-r4-ALL-PRINTED-NO-RAILS.zip`: liner frame, moving leaf, standard
+  keeper, long rear keeper, hinge axle and axle-lock gate. **Excludes bin,
+  lid, BOTH new R4 hangers, fixed R4 hinge rail and all coupons.**
+  For repeat prints with identical R4 fittings already printed, never R3.
+- `r4-manifest.json`: full-design quantities, hashes and inventory. The
+  accessory ZIP includes this catalogue for reference, not all listed parts.
+- `r4-validation.json`: actual geometry, bearing, assembly path, retention,
+  print-layout and opening checks.
 
-Read `../docs/R3_GUIDE.md`, measure the unconfirmed host opening, then print
-coupons first. Hardware and localized hinge-bore supports are required.
-No new G-code or brims. No physical fit or load rating is claimed.
+Every fastening, including test-gauge keys, is printable. No bought hardware,
+structural glue, brim or G-code. Read `../docs/R4_GUIDE.md` before printing.

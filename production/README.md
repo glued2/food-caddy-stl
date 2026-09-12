@@ -1,10 +1,9 @@
-# R3 production and test plates
+# R4 all-printed production and test plates
 
-Print the two test jobs and actual small fittings first, then the bin, lid and
-liner frame only after checking fit. The five production jobs are separate
-plates, not one oversized assembly. Each physical part also exists as an
-individual replacement in `../spares/`.
+Start with both `test-*` jobs plus actual small fittings (`04`, `05`, `06`).
+Print the full bin/lid/frame only after the new joints and host gauge fit.
 
-Read [`../docs/R3_GUIDE.md`](../docs/R3_GUIDE.md) for hardware, orientations and
-localized supports. No brims or G-code. Old files are isolated in
-`../archive/legacy/` and must not be printed or reused with R3.
+The six production jobs contain all 13 required printed pieces. No metal
+hardware or structural glue is needed. Use the supplied orientations;
+read `../docs/R4_GUIDE.md` for localized support decisions and assembly order.
+There is no brim or G-code. No R3/legacy part is compatible.

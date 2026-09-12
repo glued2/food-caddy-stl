@@ -1,10 +1,10 @@
 {
-  "name": "food-caddy-r4-all-printed",
+  "name": "food-caddy-r3",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node source/r4/generate.mjs",
-    "test": "node source/r4/generate.mjs --check"
+    "build": "node source/r3/generate.mjs",
+    "test": "node source/r3/generate.mjs --check"
   },
   "dependencies": {
     "fflate": "0.8.3",
